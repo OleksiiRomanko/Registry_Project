@@ -1,7 +1,8 @@
 package repositories;
 
-/**
- * Created by maxymratoshniuk on 3/31/16.
- */
-public class CriminalActRepository {
+import models.CriminalAct;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CriminalActRepository extends JpaRepository<CriminalAct, Integer> {
 }
+

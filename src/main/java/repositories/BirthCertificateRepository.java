@@ -1,7 +1,8 @@
 package repositories;
 
-/**
- * Created by maxymratoshniuk on 3/31/16.
- */
-public class BirthCertificateRepository {
+import models.BirthCertificate;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BirthCertificateRepository extends JpaRepository<BirthCertificate, Integer> {
+
 }

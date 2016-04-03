@@ -1,7 +1,6 @@
 package repositories;
 
-/**
- * Created by maxymratoshniuk on 3/31/16.
- */
-public class ExtractionRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ExtractionRepository extends JpaRepository<Exception, Integer>{
 }

@@ -1,7 +1,8 @@
 package repositories;
 
-/**
- * Created by maxymratoshniuk on 3/31/16.
- */
-public class WorkPlaceRepository {
+import models.Workplace;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface WorkPlaceRepository extends JpaRepository<Workplace,Integer>{
 }

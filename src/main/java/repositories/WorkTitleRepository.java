@@ -1,7 +1,8 @@
 package repositories;
 
-/**
- * Created by maxymratoshniuk on 3/31/16.
- */
-public class WorkTitleRepository {
+import models.Worktitle;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface WorkTitleRepository extends JpaRepository<Worktitle, Integer>{
 }

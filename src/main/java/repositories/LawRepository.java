@@ -1,7 +1,7 @@
 package repositories;
 
-/**
- * Created by maxymratoshniuk on 3/31/16.
- */
-public class LawRepository {
+import models.Law;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface LawRepository extends JpaRepository<Law, Integer>{
 }
