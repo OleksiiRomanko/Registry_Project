@@ -18,7 +18,6 @@ public class CriminalActTest {
 
     @Inject
     private CriminalActRepository criminalActRepository;
-
     @Inject
     private BirthCertificateRepository birthCertificateRepository;
     @Inject

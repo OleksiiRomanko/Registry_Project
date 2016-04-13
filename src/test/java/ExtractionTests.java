@@ -42,15 +42,6 @@ public class ExtractionTests {
         UsersEntity user = createUser();
         user = usersRepository.save(user);
         CriminalActEntity criminalAct = createCriminalAct();
-//        criminalAct.setUser(user);
-//        criminalActRepository.save(criminalAct);
-//
-//        criminalAct = criminalActRepository.findActByCriminalDescription("Test Law");
-//        criminalAct.setCriminalDescription("New Test Law");
-//        criminalAct = criminalActRepository.save(criminalAct);
-//        criminalActRepository.delete(criminalAct);
-//
-//
 
         List<LawEntity> list = lawRepository.findAll();
         list.remove(0);
@@ -58,11 +49,11 @@ public class ExtractionTests {
         criminalAct.setLaw(list);
         criminalAct.setUser(user);
         actRepository.save(criminalAct);
-        ExtractionEntity e = createExtraction();
-        e.setUser(criminalAct.getUser());
-        e.setCriminalAct(criminalAct);
-        extractionRepository.save(e);
-        extractionRepository.delete(e);
+        ExtractionEntity extraction = createExtraction();
+        extraction.setUser(criminalAct.getUser());
+        extraction.setCriminalAct(criminalAct);
+        extractionRepository.save(extraction);
+        extractionRepository.delete(extraction);
 
     }
 
