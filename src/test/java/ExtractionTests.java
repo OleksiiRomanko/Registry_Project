@@ -9,15 +9,13 @@ import javax.inject.Inject;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Created by lysogordima on 13.04.16.
+ */
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring/root-context.xml")
-
-
-public class CriminalActTest {
-
-    @Inject
-    private CriminalActRepository criminalActRepository;
-
+public class ExtractionTests {
     @Inject
     private BirthCertificateRepository birthCertificateRepository;
     @Inject
@@ -37,11 +35,8 @@ public class CriminalActTest {
     @Inject
     private WorkTitleRepository workTitleRepository;
 
-
-
-
     @Test
-    public void createAndDeleteCriminalAct(){
+    public void complexTestOfCreatingExctraction(){
 
 
         UsersEntity user = createUser();
@@ -62,9 +57,12 @@ public class CriminalActTest {
 
         criminalAct.setLaw(list);
         criminalAct.setUser(user);
-        criminalActRepository.save(criminalAct);
-
-
+        actRepository.save(criminalAct);
+        ExtractionEntity e = createExtraction();
+        e.setUser(criminalAct.getUser());
+        e.setCriminalAct(criminalAct);
+        extractionRepository.save(e);
+        extractionRepository.delete(e);
 
     }
 
@@ -72,12 +70,14 @@ public class CriminalActTest {
 
         CriminalActEntity crime = new CriminalActEntity();
 
+
+
 //        crime.setLaw(createLaw());
-        crime.setCriminalDescription("Test Law");
+        crime.setCriminalDescription("Description about crim");
         crime.setCriminalType("Type 1");
         crime.setTribunalDate(new Date().getTime());
         crime.setActivationDate(new Date().getTime());
-        crime.setPenaltyType("Penalty 1");
+        crime.setPenaltyType("Penalty type 1");
         crime.setRepaymentConvictions("Reason for repayment");
         crime.setDateRepaymentConvitions(new Date().getTime());
         crime.setRequisitesOfPaymentPenalty("Requisites");
@@ -165,6 +165,14 @@ public class CriminalActTest {
         law.setType("Type 1");
 
         return law;
+    }
+    private ExtractionEntity createExtraction (){
+        ExtractionEntity ext = new ExtractionEntity();
+        ext.setDate(new Date().getTime());
+        ext.setIsPresent(0);
+        ext.setNumber("0");
+        ext.setSourceInformation("information");
+        return ext;
     }
 
 
