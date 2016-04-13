@@ -19,8 +19,8 @@ public class UsersEntity {
     private PassportsEntity passport;
     private BirthCertificateEntity birthCertificate;
     private LivingPlaceEntity livingPlace;
-//    private CriminalActEntity criminalAct;
-//    private ExtractionEntity extraction;
+    private CriminalActEntity criminalAct;
+    private ExtractionEntity extraction;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -128,21 +128,21 @@ public class UsersEntity {
         this.livingPlace = livingPlace;
     }
 
-//    @OneToOne(mappedBy = "user")
-//    public CriminalActEntity getCriminalAct() {
-//        return criminalAct;
-//    }
-//
-//    public void setCriminalAct(CriminalActEntity criminalAct) {
-//        this.criminalAct = criminalAct;
-//    }
+    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
+    public CriminalActEntity getCriminalAct() {
+        return criminalAct;
+    }
 
-//    @OneToOne(mappedBy = "user")
-//    public ExtractionEntity getExtraction() {
-//        return extraction;
-//    }
-//
-//    public void setExtraction(ExtractionEntity extraction) {
-//        this.extraction = extraction;
-//    }
+    public void setCriminalAct(CriminalActEntity criminalAct) {
+        this.criminalAct = criminalAct;
+    }
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.REMOVE)
+    public ExtractionEntity getExtraction() {
+        return extraction;
+    }
+
+    public void setExtraction(ExtractionEntity extraction) {
+        this.extraction = extraction;
+    }
 }

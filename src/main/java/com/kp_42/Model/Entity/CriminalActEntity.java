@@ -3,6 +3,7 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by user on 13.04.2016.
@@ -23,7 +24,7 @@ public class CriminalActEntity {
     private String groundOfPenalty;
     private Long dateoffPenalty;
     private UsersEntity user;
-    private LawEntity law;
+    private List<LawEntity> law;
     private ExtractionEntity extraction;
 
     @Id
@@ -207,13 +208,15 @@ public class CriminalActEntity {
         this.user = user;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "law_id", referencedColumnName = "id")
-    public LawEntity getLaw() {
+    @ManyToMany
+    @JoinTable(name = "criminalacthaslaw",catalog = "mydb",joinColumns = {
+            @JoinColumn(name = "CriminalAct_id",nullable = false)},inverseJoinColumns = {
+            @JoinColumn(name = "Law_id",nullable = false)})
+    public List<LawEntity> getLaw() {
         return law;
     }
 
-    public void setLaw(LawEntity law) {
+    public void setLaw(List<LawEntity> law) {
         this.law = law;
     }
 

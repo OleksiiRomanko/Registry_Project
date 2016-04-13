@@ -7,9 +7,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.inject.Inject;
 import java.util.Date;
-
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
+import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring/root-context.xml")
@@ -49,13 +47,23 @@ public class CriminalActTest {
         UsersEntity user = createUser();
         user = usersRepository.save(user);
         CriminalActEntity criminalAct = createCriminalAct();
+//        criminalAct.setUser(user);
+//        criminalActRepository.save(criminalAct);
+//
+//        criminalAct = criminalActRepository.findActByCriminalDescription("Test Law");
+//        criminalAct.setCriminalDescription("New Test Law");
+//        criminalAct = criminalActRepository.save(criminalAct);
+//        criminalActRepository.delete(criminalAct);
+//
+//
+
+        List<LawEntity> list = lawRepository.findAll();
+        list.remove(0);
+
+        criminalAct.setLaw(list);
         criminalAct.setUser(user);
         criminalActRepository.save(criminalAct);
 
-        criminalAct = criminalActRepository.findActByCriminalDescription("Test Law");
-        criminalAct.setCriminalDescription("New Test Law");
-        criminalAct = criminalActRepository.save(criminalAct);
-        criminalActRepository.delete(criminalAct);
 
     }
 
@@ -63,7 +71,7 @@ public class CriminalActTest {
 
         CriminalActEntity crime = new CriminalActEntity();
 
-        crime.setLaw(createLaw());
+//        crime.setLaw(createLaw());
         crime.setCriminalDescription("Test Law");
         crime.setCriminalType("Type 1");
         crime.setTribunalDate(new Date().getTime());

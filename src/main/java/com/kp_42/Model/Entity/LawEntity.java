@@ -3,6 +3,7 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by user on 13.04.2016.
@@ -13,7 +14,7 @@ public class LawEntity {
     private int id;
     private String name;
     private String type;
-//    private CriminalActEntity criminalAct;
+    private List<CriminalActEntity> criminalAct;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -69,15 +70,15 @@ public class LawEntity {
         return result;
     }
 
-//
-//    @OneToOne(mappedBy = "law")
-//    public CriminalActEntity getCriminalAct() {
-//        return criminalAct;
-//    }
-//
-//    public void setCriminalAct(CriminalActEntity criminalAct) {
-//        this.criminalAct = criminalAct;
-//    }
-//
-//
+
+    @ManyToMany(mappedBy = "law")
+    public List<CriminalActEntity> getCriminalAct() {
+        return criminalAct;
+    }
+
+    public void setCriminalAct(List<CriminalActEntity> criminalAct) {
+        this.criminalAct = criminalAct;
+    }
+
+
 }
