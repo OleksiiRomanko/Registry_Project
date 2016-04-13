@@ -88,7 +88,7 @@ public class UsersEntity {
         return result;
     }
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "workplace_id", referencedColumnName = "id")
     public WorkplaceEntity getWorkplace() {
         return workplace;

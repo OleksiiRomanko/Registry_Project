@@ -13,7 +13,7 @@ public class BirthCertificateEntity {
     private int id;
     private Long birthDate;
     private String bitrhPlace;
-//    private UsersEntity user;
+    private UsersEntity user;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -69,12 +69,12 @@ public class BirthCertificateEntity {
         return result;
     }
 
-//    @OneToOne(mappedBy = "birthCertificate")
-//    public UsersEntity getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(UsersEntity user) {
-//        this.user = user;
-//    }
+    @OneToOne(mappedBy = "birthCertificate",cascade = CascadeType.REMOVE)
+    public UsersEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UsersEntity user) {
+        this.user = user;
+    }
 }

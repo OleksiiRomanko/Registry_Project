@@ -44,13 +44,40 @@ public class UsersTest {
 
 
     @Test
-    public void complexTest(){
+    public void CreateUserAndDeleteByPassportRef(){
+
+        UsersEntity user = createUser();
+        user = usersRepository.save(user);
+        user = usersRepository.findUserByName("Name");
+        user.setName("Ivan");
+        user = usersRepository.save(user);
+        passportsRepository.delete(user.getPassport());
+    }
+
+    @Test
+    public void CreateUserAndDeleteByCerifRef(){
+
+        UsersEntity user = createUser();
+        user = usersRepository.save(user);
+        user = usersRepository.findUserByName("Name");
+        user.setName("Ivan");
+        user = usersRepository.save(user);
+//        ce
+    }
 
 
+    @Test
+    public void CreateUserAndDeleteByUserRef(){
 
-        UsersEntity user = usersRepository.save(createUser());
+        UsersEntity user = createUser();
+        user = usersRepository.save(user);
+        user = usersRepository.findUserByName("Name");
+        user.setName("Ivan");
+        user = usersRepository.save(user);
+        usersRepository.delete(user);
 
     }
+
 
     private UsersEntity createUser(){
 

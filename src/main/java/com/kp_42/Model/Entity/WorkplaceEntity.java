@@ -86,7 +86,7 @@ public class WorkplaceEntity {
         return result;
     }
 
-    @OneToOne(mappedBy = "workplace")
+    @OneToOne(mappedBy = "workplace", cascade = CascadeType.REMOVE )
     public UsersEntity getUser() {
         return user;
     }
@@ -95,7 +95,7 @@ public class WorkplaceEntity {
         this.user = user;
     }
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "worktitle_id", referencedColumnName = "id", nullable = false)
     public WorktitleEntity getWorktitle() {
         return worktitle;
