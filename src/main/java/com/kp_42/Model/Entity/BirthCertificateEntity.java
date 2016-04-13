@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Table(name = "birth certificate", schema = "mydb", catalog = "")
 public class BirthCertificateEntity {
     private int id;
-    private String birthDate;
+    private Long birthDate;
     private String bitrhPlace;
     private UsersEntity user;
 
@@ -25,11 +25,11 @@ public class BirthCertificateEntity {
 
     @Basic
     @Column(name = "birthDate")
-    public String getBirthDate() {
+    public Long getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(String birthDate) {
+    public void setBirthDate(Long birthDate) {
         this.birthDate = birthDate;
     }
 
