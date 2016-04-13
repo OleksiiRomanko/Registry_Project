@@ -8,6 +8,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.inject.Inject;
 import java.util.Date;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:spring/root-context.xml")
 
@@ -40,14 +43,19 @@ public class CriminalActTest {
 
 
     @Test
-    public void complexTestOfCreatingCriminalAct(){
+    public void createAndDeleteCriminalAct(){
 
 
         UsersEntity user = createUser();
         user = usersRepository.save(user);
-        CriminalActEntity criminalActEntity = createCriminalAct();
-        criminalActEntity.setUser(user);
-        criminalActRepository.save(criminalActEntity);
+        CriminalActEntity criminalAct = createCriminalAct();
+        criminalAct.setUser(user);
+        criminalActRepository.save(criminalAct);
+
+        criminalAct = criminalActRepository.findActByCriminalDescription("Test Law");
+        criminalAct.setCriminalDescription("New Test Law");
+        criminalAct = criminalActRepository.save(criminalAct);
+        criminalActRepository.delete(criminalAct);
 
     }
 
@@ -55,19 +63,16 @@ public class CriminalActTest {
 
         CriminalActEntity crime = new CriminalActEntity();
 
-
-
         crime.setLaw(createLaw());
-        crime.setCriminalDescription("Description about crim");
+        crime.setCriminalDescription("Test Law");
         crime.setCriminalType("Type 1");
         crime.setTribunalDate(new Date().getTime());
         crime.setActivationDate(new Date().getTime());
-        crime.setTypeOfPenalty("Penalty type 1");
+        crime.setPenaltyType("Penalty 1");
         crime.setRepaymentConvictions("Reason for repayment");
         crime.setDateRepaymentConvitions(new Date().getTime());
         crime.setRequisitesOfPaymentPenalty("Requisites");
         crime.setProcessOfCriminal("process");
-        crime.setTypeOfPenalty("Type of penalty 1");
         crime.setGroundOfPenalty("Ground 1");
         crime.setDateoffPenalty(new Date().getTime());
 

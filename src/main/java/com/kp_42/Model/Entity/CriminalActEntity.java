@@ -16,11 +16,10 @@ public class CriminalActEntity {
     private Long tribunalDate;
     private Long activationDate;
     private String penaltyType;
-    private String repaymentConvictions;
+    private String reasonForRepaymentConvictions;
     private Long dateRepaymentConvitions;
     private String requisitesOfPaymentPenalty;
     private String processOfCriminal;
-    private String typeOfPenalty;
     private String groundOfPenalty;
     private Long dateoffPenalty;
     private UsersEntity user;
@@ -90,13 +89,13 @@ public class CriminalActEntity {
     }
 
     @Basic
-    @Column(name = "repaymentConvictions")
+    @Column(name = "reasonForRepaymentConvictions")
     public String getRepaymentConvictions() {
-        return repaymentConvictions;
+        return reasonForRepaymentConvictions;
     }
 
     public void setRepaymentConvictions(String repaymentConvictions) {
-        this.repaymentConvictions = repaymentConvictions;
+        this.reasonForRepaymentConvictions = repaymentConvictions;
     }
 
     @Basic
@@ -129,15 +128,6 @@ public class CriminalActEntity {
         this.processOfCriminal = processOfCriminal;
     }
 
-    @Basic
-    @Column(name = "typeOfPenalty")
-    public String getTypeOfPenalty() {
-        return typeOfPenalty;
-    }
-
-    public void setTypeOfPenalty(String typeOfPenalty) {
-        this.typeOfPenalty = typeOfPenalty;
-    }
 
     @Basic
     @Column(name = "groundOfPenalty")
@@ -174,15 +164,13 @@ public class CriminalActEntity {
         if (activationDate != null ? !activationDate.equals(that.activationDate) : that.activationDate != null)
             return false;
         if (penaltyType != null ? !penaltyType.equals(that.penaltyType) : that.penaltyType != null) return false;
-        if (repaymentConvictions != null ? !repaymentConvictions.equals(that.repaymentConvictions) : that.repaymentConvictions != null)
+        if (reasonForRepaymentConvictions != null ? !reasonForRepaymentConvictions.equals(that.reasonForRepaymentConvictions) : that.reasonForRepaymentConvictions != null)
             return false;
         if (dateRepaymentConvitions != null ? !dateRepaymentConvitions.equals(that.dateRepaymentConvitions) : that.dateRepaymentConvitions != null)
             return false;
         if (requisitesOfPaymentPenalty != null ? !requisitesOfPaymentPenalty.equals(that.requisitesOfPaymentPenalty) : that.requisitesOfPaymentPenalty != null)
             return false;
         if (processOfCriminal != null ? !processOfCriminal.equals(that.processOfCriminal) : that.processOfCriminal != null)
-            return false;
-        if (typeOfPenalty != null ? !typeOfPenalty.equals(that.typeOfPenalty) : that.typeOfPenalty != null)
             return false;
         if (groundOfPenalty != null ? !groundOfPenalty.equals(that.groundOfPenalty) : that.groundOfPenalty != null)
             return false;
@@ -200,17 +188,16 @@ public class CriminalActEntity {
         result = 31 * result + (tribunalDate != null ? tribunalDate.hashCode() : 0);
         result = 31 * result + (activationDate != null ? activationDate.hashCode() : 0);
         result = 31 * result + (penaltyType != null ? penaltyType.hashCode() : 0);
-        result = 31 * result + (repaymentConvictions != null ? repaymentConvictions.hashCode() : 0);
+        result = 31 * result + (reasonForRepaymentConvictions != null ? reasonForRepaymentConvictions.hashCode() : 0);
         result = 31 * result + (dateRepaymentConvitions != null ? dateRepaymentConvitions.hashCode() : 0);
         result = 31 * result + (requisitesOfPaymentPenalty != null ? requisitesOfPaymentPenalty.hashCode() : 0);
         result = 31 * result + (processOfCriminal != null ? processOfCriminal.hashCode() : 0);
-        result = 31 * result + (typeOfPenalty != null ? typeOfPenalty.hashCode() : 0);
         result = 31 * result + (groundOfPenalty != null ? groundOfPenalty.hashCode() : 0);
         result = 31 * result + (dateoffPenalty != null ? dateoffPenalty.hashCode() : 0);
         return result;
     }
 
-    @OneToOne(cascade = CascadeType.PERSIST)
+    @OneToOne(cascade = CascadeType.MERGE)
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
     public UsersEntity getUser() {
         return user;
