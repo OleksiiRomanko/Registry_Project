@@ -210,7 +210,7 @@ public class CriminalActEntity {
         return result;
     }
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
     public UsersEntity getUser() {
         return user;
