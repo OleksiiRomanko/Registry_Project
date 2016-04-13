@@ -1,12 +1,12 @@
-package models;
+package com.kp_42.Model.Entity;
 
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "Living Place", schema = "mydb", catalog = "")
+@Table(name = "living place", schema = "mydb", catalog = "")
 public class LivingPlaceEntity {
     private int id;
     private String country;
@@ -15,6 +15,7 @@ public class LivingPlaceEntity {
     private String district;
     private String house;
     private String flat;
+    private UsersEntity user;
 
     @Id
     @Column(name = "id")
@@ -114,5 +115,14 @@ public class LivingPlaceEntity {
         result = 31 * result + (house != null ? house.hashCode() : 0);
         result = 31 * result + (flat != null ? flat.hashCode() : 0);
         return result;
+    }
+
+    @OneToOne(mappedBy = "livingPlace")
+    public UsersEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UsersEntity user) {
+        this.user = user;
     }
 }

@@ -1,12 +1,12 @@
-package models;
+package com.kp_42.Model.Entity;
 
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "Criminal Act", schema = "mydb", catalog = "")
+@Table(name = "criminal act", schema = "mydb", catalog = "")
 public class CriminalActEntity {
     private int id;
     private String criminalDescription;
@@ -21,6 +21,9 @@ public class CriminalActEntity {
     private String typeOfPenalty;
     private String groundOfPenalty;
     private String dateoffPenalty;
+    private UsersEntity user;
+    private LawEntity law;
+    private ExtractionEntity extraction;
 
     @Id
     @Column(name = "id")
@@ -201,5 +204,35 @@ public class CriminalActEntity {
         result = 31 * result + (groundOfPenalty != null ? groundOfPenalty.hashCode() : 0);
         result = 31 * result + (dateoffPenalty != null ? dateoffPenalty.hashCode() : 0);
         return result;
+    }
+
+    @OneToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
+    public UsersEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UsersEntity user) {
+        this.user = user;
+    }
+
+    @OneToOne
+    @JoinColumn(name = "law_id", referencedColumnName = "id")
+    public LawEntity getLaw() {
+        return law;
+    }
+
+    public void setLaw(LawEntity law) {
+        this.law = law;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "criminalAct_id", referencedColumnName = "id", nullable = false)
+    public ExtractionEntity getExtraction() {
+        return extraction;
+    }
+
+    public void setExtraction(ExtractionEntity extraction) {
+        this.extraction = extraction;
     }
 }

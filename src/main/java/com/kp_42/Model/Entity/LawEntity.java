@@ -1,18 +1,23 @@
-package models;
+package com.kp_42.Model.Entity;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "Law", schema = "mydb", catalog = "")
+@Table(name = "law", schema = "mydb", catalog = "")
 public class LawEntity {
     private int id;
     private String name;
     private String type;
+//    private CriminalActEntity criminalAct;
 
     @Id
+    @GenericGenerator(name="kaugen" , strategy="increment")
+    @GeneratedValue(generator="kaugen")
     @Column(name = "id")
     public int getId() {
         return id;
@@ -63,4 +68,16 @@ public class LawEntity {
         result = 31 * result + (type != null ? type.hashCode() : 0);
         return result;
     }
+
+//
+//    @OneToOne(mappedBy = "law")
+//    public CriminalActEntity getCriminalAct() {
+//        return criminalAct;
+//    }
+//
+//    public void setCriminalAct(CriminalActEntity criminalAct) {
+//        this.criminalAct = criminalAct;
+//    }
+//
+//
 }

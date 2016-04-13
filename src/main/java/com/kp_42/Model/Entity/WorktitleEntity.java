@@ -1,15 +1,16 @@
-package models;
+package com.kp_42.Model.Entity;
 
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
 @Table(name = "worktitle", schema = "mydb", catalog = "")
 public class WorktitleEntity {
     private int id;
     private String title;
+    private WorkplaceEntity workplace;
 
     @Id
     @Column(name = "id")
@@ -49,5 +50,15 @@ public class WorktitleEntity {
         int result = id;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         return result;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "worktitle_id", referencedColumnName = "id", nullable = false)
+    public WorkplaceEntity getWorkplace() {
+        return workplace;
+    }
+
+    public void setWorkplace(WorkplaceEntity workplace) {
+        this.workplace = workplace;
     }
 }

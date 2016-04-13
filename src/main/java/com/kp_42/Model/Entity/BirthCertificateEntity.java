@@ -1,16 +1,17 @@
-package models;
+package com.kp_42.Model.Entity;
 
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "Birth Certificate", schema = "mydb", catalog = "")
+@Table(name = "birth certificate", schema = "mydb", catalog = "")
 public class BirthCertificateEntity {
     private int id;
     private String birthDate;
     private String bitrhPlace;
+    private UsersEntity user;
 
     @Id
     @Column(name = "id")
@@ -62,5 +63,14 @@ public class BirthCertificateEntity {
         result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
         result = 31 * result + (bitrhPlace != null ? bitrhPlace.hashCode() : 0);
         return result;
+    }
+
+    @OneToOne(mappedBy = "birthCertificate")
+    public UsersEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UsersEntity user) {
+        this.user = user;
     }
 }

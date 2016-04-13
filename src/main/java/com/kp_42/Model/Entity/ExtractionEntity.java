@@ -1,18 +1,21 @@
-package models;
+package com.kp_42.Model.Entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "Extraction", schema = "mydb", catalog = "")
+@Table(name = "extraction", schema = "mydb", catalog = "")
 public class ExtractionEntity {
     private int id;
     private String number;
     private String date;
     private Integer isPresent;
     private String sourceInformation;
+    private List<CriminalActEntity> criminalAct;
+    private UsersEntity user;
 
     @Id
     @Column(name = "id")
@@ -89,5 +92,24 @@ public class ExtractionEntity {
         result = 31 * result + (isPresent != null ? isPresent.hashCode() : 0);
         result = 31 * result + (sourceInformation != null ? sourceInformation.hashCode() : 0);
         return result;
+    }
+
+    @OneToMany(mappedBy = "extraction")
+    public List<CriminalActEntity> getCriminalAct() {
+        return criminalAct;
+    }
+
+    public void setCriminalAct(List<CriminalActEntity> criminalAct) {
+        this.criminalAct = criminalAct;
+    }
+
+    @OneToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
+    public UsersEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UsersEntity user) {
+        this.user = user;
     }
 }

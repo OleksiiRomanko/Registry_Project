@@ -1,9 +1,10 @@
-package models;
+package com.kp_42.Model.Entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
- * Created by maxymratoshniuk on 4/13/16.
+ * Created by user on 13.04.2016.
  */
 @Entity
 @Table(name = "workplace", schema = "mydb", catalog = "")
@@ -12,6 +13,8 @@ public class WorkplaceEntity {
     private String worksphere;
     private String adress;
     private String workplaceName;
+    private UsersEntity user;
+    private List<WorktitleEntity> worktitle;
 
     @Id
     @Column(name = "id")
@@ -76,5 +79,23 @@ public class WorkplaceEntity {
         result = 31 * result + (adress != null ? adress.hashCode() : 0);
         result = 31 * result + (workplaceName != null ? workplaceName.hashCode() : 0);
         return result;
+    }
+
+    @OneToOne(mappedBy = "workplace")
+    public UsersEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UsersEntity user) {
+        this.user = user;
+    }
+
+    @OneToMany(mappedBy = "workplace")
+    public List<WorktitleEntity> getWorktitle() {
+        return worktitle;
+    }
+
+    public void setWorktitle(List<WorktitleEntity> worktitle) {
+        this.worktitle = worktitle;
     }
 }

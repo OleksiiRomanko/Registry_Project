@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <class>com.kp_42.Model.Entity.BirthCertificateEntity</class>
+        <class>com.kp_42.Model.Entity.CriminalActEntity</class>
+        <class>com.kp_42.Model.Entity.ExtractionEntity</class>
+        <class>com.kp_42.Model.Entity.LawEntity</class>
+        <class>com.kp_42.Model.Entity.LivingPlaceEntity</class>
+        <class>com.kp_42.Model.Entity.PassportsEntity</class>
+        <class>com.kp_42.Model.Entity.UsersEntity</class>
+        <class>com.kp_42.Model.Entity.WorkplaceEntity</class>
+        <class>com.kp_42.Model.Entity.WorktitleEntity</class>
+
+
+
+    </persistence-unit>
+</persistence>
