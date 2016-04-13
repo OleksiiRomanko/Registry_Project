@@ -3,7 +3,6 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.List;
 
 /**
  * Created by user on 13.04.2016.
@@ -16,7 +15,7 @@ public class ExtractionEntity {
     private Long date;
     private Integer isPresent;
     private String sourceInformation;
-    private List<CriminalActEntity> criminalAct;
+    private CriminalActEntity criminalAct;
     private UsersEntity user;
 
     @Id
@@ -98,12 +97,12 @@ public class ExtractionEntity {
         return result;
     }
 
-    @OneToMany(mappedBy = "extraction")
-    public List<CriminalActEntity> getCriminalAct() {
+    @OneToOne(mappedBy = "extraction")
+    public CriminalActEntity getCriminalAct() {
         return criminalAct;
     }
 
-    public void setCriminalAct(List<CriminalActEntity> criminalAct) {
+    public void setCriminalAct(CriminalActEntity criminalAct) {
         this.criminalAct = criminalAct;
     }
 

@@ -16,7 +16,7 @@ public class CriminalActEntity {
     private Long tribunalDate;
     private Long activationDate;
     private String penaltyType;
-    private Long repaymentConvictions;
+    private String repaymentConvictions;
     private Long dateRepaymentConvitions;
     private String requisitesOfPaymentPenalty;
     private String processOfCriminal;
@@ -91,11 +91,11 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "repaymentConvictions")
-    public Long getRepaymentConvictions() {
+    public String getRepaymentConvictions() {
         return repaymentConvictions;
     }
 
-    public void setRepaymentConvictions(Long repaymentConvictions) {
+    public void setRepaymentConvictions(String repaymentConvictions) {
         this.repaymentConvictions = repaymentConvictions;
     }
 
@@ -220,7 +220,7 @@ public class CriminalActEntity {
         this.user = user;
     }
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "law_id", referencedColumnName = "id")
     public LawEntity getLaw() {
         return law;
@@ -230,8 +230,8 @@ public class CriminalActEntity {
         this.law = law;
     }
 
-    @ManyToOne
-    @JoinColumn(name = "criminalAct_id", referencedColumnName = "id", nullable = false)
+    @OneToOne
+    @JoinColumn(name = "id", referencedColumnName = "criminalAct_id", nullable = false)
     public ExtractionEntity getExtraction() {
         return extraction;
     }
