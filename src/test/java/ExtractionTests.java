@@ -6,6 +6,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -43,8 +44,14 @@ public class ExtractionTests {
         user = usersRepository.save(user);
         CriminalActEntity criminalAct = createCriminalAct();
 
-        List<LawEntity> list = lawRepository.findAll();
-        list.remove(0);
+
+        LawEntity law1 = createLaw();
+        LawEntity law2 = createLaw();
+        List<LawEntity> list = new ArrayList<>();
+
+        list.add(law1);
+        list.add(law2);
+        list = lawRepository.save(list);
 
         criminalAct.setLaw(list);
         criminalAct.setUser(user);
@@ -54,6 +61,9 @@ public class ExtractionTests {
         extraction.setCriminalAct(criminalAct);
         extractionRepository.save(extraction);
         extractionRepository.delete(extraction);
+        actRepository.delete(criminalAct);
+        lawRepository.delete(list);
+        usersRepository.delete(user);
 
     }
 
@@ -152,7 +162,7 @@ public class ExtractionTests {
     private LawEntity createLaw() {
 
         LawEntity law = new LawEntity();
-        law.setName("Law 1");
+        law.setName("Law 2");
         law.setType("Type 1");
 
         return law;

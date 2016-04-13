@@ -40,15 +40,24 @@ public class UsersTest {
     @Inject
     private WorkTitleRepository workTitleRepository;
 
-
-
-
-
-
+    @Test
+    public void OrphanTest(){
+        UsersEntity user = createUser();
+        PassportsEntity entity = new PassportsEntity();
+        entity.setAuthor("Author 2");
+        entity.setBirthDate(new Date().getTime());
+        entity.setBirthPlace("Place 2");
+        entity.setDate(new Date().getTime());
+        entity.setNumber(959659656);
+        entity.setSeries("Series 2");
+        user = usersRepository.save(user);
+        user.setPassport(entity);
+        user = usersRepository.save(user);
+        usersRepository.delete(user);
+    }
 
     @Test
     public void CreateUserAndDeleteByPassportRef(){
-
         UsersEntity user = createUser();
         user = usersRepository.save(user);
         user = usersRepository.findUserByName("Name");

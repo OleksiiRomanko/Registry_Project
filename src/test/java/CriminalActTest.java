@@ -66,6 +66,8 @@ public class CriminalActTest {
         criminalActRepository.delete(criminalAct);
         lawRepository.delete(list);
 
+        usersRepository.delete(user);
+
     }
 
     private CriminalActEntity createCriminalAct() {
