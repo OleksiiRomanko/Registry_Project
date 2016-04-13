@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "Passports", schema = "register", catalog = "")
-public class Passports {
+@Table(name = "Passports", schema = "mydb", catalog = "")
+public class PassportsEntity {
     private int id;
     private String series;
     private Integer number;
@@ -91,7 +91,7 @@ public class Passports {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Passports that = (Passports) o;
+        PassportsEntity that = (PassportsEntity) o;
 
         if (id != that.id) return false;
         if (series != null ? !series.equals(that.series) : that.series != null) return false;

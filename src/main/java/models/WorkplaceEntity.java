@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "workplace", schema = "register", catalog = "")
-public class Workplace {
+@Table(name = "workplace", schema = "mydb", catalog = "")
+public class WorkplaceEntity {
     private int id;
     private String worksphere;
     private String adress;
@@ -58,7 +58,7 @@ public class Workplace {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Workplace that = (Workplace) o;
+        WorkplaceEntity that = (WorkplaceEntity) o;
 
         if (id != that.id) return false;
         if (worksphere != null ? !worksphere.equals(that.worksphere) : that.worksphere != null) return false;

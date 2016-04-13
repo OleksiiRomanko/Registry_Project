@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "Users", schema = "register", catalog = "")
-public class Users {
+@Table(name = "Users", schema = "mydb", catalog = "")
+public class UsersEntity {
     private int id;
     private String surname;
     private String name;
@@ -58,7 +58,7 @@ public class Users {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Users that = (Users) o;
+        UsersEntity that = (UsersEntity) o;
 
         if (id != that.id) return false;
         if (surname != null ? !surname.equals(that.surname) : that.surname != null) return false;

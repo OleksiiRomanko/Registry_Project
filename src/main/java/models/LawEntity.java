@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "Law", schema = "register", catalog = "")
-public class Law {
+@Table(name = "Law", schema = "mydb", catalog = "")
+public class LawEntity {
     private int id;
     private String name;
     private String type;
@@ -47,11 +47,11 @@ public class Law {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Law law = (Law) o;
+        LawEntity lawEntity = (LawEntity) o;
 
-        if (id != law.id) return false;
-        if (name != null ? !name.equals(law.name) : law.name != null) return false;
-        if (type != null ? !type.equals(law.type) : law.type != null) return false;
+        if (id != lawEntity.id) return false;
+        if (name != null ? !name.equals(lawEntity.name) : lawEntity.name != null) return false;
+        if (type != null ? !type.equals(lawEntity.type) : lawEntity.type != null) return false;
 
         return true;
     }

@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "Criminal Act", schema = "register", catalog = "")
-public class CriminalAct {
+@Table(name = "Criminal Act", schema = "mydb", catalog = "")
+public class CriminalActEntity {
     private int id;
     private String criminalDescription;
     private String criminalType;
@@ -157,7 +157,7 @@ public class CriminalAct {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        CriminalAct that = (CriminalAct) o;
+        CriminalActEntity that = (CriminalActEntity) o;
 
         if (id != that.id) return false;
         if (criminalDescription != null ? !criminalDescription.equals(that.criminalDescription) : that.criminalDescription != null)

@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "worktitle", schema = "register", catalog = "")
-public class Worktitle {
+@Table(name = "worktitle", schema = "mydb", catalog = "")
+public class WorktitleEntity {
     private int id;
     private String title;
 
@@ -36,7 +36,7 @@ public class Worktitle {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Worktitle that = (Worktitle) o;
+        WorktitleEntity that = (WorktitleEntity) o;
 
         if (id != that.id) return false;
         if (title != null ? !title.equals(that.title) : that.title != null) return false;

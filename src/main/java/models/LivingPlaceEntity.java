@@ -3,11 +3,11 @@ package models;
 import javax.persistence.*;
 
 /**
- * Created by maxymratoshniuk on 3/31/16.
+ * Created by maxymratoshniuk on 4/13/16.
  */
 @Entity
-@Table(name = "Living Place", schema = "register", catalog = "")
-public class LivingPlace {
+@Table(name = "Living Place", schema = "mydb", catalog = "")
+public class LivingPlaceEntity {
     private int id;
     private String country;
     private String region;
@@ -91,7 +91,7 @@ public class LivingPlace {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        LivingPlace that = (LivingPlace) o;
+        LivingPlaceEntity that = (LivingPlaceEntity) o;
 
         if (id != that.id) return false;
         if (country != null ? !country.equals(that.country) : that.country != null) return false;
