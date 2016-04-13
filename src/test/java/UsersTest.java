@@ -8,6 +8,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.inject.Inject;
 import java.util.Date;
 
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+
 /**
  * Created by user on 13.04.2016.
  */
@@ -51,7 +54,10 @@ public class UsersTest {
         user = usersRepository.findUserByName("Name");
         user.setName("Ivan");
         user = usersRepository.save(user);
+        assertNotNull(usersRepository.findUserByName("Ivan"));
         passportsRepository.delete(user.getPassport());
+        assertNull(usersRepository.findUserByName("Name"));
+        assertNull(usersRepository.findUserByName("Ivan"));
     }
 
     @Test
@@ -62,7 +68,10 @@ public class UsersTest {
         user = usersRepository.findUserByName("Name");
         user.setName("Ivan");
         user = usersRepository.save(user);
-//        ce
+        assertNotNull(usersRepository.findUserByName("Ivan"));
+        birthCertificateRepository.delete(user.getBirthCertificate());
+        assertNull(usersRepository.findUserByName("Name"));
+        assertNull(usersRepository.findUserByName("Ivan"));
     }
 
 
@@ -74,8 +83,10 @@ public class UsersTest {
         user = usersRepository.findUserByName("Name");
         user.setName("Ivan");
         user = usersRepository.save(user);
+        assertNotNull(usersRepository.findUserByName("Ivan"));
         usersRepository.delete(user);
-
+        assertNull(usersRepository.findUserByName("Name"));
+        assertNull(usersRepository.findUserByName("Ivan"));
     }
 
 
