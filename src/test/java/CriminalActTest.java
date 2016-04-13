@@ -6,6 +6,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -47,24 +48,24 @@ public class CriminalActTest {
         UsersEntity user = createUser();
         user = usersRepository.save(user);
         CriminalActEntity criminalAct = createCriminalAct();
-//        criminalAct.setUser(user);
-//        criminalActRepository.save(criminalAct);
-//
-//        criminalAct = criminalActRepository.findActByCriminalDescription("Test Law");
-//        criminalAct.setCriminalDescription("New Test Law");
-//        criminalAct = criminalActRepository.save(criminalAct);
-//        criminalActRepository.delete(criminalAct);
-//
-//
 
-        List<LawEntity> list = lawRepository.findAll();
-        list.remove(0);
+        LawEntity law1 = createLaw();
+        LawEntity law2 = createLaw();
+        List<LawEntity> list = new ArrayList<>();
+
+        list.add(law1);
+        list.add(law2);
+        list = lawRepository.save(list);
 
         criminalAct.setLaw(list);
         criminalAct.setUser(user);
-        criminalActRepository.save(criminalAct);
+        criminalAct = criminalActRepository.save(criminalAct);
 
-
+        criminalAct = criminalActRepository.findActByCriminalDescription("Test Law");
+        criminalAct.setCriminalDescription("New Test Law");
+        criminalAct = criminalActRepository.save(criminalAct);
+        criminalActRepository.delete(criminalAct);
+        lawRepository.delete(list);
 
     }
 
