@@ -88,7 +88,7 @@ public class UsersEntity {
         return result;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "workplace_id", referencedColumnName = "id")
     public WorkplaceEntity getWorkplace() {
         return workplace;
@@ -98,7 +98,7 @@ public class UsersEntity {
         this.workplace = workplace;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "passport_id", referencedColumnName = "id")
     public PassportsEntity getPassport() {
         return passport;
@@ -108,7 +108,7 @@ public class UsersEntity {
         this.passport = passport;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "birthCertificate_id", referencedColumnName = "id")
     public BirthCertificateEntity getBirthCertificate() {
         return birthCertificate;
@@ -118,7 +118,7 @@ public class UsersEntity {
         this.birthCertificate = birthCertificate;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "livingplace_id", referencedColumnName = "id")
     public LivingPlaceEntity getLivingPlace() {
         return livingPlace;
