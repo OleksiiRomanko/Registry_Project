@@ -1,5 +1,7 @@
 package com.kp_42.Model.Entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -17,6 +19,8 @@ public class WorkplaceEntity {
     private List<WorktitleEntity> worktitle;
 
     @Id
+    @GenericGenerator(name="kaugen" , strategy="increment")
+    @GeneratedValue(generator="kaugen")
     @Column(name = "id")
     public int getId() {
         return id;

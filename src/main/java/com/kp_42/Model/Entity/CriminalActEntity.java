@@ -1,5 +1,7 @@
 package com.kp_42.Model.Entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 /**
@@ -14,18 +16,20 @@ public class CriminalActEntity {
     private Long tribunalDate;
     private Long activationDate;
     private String penaltyType;
-    private String repaymentConvictions;
-    private String dateRepaymentConvitions;
+    private Long repaymentConvictions;
+    private Long dateRepaymentConvitions;
     private String requisitesOfPaymentPenalty;
     private String processOfCriminal;
     private String typeOfPenalty;
     private String groundOfPenalty;
-    private String dateoffPenalty;
+    private Long dateoffPenalty;
     private UsersEntity user;
     private LawEntity law;
     private ExtractionEntity extraction;
 
     @Id
+    @GenericGenerator(name="kaugen" , strategy="increment")
+    @GeneratedValue(generator="kaugen")
     @Column(name = "id")
     public int getId() {
         return id;
@@ -87,21 +91,21 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "repaymentConvictions")
-    public String getRepaymentConvictions() {
+    public Long getRepaymentConvictions() {
         return repaymentConvictions;
     }
 
-    public void setRepaymentConvictions(String repaymentConvictions) {
+    public void setRepaymentConvictions(Long repaymentConvictions) {
         this.repaymentConvictions = repaymentConvictions;
     }
 
     @Basic
     @Column(name = "dateRepaymentConvitions")
-    public String getDateRepaymentConvitions() {
+    public Long getDateRepaymentConvitions() {
         return dateRepaymentConvitions;
     }
 
-    public void setDateRepaymentConvitions(String dateRepaymentConvitions) {
+    public void setDateRepaymentConvitions(Long dateRepaymentConvitions) {
         this.dateRepaymentConvitions = dateRepaymentConvitions;
     }
 
@@ -147,11 +151,11 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "dateoffPenalty")
-    public String getDateoffPenalty() {
+    public Long getDateoffPenalty() {
         return dateoffPenalty;
     }
 
-    public void setDateoffPenalty(String dateoffPenalty) {
+    public void setDateoffPenalty(Long dateoffPenalty) {
         this.dateoffPenalty = dateoffPenalty;
     }
 
