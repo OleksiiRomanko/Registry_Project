@@ -3,6 +3,7 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 /**
@@ -16,7 +17,7 @@ public class WorkplaceEntity {
     private String adress;
     private String workplaceName;
     private UsersEntity user;
-    private List<WorktitleEntity> worktitle;
+    private WorktitleEntity worktitle;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -94,12 +95,17 @@ public class WorkplaceEntity {
         this.user = user;
     }
 
-    @OneToMany(mappedBy = "workplace")
-    public List<WorktitleEntity> getWorktitle() {
+    @ManyToOne(cascade = CascadeType.PERSIST)
+    @JoinColumn(name = "worktitle_id", referencedColumnName = "id", nullable = false)
+    public WorktitleEntity getWorktitle() {
         return worktitle;
     }
 
-    public void setWorktitle(List<WorktitleEntity> worktitle) {
+    public void setWorktitle(WorktitleEntity worktitle) {
         this.worktitle = worktitle;
     }
+
+
+
+
 }

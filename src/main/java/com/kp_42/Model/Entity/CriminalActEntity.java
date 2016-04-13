@@ -8,7 +8,7 @@ import javax.persistence.*;
  * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "criminal act", schema = "mydb", catalog = "")
+@Table(name = "criminalact", schema = "mydb", catalog = "")
 public class CriminalActEntity {
     private int id;
     private String criminalDescription;

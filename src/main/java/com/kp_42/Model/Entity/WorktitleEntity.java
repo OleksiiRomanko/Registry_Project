@@ -3,6 +3,7 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by user on 13.04.2016.
@@ -12,7 +13,6 @@ import javax.persistence.*;
 public class WorktitleEntity {
     private int id;
     private String title;
-    private WorkplaceEntity workplace;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -56,13 +56,5 @@ public class WorktitleEntity {
         return result;
     }
 
-    @ManyToOne
-    @JoinColumn(name = "worktitle_id", referencedColumnName = "id", nullable = false)
-    public WorkplaceEntity getWorkplace() {
-        return workplace;
-    }
 
-    public void setWorkplace(WorkplaceEntity workplace) {
-        this.workplace = workplace;
-    }
 }

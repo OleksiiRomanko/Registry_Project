@@ -8,7 +8,7 @@ import javax.persistence.*;
  * Created by user on 13.04.2016.
  */
 @Entity
-@Table(name = "living place", schema = "mydb", catalog = "")
+@Table(name = "livingplace", schema = "mydb", catalog = "")
 public class LivingPlaceEntity {
     private int id;
     private String country;
@@ -17,7 +17,7 @@ public class LivingPlaceEntity {
     private String district;
     private String house;
     private String flat;
-    private UsersEntity user;
+//    private UsersEntity user;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -120,13 +120,13 @@ public class LivingPlaceEntity {
         result = 31 * result + (flat != null ? flat.hashCode() : 0);
         return result;
     }
-
-    @OneToOne(mappedBy = "livingPlace")
-    public UsersEntity getUser() {
-        return user;
-    }
-
-    public void setUser(UsersEntity user) {
-        this.user = user;
-    }
+//
+//    @OneToOne(mappedBy = "livingPlace")
+//    public UsersEntity getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(UsersEntity user) {
+//        this.user = user;
+//    }
 }

@@ -1,6 +1,7 @@
 package com.kp_42.Model.Entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 
@@ -18,8 +19,8 @@ public class UsersEntity {
     private PassportsEntity passport;
     private BirthCertificateEntity birthCertificate;
     private LivingPlaceEntity livingPlace;
-    private CriminalActEntity criminalAct;
-    private ExtractionEntity extraction;
+//    private CriminalActEntity criminalAct;
+//    private ExtractionEntity extraction;
 
     @Id
     @GenericGenerator(name="kaugen" , strategy="increment")
@@ -87,7 +88,7 @@ public class UsersEntity {
         return result;
     }
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "workplace_id", referencedColumnName = "id")
     public WorkplaceEntity getWorkplace() {
         return workplace;
@@ -97,7 +98,7 @@ public class UsersEntity {
         this.workplace = workplace;
     }
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "passport_id", referencedColumnName = "id")
     public PassportsEntity getPassport() {
         return passport;
@@ -107,7 +108,7 @@ public class UsersEntity {
         this.passport = passport;
     }
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "birthCertificate_id", referencedColumnName = "id")
     public BirthCertificateEntity getBirthCertificate() {
         return birthCertificate;
@@ -117,7 +118,7 @@ public class UsersEntity {
         this.birthCertificate = birthCertificate;
     }
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "livingplace_id", referencedColumnName = "id")
     public LivingPlaceEntity getLivingPlace() {
         return livingPlace;
@@ -127,21 +128,21 @@ public class UsersEntity {
         this.livingPlace = livingPlace;
     }
 
-    @OneToOne(mappedBy = "user")
-    public CriminalActEntity getCriminalAct() {
-        return criminalAct;
-    }
+//    @OneToOne(mappedBy = "user")
+//    public CriminalActEntity getCriminalAct() {
+//        return criminalAct;
+//    }
+//
+//    public void setCriminalAct(CriminalActEntity criminalAct) {
+//        this.criminalAct = criminalAct;
+//    }
 
-    public void setCriminalAct(CriminalActEntity criminalAct) {
-        this.criminalAct = criminalAct;
-    }
-
-    @OneToOne(mappedBy = "user")
-    public ExtractionEntity getExtraction() {
-        return extraction;
-    }
-
-    public void setExtraction(ExtractionEntity extraction) {
-        this.extraction = extraction;
-    }
+//    @OneToOne(mappedBy = "user")
+//    public ExtractionEntity getExtraction() {
+//        return extraction;
+//    }
+//
+//    public void setExtraction(ExtractionEntity extraction) {
+//        this.extraction = extraction;
+//    }
 }
