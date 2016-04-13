@@ -59,6 +59,5 @@ public class DeleteServiceImpl implements IDeleteService {
 
     @Override
     public void deleteAct(UsersEntity usersEntity) {
-        actRepository.deleteActByUser(usersEntity);
     }
 }

@@ -2,7 +2,7 @@ package com.kp_42.Model.Interface;
 
 import com.kp_42.Model.Entity.*;
 
-public interface IAdding {
+public interface IAddService {
 
     UsersEntity addUser(String name,
                         String secondName,

@@ -2,13 +2,14 @@ package com.kp_42.Services;
 
 
 import com.kp_42.Model.Entity.*;
-import com.kp_42.Model.Interface.IAdding;
+import com.kp_42.Model.Interface.IAddService;
 import com.kp_42.Model.Repositories.*;
 
 import javax.inject.Inject;
-import javax.jws.soap.SOAPBinding;
+import javax.inject.Named;
 
-public class AddingImplementation implements IAdding{
+@Named("AddService")
+public class AddServiceImpl implements IAddService {
 
     @Inject
     private CriminalActRepository criminalActRepository;
@@ -46,7 +47,7 @@ public class AddingImplementation implements IAdding{
         user.setLivingPlace(livingPlace);
         user.setPassport(passport);
 
-        usersRepository.save(user);
+        user = usersRepository.save(user);
 
         return user;
     }

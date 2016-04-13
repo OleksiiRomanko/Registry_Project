@@ -7,6 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface CriminalActRepository extends JpaRepository<CriminalActEntity, Integer> {
 
     public CriminalActEntity findActByCriminalDescription(String description);
-    public void deleteActByUser(UsersEntity user);
 }
 
