@@ -11,7 +11,7 @@ import java.util.List;
 public class ExtractionEntity {
     private int id;
     private String number;
-    private String date;
+    private Long date;
     private Integer isPresent;
     private String sourceInformation;
     private List<CriminalActEntity> criminalAct;
@@ -39,11 +39,11 @@ public class ExtractionEntity {
 
     @Basic
     @Column(name = "date")
-    public String getDate() {
+    public Long getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Long date) {
         this.date = date;
     }
 

@@ -11,9 +11,9 @@ public class PassportsEntity {
     private int id;
     private String series;
     private Integer number;
-    private Integer date;
+    private Long date;
     private String author;
-    private Integer birthDate;
+    private Long birthDate;
     private String birthPlace;
     private UsersEntity user;
 
@@ -49,11 +49,11 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "date")
-    public Integer getDate() {
+    public Long getDate() {
         return date;
     }
 
-    public void setDate(Integer date) {
+    public void setDate(Long date) {
         this.date = date;
     }
 
@@ -69,11 +69,11 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "birthDate")
-    public Integer getBirthDate() {
+    public Long getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(Integer birthDate) {
+    public void setBirthDate(Long birthDate) {
         this.birthDate = birthDate;
     }
 

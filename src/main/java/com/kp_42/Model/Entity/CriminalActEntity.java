@@ -11,8 +11,8 @@ public class CriminalActEntity {
     private int id;
     private String criminalDescription;
     private String criminalType;
-    private Integer tribunalDate;
-    private Integer activationDate;
+    private Long tribunalDate;
+    private Long activationDate;
     private String penaltyType;
     private String repaymentConvictions;
     private String dateRepaymentConvitions;
@@ -57,21 +57,21 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "tribunalDate")
-    public Integer getTribunalDate() {
+    public Long getTribunalDate() {
         return tribunalDate;
     }
 
-    public void setTribunalDate(Integer tribunalDate) {
+    public void setTribunalDate(Long tribunalDate) {
         this.tribunalDate = tribunalDate;
     }
 
     @Basic
     @Column(name = "activationDate")
-    public Integer getActivationDate() {
+    public Long getActivationDate() {
         return activationDate;
     }
 
-    public void setActivationDate(Integer activationDate) {
+    public void setActivationDate(Long activationDate) {
         this.activationDate = activationDate;
     }
 
