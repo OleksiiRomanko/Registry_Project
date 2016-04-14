@@ -19,4 +19,28 @@ public class MainController {
         return "mainpage";
     }
 
+    @RequestMapping(value = {"adminpage"},method = RequestMethod.GET )
+    public String adminpage(ModelAndView mav){
+
+        return "adminpage";
+    }
+
+    @RequestMapping(value = {"personalinformation"},method = RequestMethod.GET )
+    public String personalinformation(ModelAndView mav){
+
+        return "personalinformation";
+    }
+
+    @RequestMapping(value = {"passport"},method = RequestMethod.GET )
+    public String passporte(ModelAndView mav){
+
+        return "passport";
+    }
+
+    @RequestMapping(value = {"certificate"},method = RequestMethod.GET )
+    public String certificate(ModelAndView mav){
+
+        return "certificate";
+    }
+
 }
