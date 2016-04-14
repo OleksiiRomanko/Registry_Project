@@ -85,7 +85,7 @@ public class ChatServlet
                 if ("login".equals(action)) {
                     String nickname = request.getParameter("nickname");
                     request.getSession(true).setAttribute("nickname", nickname);
-                    response.sendRedirect("index.jsp");
+                    response.sendRedirect("mainpage.jsp");
                     event.close();
                     return;
                 }
