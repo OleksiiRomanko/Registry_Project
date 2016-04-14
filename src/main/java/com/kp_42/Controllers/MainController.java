@@ -1,6 +1,7 @@
 package com.kp_42.Controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -19,6 +20,32 @@ public class MainController {
         return "mainpage";
     }
 
+
+
+    @RequestMapping(value = "login")
+    public String login(ModelAndView mav ){
+
+        return "loginpage";
+    }
+
+    @RequestMapping(value = "login", params = "retry")
+    public String denied(ModelMap mav){
+
+        mav.put("error","Error occurred");
+
+        return "loginpage";
+    }
+    @RequestMapping("logout")
+    public String logout(ModelAndView mav){
+
+        return "mainpage";
+    }
+
+
+
+
+
+    //
     @RequestMapping(value = {"adminpage"},method = RequestMethod.GET )
     public String adminpage(ModelAndView mav){
 
@@ -28,31 +55,31 @@ public class MainController {
     @RequestMapping(value = {"personalinformation"},method = RequestMethod.GET )
     public String personalinformation(ModelAndView mav){
 
-        return "personalinformation";
+        return "UserCreating/personalinformation";
     }
 
     @RequestMapping(value = {"passport"},method = RequestMethod.GET )
     public String passporte(ModelAndView mav){
 
-        return "passport";
+        return "UserCreating/passport";
     }
 
     @RequestMapping(value = {"certificate"},method = RequestMethod.GET )
     public String certificate(ModelAndView mav){
 
-        return "certificate";
+        return "UserCreating/certificate";
     }
 
     @RequestMapping(value = {"workplace"},method = RequestMethod.GET )
     public String workplace(ModelAndView mav){
 
-        return "workplace";
+        return "UserCreating/workplace";
     }
 
     @RequestMapping(value = {"livingplace"},method = RequestMethod.GET )
     public String livingplace(ModelAndView mav){
 
-        return "livingplace";
+        return "UserCreating/livingplace";
     }
 
 
