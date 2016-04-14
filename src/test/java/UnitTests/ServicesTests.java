@@ -1,6 +1,10 @@
+package UnitTests;
+
+import Utility.TestUtility;
 import com.kp_42.Model.Entity.UsersEntity;
-import com.kp_42.Model.Interface.IAddService;
 import com.kp_42.Model.Interface.IDeleteService;
+import com.kp_42.Model.Interface.IPersistService;
+import com.kp_42.Model.Interface.ISearchService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -19,19 +23,26 @@ public class ServicesTests {
 
     @Inject
     @Named("DeleteService")
-    private IDeleteService iDeleteService;
+    private IDeleteService deleteService;
 
     @Inject
-    @Named("AddService")
-    private IAddService iAddService;
+    @Named("PersistService")
+    private IPersistService persistService;
+
+    @Inject
+    @Named("SearchService")
+    private ISearchService searchService;
+
+
+
 
     @Test
     public void AddAndDeleteUser() {
         TestUtility dummy = new TestUtility();
 
-        UsersEntity testUser = iAddService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
+        UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
                 dummy.createBirthCertificate(), dummy.createLivingPlace());
-        iDeleteService.deleteUser(testUser);
+        deleteService.deleteUser(testUser);
     }
 
 

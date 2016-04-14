@@ -1,4 +1,8 @@
-import com.kp_42.Model.Entity.*;
+package RawTests;
+
+import Utility.TestUtility;
+import com.kp_42.Model.Entity.PassportsEntity;
+import com.kp_42.Model.Entity.UsersEntity;
 import com.kp_42.Model.Repositories.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -67,10 +71,10 @@ public class UsersTest {
         user = usersRepository.save(user);
         user.setName("Ivan 1");
         user = usersRepository.save(user);
-        assertNotNull(usersRepository.findUserByName("Ivan 1"));
-        user = usersRepository.findUserByName("Ivan 1");
+        assertNotNull(usersRepository.findByName("Ivan 1"));
+        user = usersRepository.findByName("Ivan 1");
         passportsRepository.delete(user.getPassport());
-        assertNull(usersRepository.findUserByName("Ivan 1"));
+        assertNull(usersRepository.findByName("Ivan 1"));
     }
 
     @Test
@@ -81,10 +85,10 @@ public class UsersTest {
         user = usersRepository.save(user);
         user.setName("Ivan 2");
         user = usersRepository.save(user);
-        assertNotNull(usersRepository.findUserByName("Ivan 2"));
-        user = usersRepository.findUserByName("Ivan 2");
+        assertNotNull(usersRepository.findByName("Ivan 2"));
+        user = usersRepository.findByName("Ivan 2");
         birthCertificateRepository.delete(user.getBirthCertificate());
-        assertNull(usersRepository.findUserByName("Ivan 2"));
+        assertNull(usersRepository.findByName("Ivan 2"));
     }
 
 
@@ -96,9 +100,9 @@ public class UsersTest {
         user = usersRepository.save(user);
         user.setName("Ivan 3");
         user = usersRepository.save(user);
-        assertNotNull(usersRepository.findUserByName("Ivan 3"));
+        assertNotNull(usersRepository.findByName("Ivan 3"));
         usersRepository.delete(user);
-        assertNull(usersRepository.findUserByName("Ivan 3"));
+        assertNull(usersRepository.findByName("Ivan 3"));
     }
 
 }

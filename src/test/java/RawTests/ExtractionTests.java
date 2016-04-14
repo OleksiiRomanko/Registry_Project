@@ -1,3 +1,6 @@
+package RawTests;
+
+import Utility.TestUtility;
 import com.kp_42.Model.Entity.CriminalActEntity;
 import com.kp_42.Model.Entity.ExtractionEntity;
 import com.kp_42.Model.Entity.LawEntity;

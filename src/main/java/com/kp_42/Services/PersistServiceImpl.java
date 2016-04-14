@@ -2,14 +2,14 @@ package com.kp_42.Services;
 
 
 import com.kp_42.Model.Entity.*;
-import com.kp_42.Model.Interface.IAddService;
+import com.kp_42.Model.Interface.IPersistService;
 import com.kp_42.Model.Repositories.*;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 
-@Named("AddService")
-public class AddServiceImpl implements IAddService {
+@Named("PersistService")
+public class PersistServiceImpl implements IPersistService {
 
     @Inject
     private CriminalActRepository criminalActRepository;
@@ -50,5 +50,20 @@ public class AddServiceImpl implements IAddService {
         user = usersRepository.save(user);
 
         return user;
+    }
+
+    @Override
+    public UsersEntity save(UsersEntity user) {
+        return usersRepository.save(user);
+    }
+
+    @Override
+    public CriminalActEntity save(CriminalActEntity act) {
+        return actRepository.save(act);
+    }
+
+    @Override
+    public ExtractionEntity save(ExtractionEntity extractionEntity) {
+        return extractionRepository.saveAndFlush(extractionEntity);
     }
 }

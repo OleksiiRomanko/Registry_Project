@@ -4,18 +4,19 @@ import com.kp_42.Model.Entity.BirthCertificateEntity;
 import com.kp_42.Model.Entity.CriminalActEntity;
 import com.kp_42.Model.Entity.PassportsEntity;
 import com.kp_42.Model.Entity.UsersEntity;
-import com.kp_42.Model.Interface.IDeleteService;
+import com.kp_42.Model.Interface.ISearchService;
 import com.kp_42.Model.Repositories.*;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 /**
  * Created by user on 14.04.2016.
  */
 
-@Named("DeleteService")
-public class DeleteServiceImpl implements IDeleteService {
+@Named("SearchService")
+public class SearchServiceImpl implements ISearchService {
 
 
     @Inject
@@ -39,30 +40,23 @@ public class DeleteServiceImpl implements IDeleteService {
 
 
 
-
     @Override
-    public void deleteUser(UsersEntity user) {
-        usersRepository.delete(user);
+    public UsersEntity findUsersByCredentials(String credentials) {
+        return null;
     }
 
     @Override
-    public void deleteUser(BirthCertificateEntity entity) {
-        birthCertificateRepository.delete(entity);
+    public UsersEntity findUsersByPassport(PassportsEntity entity) {
+        return usersRepository.findByPassport(entity);
     }
 
     @Override
-    public void deleteUser(PassportsEntity entity) {
-        passportsRepository.delete(entity);
+    public UsersEntity findUsersByCertificate(BirthCertificateEntity entity) {
+        return usersRepository.findByBirthCertificate(entity);
     }
 
     @Override
-    public void deleteAct(Integer id) {
-        actRepository.delete(id);
-    }
-
-
-    @Override
-    public void deleteAct(CriminalActEntity act) {
-        actRepository.delete(act);
+    public List<CriminalActEntity> findActsByUsers(UsersEntity user) {
+        return actRepository.findByUser(user);
     }
 }

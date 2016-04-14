@@ -2,7 +2,7 @@ package com.kp_42.Model.Interface;
 
 import com.kp_42.Model.Entity.*;
 
-public interface IAddService {
+public interface IPersistService {
 
     UsersEntity addUser(String name,
                         String secondName,
@@ -11,4 +11,8 @@ public interface IAddService {
                         WorkplaceEntity workPlace,
                         BirthCertificateEntity birthCertificate,
                         LivingPlaceEntity livingPlace);
+
+    public UsersEntity save(UsersEntity user);
+    public CriminalActEntity save(CriminalActEntity act);
+    public ExtractionEntity save (ExtractionEntity extractionEntity);
 }
