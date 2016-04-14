@@ -55,31 +55,58 @@ public class MainController {
     @RequestMapping(value = {"personalinformation"},method = RequestMethod.GET )
     public String personalinformation(ModelAndView mav){
 
-        return "UserCreating/personalinformation";
+        return "EntityCreating/UserCreating/personalinformation";
     }
 
     @RequestMapping(value = {"passport"},method = RequestMethod.GET )
     public String passporte(ModelAndView mav){
 
-        return "UserCreating/passport";
+        return "EntityCreating/UserCreating/passport";
     }
 
     @RequestMapping(value = {"certificate"},method = RequestMethod.GET )
     public String certificate(ModelAndView mav){
 
-        return "UserCreating/certificate";
+        return "EntityCreating/UserCreating/certificate";
     }
 
     @RequestMapping(value = {"workplace"},method = RequestMethod.GET )
     public String workplace(ModelAndView mav){
 
-        return "UserCreating/workplace";
+        return "EntityCreating/UserCreating/workplace";
     }
 
-    @RequestMapping(value = {"livingplace"},method = RequestMethod.GET )
-    public String livingplace(ModelAndView mav){
 
-        return "UserCreating/livingplace";
+
+
+    //other entities
+    @RequestMapping(value = {"addlaw"},method = RequestMethod.GET )
+    public String addlaw(ModelAndView mav){
+
+        return "EntityCreating/addlaw";
+    }
+
+    @RequestMapping(value = {"createact"},method = RequestMethod.GET )
+    public String createact(ModelAndView mav){
+
+        return "EntityCreating/ActCreating/createact";
+    }
+
+    @RequestMapping(value = {"finduser"},method = RequestMethod.GET )
+    public String finduser(ModelAndView mav){
+
+        return "EntityCreating/ActCreating/finduser";
+    }
+    @RequestMapping(value = {"selectlaw"},method = RequestMethod.GET )
+    public String selectlaw(ModelAndView mav){
+
+        return "EntityCreating/ActCreating/selectlaw";
+    }
+
+    @RequestMapping(value = {"selectuser"},method = RequestMethod.GET )
+    public String selectuser(ModelAndView mav){
+
+        return "EntityCreating/ActCreating/selectuser";
     }
 
 
