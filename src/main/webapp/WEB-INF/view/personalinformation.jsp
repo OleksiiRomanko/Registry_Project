@@ -26,22 +26,24 @@
 <h1>Введіть анкетні дані нового правопорушника:</h1>
 <h1></h1>
 
-<div style = "padding: 60px 100px 100px 510px;">
 
-    <form class = "bs-example bs-example-form" role = "form">
-        <div class = "input-group input-group-lg">
-            <input type="text" class="form-control" style="text-align:center;" placeholder="Прівище">
+<div class="row" style="text-align: center">
+
+    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Прівище"/>
         </div>
         <br>
-        <div class = "input-group input-group-lg">
-            <input type="text" class="form-control"  style="text-align:center;" placeholder="Ім'я">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Ім'я"/>
         </div>
         <br>
-        <div class = "input-group input-group-lg">
-            <input type="text" class="form-control" style="text-align:center;" placeholder="По батькові">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="По батькові"/>
         </div>
-    </form>
-
+        <br>
+    </div>
 </div>
 
 <div style="text-align:center;">

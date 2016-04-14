@@ -43,4 +43,11 @@ public class MainController {
         return "certificate";
     }
 
+    @RequestMapping(value = {"workplace"},method = RequestMethod.GET )
+    public String workplace(ModelAndView mav){
+
+        return "workplace";
+    }
+
+
 }
