@@ -49,5 +49,11 @@ public class MainController {
         return "workplace";
     }
 
+    @RequestMapping(value = {"livingplace"},method = RequestMethod.GET )
+    public String livingplace(ModelAndView mav){
+
+        return "livingplace";
+    }
+
 
 }

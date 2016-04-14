@@ -63,7 +63,7 @@
 <div style="text-align: center">
     <br>
     <button class="myButton" type="button">
-        Commit and next
+        NEXT
     </button>
 </div>
 

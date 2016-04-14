@@ -49,7 +49,7 @@
 
 <div style="text-align:center;">
     <button class="myButton" type="button">
-        Commit and next
+        NEXT
     </button>
 
 </div>
