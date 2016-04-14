@@ -34,23 +34,23 @@
 <h1></h1>
 <div style="text-align:center;">
     <button class="myButton" type="button">
-        Add user
+        Додати особоу
     </button>
     <h1></h1>
     <button class="myButton" type="button">
-        Add act
+        Додати акт
     </button>
     <h1></h1>
     <button class="myButton" type="button">
-        Add law
+        Додати закон
     </button>
     <h1></h1>
     <button class="myButton" type="button">
-        Find user
+        Знайти особу
     </button>
     <h1></h1>
     <button class="myButton" type="button">
-        Find act
+        Знайти акт
     </button>
 </div>
 

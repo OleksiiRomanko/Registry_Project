@@ -81,4 +81,11 @@ public class LawEntity {
     }
 
 
+    @Override
+    public String toString() {
+        return "LawEntity{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }

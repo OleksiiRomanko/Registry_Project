@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +17,7 @@
 
 
 </head>
-
+<body>
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/admin.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
@@ -26,32 +27,36 @@
         Покинути кабінет Адміністратора
     </button>
 </form>
-<br>
-<br>
-<h1 style="text-align: center">Введіть нову статтю із Закону:</h1>
-<h1></h1>
-<h1></h1>
-<div class="row" style="text-align: center">
 
-    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Номер статті"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Опис статті"/>
-        </div>
-        <br>
-    </div>
-</div>
-
-
-<div style="text-align: center">
+<form:form modelAttribute="LawEntity" method="post" action="/admin/law/add">
     <br>
-    <button class="myButton" type="button">
-        Додати
-    </button>
-</div>
+    <br>
+    <h1 style="text-align: center">Введіть нову статтю із Закону:</h1>
+    <h1></h1>
+    <h1></h1>
+    <div class="row" style="text-align: center">
+
+        <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Номер статті"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Опис статті"/>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+    <div style="text-align: center">
+        <br>
+        <button class="myButton" type="button">
+            Додати
+        </button>
+    </div>
+</form:form>
+
 
 
 
