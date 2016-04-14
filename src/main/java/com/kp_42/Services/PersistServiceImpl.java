@@ -7,6 +7,7 @@ import com.kp_42.Model.Repositories.*;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 @Named("PersistService")
 public class PersistServiceImpl implements IPersistService {
@@ -60,6 +61,11 @@ public class PersistServiceImpl implements IPersistService {
     @Override
     public CriminalActEntity save(CriminalActEntity act) {
         return actRepository.save(act);
+    }
+
+    @Override
+    public List<LawEntity> save(List<LawEntity> law) {
+        return lawRepository.save(law);
     }
 
     @Override

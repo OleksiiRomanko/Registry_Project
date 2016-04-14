@@ -1,9 +1,6 @@
 package com.kp_42.Services;
 
-import com.kp_42.Model.Entity.BirthCertificateEntity;
-import com.kp_42.Model.Entity.CriminalActEntity;
-import com.kp_42.Model.Entity.PassportsEntity;
-import com.kp_42.Model.Entity.UsersEntity;
+import com.kp_42.Model.Entity.*;
 import com.kp_42.Model.Interface.IDeleteService;
 import com.kp_42.Model.Repositories.*;
 
@@ -60,9 +57,14 @@ public class DeleteServiceImpl implements IDeleteService {
         actRepository.delete(id);
     }
 
+    @Override
+    public  void deleteLaw(LawEntity law) { lawRepository.delete(law); }
+
 
     @Override
     public void deleteAct(CriminalActEntity act) {
         actRepository.delete(act);
     }
+
+
 }
