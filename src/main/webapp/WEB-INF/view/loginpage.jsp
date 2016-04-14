@@ -24,63 +24,75 @@
 
 
 <%
+
     String error = (String) request.getAttribute("error");
 
 %>
+<div class="col-lg-12 col-lg-offset-4">
+    <div class="modal-body" style="width: 33%;">
+        <spring:url value="/login" var="loginUrl"/>
+        <form:form role="form" action="${loginUrl}" method="post">
 
-<div class="modal-body">
-    <spring:url value="/login" var="loginUrl" />
-    <form:form role="form" action="${loginUrl}" method="post">
-
-
-        <div class="form-group">
-            <div class="input-group">
-                <input type="text" class="form-control" id="j_username" name = "j_username" placeholder="Login">
-                <label for="j_username" class="input-group-addon glyphicon glyphicon-user"></label>
+            <h3 style="text-align: center">
+                Будь ласка, введіть коректні дані для доступу до бази даних:
+            </h3>
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="j_username" name="j_username" placeholder="Login">
+                    <label for="j_username" class="input-group-addon glyphicon glyphicon-user"></label>
+                </div>
             </div>
-        </div> <!-- /.form-group -->
+            <!-- /.form-group -->
 
-        <div class="form-group">
-            <div class="input-group">
-                <input type="password" class="form-control" id="j_password" name="j_password" placeholder="Password">
-                <label for="j_password" class="input-group-addon glyphicon glyphicon-lock"></label>
-            </div> <!-- /.input-group -->
-        </div> <!-- /.form-group -->
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="j_password" name="j_password"
+                           placeholder="Password">
+                    <label for="j_password" class="input-group-addon glyphicon glyphicon-lock"></label>
+                </div> <!-- /.input-group -->
+            </div>
+            <!-- /.form-group -->
 
-        <div class="checkbox">
-            <label>
-                <input type="checkbox" name="_spring_security_remember_me"> Remember me
-            </label>
-        </div> <!-- /.checkbox -->
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="_spring_security_remember_me"> Remember me
+                </label>
+            </div>
+            <!-- /.checkbox -->
 
-        <div class="modal-footer">
-            <button class="form-control btn btn-primary" type="submit">Ok</button>
-
-
-        </div> <!-- /.modal-footer -->
-
-    </form:form>
-
-</div> <!-- /.modal-body -->
+            <div class="modal-footer">
+                <button class="form-control btn btn-primary" type="submit">Ok</button>
 
 
+            </div>
+            <!-- /.modal-footer -->
+
+        </form:form>
+
+    </div> <!-- /.modal-body -->
+
+</div>
 
 <div>
 
-    <%=error == null?"" : error %>
-
-
     <%
-        if(error != null){
+        if (error != null) {
     %>
-    Error ne null
+        <div class="col-lg-12 col-lg-offset-5" style="width: 20%;">
+            <h2 style="background: #f2dede">
+
+
+            </h2>
+        </div>
+
+
 
     <%
         }
 
 
-
     %>
 </div>
+
 </body>
 </html>

@@ -31,7 +31,7 @@ public class MainController {
     @RequestMapping(value = "login", params = "retry")
     public String denied(ModelMap mav){
 
-        mav.put("error","Error occurred");
+        mav.put("error","Помилка авторизації! Неправильно введений логін чи пароль.");
 
         return "loginpage";
     }

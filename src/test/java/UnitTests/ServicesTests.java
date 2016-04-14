@@ -109,6 +109,7 @@ public class ServicesTests {
         deleteService.deleteAct(criminalAct);
         deleteService.deleteLaw(law1);
         deleteService.deleteLaw(law2);
+        deleteService.deleteUser(testUser);
     }
 
     @Test
