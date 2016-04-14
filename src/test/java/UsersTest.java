@@ -42,14 +42,17 @@ public class UsersTest {
 
     @Test
     public void OrphanTest(){
-        UsersEntity user = createUser();
+        TestUtility dummy = new TestUtility();
+        UsersEntity user = dummy.createUser();
         PassportsEntity entity = new PassportsEntity();
+
         entity.setAuthor("Author 2");
         entity.setBirthDate(new Date().getTime());
         entity.setBirthPlace("Place 2");
         entity.setDate(new Date().getTime());
         entity.setNumber(959659656);
         entity.setSeries("Series 2");
+
         user = usersRepository.save(user);
         user.setPassport(entity);
         user = usersRepository.save(user);
@@ -58,111 +61,44 @@ public class UsersTest {
 
     @Test
     public void CreateUserAndDeleteByPassportRef(){
-        UsersEntity user = createUser();
+
+        TestUtility dummy = new TestUtility();
+        UsersEntity user = dummy.createUser();
         user = usersRepository.save(user);
-        user = usersRepository.findUserByName("Name");
-        user.setName("Ivan");
+        user.setName("Ivan 1");
         user = usersRepository.save(user);
-        assertNotNull(usersRepository.findUserByName("Ivan"));
+        assertNotNull(usersRepository.findUserByName("Ivan 1"));
+        user = usersRepository.findUserByName("Ivan 1");
         passportsRepository.delete(user.getPassport());
-        assertNull(usersRepository.findUserByName("Name"));
-        assertNull(usersRepository.findUserByName("Ivan"));
+        assertNull(usersRepository.findUserByName("Ivan 1"));
     }
 
     @Test
     public void CreateUserAndDeleteByCerifRef(){
 
-        UsersEntity user = createUser();
+        TestUtility dummy = new TestUtility();
+        UsersEntity user = dummy.createUser();
         user = usersRepository.save(user);
-        user = usersRepository.findUserByName("Name");
-        user.setName("Ivan");
+        user.setName("Ivan 2");
         user = usersRepository.save(user);
-        assertNotNull(usersRepository.findUserByName("Ivan"));
+        assertNotNull(usersRepository.findUserByName("Ivan 2"));
+        user = usersRepository.findUserByName("Ivan 2");
         birthCertificateRepository.delete(user.getBirthCertificate());
-        assertNull(usersRepository.findUserByName("Name"));
-        assertNull(usersRepository.findUserByName("Ivan"));
+        assertNull(usersRepository.findUserByName("Ivan 2"));
     }
 
 
     @Test
     public void CreateUserAndDeleteByUserRef(){
 
-        UsersEntity user = createUser();
+        TestUtility dummy = new TestUtility();
+        UsersEntity user = dummy.createUser();
         user = usersRepository.save(user);
-        user = usersRepository.findUserByName("Name");
-        user.setName("Ivan");
+        user.setName("Ivan 3");
         user = usersRepository.save(user);
-        assertNotNull(usersRepository.findUserByName("Ivan"));
+        assertNotNull(usersRepository.findUserByName("Ivan 3"));
         usersRepository.delete(user);
-        assertNull(usersRepository.findUserByName("Name"));
-        assertNull(usersRepository.findUserByName("Ivan"));
-    }
-
-
-    private UsersEntity createUser(){
-
-        UsersEntity user = new UsersEntity();
-        user.setName("Name");
-        user.setSecondName("Second Name");
-        user.setSurname("Surname");
-        user.setWorkplace(createWorkplace());
-        user.setBirthCertificate(createBirthCertificate());
-        user.setLivingPlace(createLivingPlace());
-        user.setPassport(createPassport());
-        return user;
-    }
-
-    private PassportsEntity createPassport(){
-
-        PassportsEntity entity = new PassportsEntity();
-        entity.setAuthor("Author");
-        entity.setBirthDate(new Date().getTime());
-        entity.setBirthPlace("Place");
-        entity.setDate(new Date().getTime());
-        entity.setNumber(959659656);
-        entity.setSeries("Series");
-        return entity;
-
-    }
-
-    private WorkplaceEntity createWorkplace(){
-
-        WorkplaceEntity entity = new WorkplaceEntity();
-        entity.setWorkplaceName("Name");
-        entity.setAdress("Address");
-        entity.setWorksphere("Sphere");
-
-        WorktitleEntity title = new WorktitleEntity();
-        title.setTitle("title");
-        entity.setWorktitle(title);
-
-        return entity;
-
-    }
-
-    private BirthCertificateEntity createBirthCertificate(){
-
-        BirthCertificateEntity entity = new BirthCertificateEntity();
-        entity.setBitrhPlace("Place");
-        entity.setBirthDate(new Date().getTime());
-
-        return entity;
-
-    }
-
-    private LivingPlaceEntity createLivingPlace(){
-
-        LivingPlaceEntity livingPlaceEntity = new LivingPlaceEntity();
-
-        livingPlaceEntity.setCity("City");
-        livingPlaceEntity.setCountry("Country");
-        livingPlaceEntity.setDistrict("District");
-        livingPlaceEntity.setFlat("Flat");
-        livingPlaceEntity.setHouse("house");
-        livingPlaceEntity.setRegion("region");
-
-        return livingPlaceEntity;
-
+        assertNull(usersRepository.findUserByName("Ivan 3"));
     }
 
 }
