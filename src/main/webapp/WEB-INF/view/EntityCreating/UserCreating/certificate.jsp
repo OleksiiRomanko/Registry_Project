@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,29 +34,38 @@
 <h1></h1>
 <h1></h1>
 
-<div class="row" style="text-align: center">
+<form:form method="post" modelAttribute="BirthCertificateEntity" action="/admin/user/add/step/4">
+    <div class="row" style="text-align: center">
 
-    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+        <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
 
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата народження"/>
+            <div class="input-group">
+                <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="birthDate" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="bitrhPlace" class="form-control" placeholder="Місце народження"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="bitrhPlace" cssClass="error" />
+            </div>
+            <br>
         </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Місце народження"/>
-        </div>
-        <br>
     </div>
-</div>
 
-</div>
+    </div>
 
-<div style="text-align:center;">
-    <button class="myButton" type="button">
-        NEXT
-    </button>
+    <div style="text-align:center;">
+        <button class="myButton" type="submit">
+            NEXT
+        </button>
 
-</div>
+    </div>
+
+</form:form>
 
 
 </body>

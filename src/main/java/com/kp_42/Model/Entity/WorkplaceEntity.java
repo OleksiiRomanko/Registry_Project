@@ -4,6 +4,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -33,6 +34,8 @@ public class WorkplaceEntity {
 
     @Basic
     @Column(name = "worksphere")
+    @NotNull(message = "Введіть сферу діяльності")
+    @Size(min = 1,message = "Введіть сферу діяльності" )
     public String getWorksphere() {
         return worksphere;
     }
@@ -43,6 +46,8 @@ public class WorkplaceEntity {
 
     @Basic
     @Column(name = "adress")
+    @NotNull(message = "Введіть адресу місця роботи")
+    @Size(min = 1,message = "Введіть адресу місця роботи" )
     public String getAdress() {
         return adress;
     }
@@ -53,6 +58,8 @@ public class WorkplaceEntity {
 
     @Basic
     @Column(name = "workplaceName")
+    @NotNull(message = "Введіть назву компанії")
+    @Size(min = 1,message = "Введіть назву компанії" )
     public String getWorkplaceName() {
         return workplaceName;
     }
@@ -106,6 +113,13 @@ public class WorkplaceEntity {
     }
 
 
-
-
+    @Override
+    public String toString() {
+        return "WorkplaceEntity{" +
+                "worksphere='" + worksphere + '\'' +
+                ", adress='" + adress + '\'' +
+                ", workplaceName='" + workplaceName + '\'' +
+                ", worktitle=" + worktitle.toString() +
+                '}';
+    }
 }

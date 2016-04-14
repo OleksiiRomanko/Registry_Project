@@ -3,6 +3,8 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by user on 13.04.2016.
@@ -20,8 +22,8 @@ public class LivingPlaceEntity {
     private UsersEntity user;
 
     @Id
-    @GenericGenerator(name="kaugen" , strategy="increment")
-    @GeneratedValue(generator="kaugen")
+    @GenericGenerator(name = "kaugen", strategy = "increment")
+    @GeneratedValue(generator = "kaugen")
     @Column(name = "id")
     public int getId() {
         return id;
@@ -33,6 +35,8 @@ public class LivingPlaceEntity {
 
     @Basic
     @Column(name = "country")
+    @NotNull(message = "Введіть країну")
+    @Size(min = 1,message = "Введіть країну" )
     public String getCountry() {
         return country;
     }
@@ -43,6 +47,8 @@ public class LivingPlaceEntity {
 
     @Basic
     @Column(name = "region")
+    @NotNull(message = "Введіть регіон")
+    @Size(min = 1,message = "Введіть регіон" )
     public String getRegion() {
         return region;
     }
@@ -53,6 +59,8 @@ public class LivingPlaceEntity {
 
     @Basic
     @Column(name = "city")
+    @NotNull(message = "Введіть місто")
+    @Size(min = 1,message = "Введіть місто" )
     public String getCity() {
         return city;
     }
@@ -63,6 +71,8 @@ public class LivingPlaceEntity {
 
     @Basic
     @Column(name = "district")
+    @NotNull(message = "Введіть вулицю")
+    @Size(min = 1,message = "Введіть вулицю" )
     public String getDistrict() {
         return district;
     }
@@ -73,6 +83,8 @@ public class LivingPlaceEntity {
 
     @Basic
     @Column(name = "house")
+    @NotNull(message = "Введіть будинок")
+    @Size(min = 1,message = "Введіть будинок" )
     public String getHouse() {
         return house;
     }
@@ -83,6 +95,8 @@ public class LivingPlaceEntity {
 
     @Basic
     @Column(name = "flat")
+    @NotNull(message = "Введіть номер квартири")
+    @Size(min = 1,message = "Введіть номер квартири" )
     public String getFlat() {
         return flat;
     }
@@ -128,5 +142,17 @@ public class LivingPlaceEntity {
 
     public void setUser(UsersEntity user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "LivingPlaceEntity{" +
+                "country='" + country + '\'' +
+                ", region='" + region + '\'' +
+                ", city='" + city + '\'' +
+                ", district='" + district + '\'' +
+                ", house='" + house + '\'' +
+                ", flat='" + flat + '\'' +
+                '}';
     }
 }

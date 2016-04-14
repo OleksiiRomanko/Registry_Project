@@ -3,6 +3,8 @@ package com.kp_42.Model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -28,6 +30,8 @@ public class WorktitleEntity {
 
     @Basic
     @Column(name = "title")
+    @NotNull(message = "Введіть назву посади")
+    @Size(min = 1,message = "Введіть назву посади" )
     public String getTitle() {
         return title;
     }
@@ -56,5 +60,10 @@ public class WorktitleEntity {
         return result;
     }
 
-
+    @Override
+    public String toString() {
+        return "WorktitleEntity{" +
+                "title='" + title + '\'' +
+                '}';
+    }
 }

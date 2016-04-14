@@ -1,8 +1,11 @@
 package com.kp_42.Model.Entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by user on 13.04.2016.
@@ -29,6 +32,8 @@ public class BirthCertificateEntity {
 
     @Basic
     @Column(name = "birthDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату ")
     public Long getBirthDate() {
         return birthDate;
     }
@@ -39,6 +44,8 @@ public class BirthCertificateEntity {
 
     @Basic
     @Column(name = "bitrhPlace")
+    @NotNull(message = "Введіть міце народження")
+    @Size(min = 1,message = "Введіть міце народження" )
     public String getBitrhPlace() {
         return bitrhPlace;
     }
@@ -76,5 +83,13 @@ public class BirthCertificateEntity {
 
     public void setUser(UsersEntity user) {
         this.user = user;
+    }
+
+    @Override
+    public String toString() {
+        return "BirthCertificateEntity{" +
+                "birthDate=" + birthDate +
+                ", bitrhPlace='" + bitrhPlace + '\'' +
+                '}';
     }
 }

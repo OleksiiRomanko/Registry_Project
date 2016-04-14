@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,9 +34,12 @@
 <br>
 <h1></h1>
 <div style="text-align:center;">
-    <button class="myButton" type="button">
-        Додати особоу
-    </button>
+
+    <form:form action="/admin/user/add/step/1" method="get">
+        <button class="myButton" type="submit">
+            Додати порушника
+        </button>
+    </form:form>
     <h1></h1>
     <button class="myButton" type="button">
         Додати акт

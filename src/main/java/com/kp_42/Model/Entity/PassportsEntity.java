@@ -1,8 +1,11 @@
 package com.kp_42.Model.Entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by user on 13.04.2016.
@@ -33,6 +36,8 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "series")
+    @NotNull(message = "Введіть серію паспорту")
+    @Size(min = 2,max = 2,message = "Введіть серію паспорту(2 букви)" )
     public String getSeries() {
         return series;
     }
@@ -43,6 +48,7 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "number")
+    @NotNull(message = "Введіть номер паспорту")
     public Integer getNumber() {
         return number;
     }
@@ -53,6 +59,9 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату")
+
     public Long getDate() {
         return date;
     }
@@ -63,6 +72,8 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "author")
+    @NotNull(message = "Введіть назву організації, яка видала паспорт")
+    @Size(min = 1,message = "Введіть назву організації, яка видала паспорт" )
     public String getAuthor() {
         return author;
     }
@@ -73,6 +84,8 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "birthDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату")
     public Long getBirthDate() {
         return birthDate;
     }
@@ -83,6 +96,8 @@ public class PassportsEntity {
 
     @Basic
     @Column(name = "birthPlace")
+    @NotNull(message = "Введіть міце народження")
+    @Size(min = 1,message = "Введіть міце народження" )
     public String getBirthPlace() {
         return birthPlace;
     }
@@ -130,4 +145,16 @@ public class PassportsEntity {
         this.user = user;
     }
 
+
+    @Override
+    public String toString() {
+        return "PassportsEntity{" +
+                "series='" + series + '\'' +
+                ", number=" + number +
+                ", date=" + date +
+                ", author='" + author + '\'' +
+                ", birthDate=" + birthDate +
+                ", birthPlace='" + birthPlace + '\'' +
+                '}';
+    }
 }

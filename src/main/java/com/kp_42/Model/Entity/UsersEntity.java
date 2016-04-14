@@ -4,6 +4,8 @@ import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  * Created by user on 13.04.2016.
@@ -12,6 +14,8 @@ import javax.persistence.*;
 @Table(name = "users", schema = "mydb", catalog = "")
 public class UsersEntity {
     private int id;
+
+
     private String surname;
     private String name;
     private String secondName;
@@ -36,6 +40,8 @@ public class UsersEntity {
 
     @Basic
     @Column(name = "Surname")
+    @NotNull(message = "Введіть Прізвище")
+    @Size(min = 1,message = "Введіть Прізвище" )
     public String getSurname() {
         return surname;
     }
@@ -46,6 +52,8 @@ public class UsersEntity {
 
     @Basic
     @Column(name = "Name")
+    @NotNull(message = "Введіть ім'я ")
+    @Size(min = 1,message = "Введіть ім'я" )
     public String getName() {
         return name;
     }
@@ -56,6 +64,8 @@ public class UsersEntity {
 
     @Basic
     @Column(name = "SecondName")
+    @NotNull(message = "Введіть ім'я по-батькові")
+    @Size(min = 1,message = "Введіть ім'я по-батькові" )
     public String getSecondName() {
         return secondName;
     }
@@ -144,5 +154,15 @@ public class UsersEntity {
 
     public void setExtraction(ExtractionEntity extraction) {
         this.extraction = extraction;
+    }
+
+
+    @Override
+    public String toString() {
+        return "UsersEntity{" +
+                "surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", secondName='" + secondName + '\'' +
+                '}';
     }
 }

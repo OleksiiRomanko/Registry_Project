@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,47 +35,70 @@
 <h1 style="text-align: center">Введіть адресу проживання нового правопорушника:</h1>
 <h1></h1>
 <h1></h1>
-<div class="row" style="text-align: center">
 
-    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Країна"/>
+
+<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/user/add/step/5">
+    <div class="row" style="text-align: center">
+
+        <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+            <div class="input-group">
+                <form:input type="text" path="country" class="form-control" placeholder="Країна"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="country" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="region" class="form-control" placeholder="Область"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="region" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="city" class="form-control" placeholder="Місто"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="city" cssClass="error" />
+            </div>
+            <%--<br>--%>
+            <%--<div class="input-group">--%>
+                <%--<form:input type="text" path="district" class="form-control" placeholder="Район"/>--%>
+            <%--</div>--%>
+            <%--<br>--%>
+            <div class="input-group">
+                <form:input type="text" path="district" class="form-control" placeholder="Вулиця"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="district" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="house" class="form-control" placeholder="Будинок"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="house" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="flat" class="form-control" placeholder="Квартира"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="flat" cssClass="error" />
+            </div>
+            <br>
         </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Область"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Місто"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Район"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Вулиця"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Будинок"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Квартира"/>
-        </div>
-        <br>
     </div>
-</div>
 
 
-<div style="text-align: center">
-    <br>
-    <button class="myButton" type="button">
-        NEXT
-    </button>
-</div>
+    <div style="text-align: center">
+        <br>
+        <button class="myButton" type="submit ">
+            NEXT
+        </button>
+    </div>
+
+</form:form>
 
 
 

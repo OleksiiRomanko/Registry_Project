@@ -1,4 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,42 +38,66 @@
 <h1></h1>
 <div class="row" style="text-align: center">
 
-    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Серія"/>
+
+    <form:form method="post" modelAttribute="PassportsEntity" action="/admin/user/add/step/3">
+        <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+            <div class="input-group">
+                <form:input type="text" path="series" class="form-control" placeholder="Серія"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="series" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="number" class="form-control" placeholder="Номер"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="number" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="date" path="date" class="form-control" placeholder="Дата видачі"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="date" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="author" class="form-control" placeholder="Ким виданий"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="author" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="birthDate" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="birthPlace" class="form-control" placeholder="Місце народження"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="birthPlace" cssClass="error" />
+            </div>
+            <br>
         </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Номер"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата видачі"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Ким виданий"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата народження"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Місце народження"/>
-        </div>
-        <br>
+
+
     </div>
-</div>
 
 
-<div style="text-align: center">
-    <br>
-    <button class="myButton" type="button">
-        NEXT
-    </button>
-</div>
+    <div style="text-align: center">
+        <br>
+        <button class="myButton" type="submit">
+            NEXT
+        </button>
 
+    </div>
+
+</form:form>
 
 
 </body>
