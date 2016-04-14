@@ -1,9 +1,7 @@
 package UnitTests;
 
 import Utility.TestUtility;
-import com.kp_42.Model.Entity.CriminalActEntity;
-import com.kp_42.Model.Entity.LawEntity;
-import com.kp_42.Model.Entity.UsersEntity;
+import com.kp_42.Model.Entity.*;
 import com.kp_42.Model.Interface.IDeleteService;
 import com.kp_42.Model.Interface.IPersistService;
 import com.kp_42.Model.Interface.ISearchService;
@@ -57,7 +55,7 @@ public class ServicesTests {
         deleteService.deleteUser(testUser);
     }
     @Test
-    public void AddAndDeleteUserPassport() {
+    public void AddAndDeleteUserAct() {
         TestUtility dummy = new TestUtility();
 
         UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
@@ -84,6 +82,78 @@ public class ServicesTests {
         deleteService.deleteLaw(law2);
         deleteService.deleteUser(testUser);
     }
+
+    @Test
+    public void CheckAddAndDeleteActWithoutUser(){
+        TestUtility dummy = new TestUtility();
+
+        UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
+                dummy.createBirthCertificate(), dummy.createLivingPlace());
+
+        CriminalActEntity criminalAct = dummy.createCriminalAct();
+
+        LawEntity law1 = dummy.createLaw();
+        LawEntity law2 = dummy.createLaw();
+        List<LawEntity> list = new ArrayList<>();
+
+        list.add(law1);
+        list.add(law2);
+        list = persistService.save(list);
+
+        criminalAct.setLaw(list);
+        criminalAct.setUser(testUser);
+        criminalAct = persistService.save(criminalAct);
+
+        criminalAct.setCriminalDescription("New Test Law");
+        criminalAct = persistService.save(criminalAct);
+        deleteService.deleteAct(criminalAct);
+        deleteService.deleteLaw(law1);
+        deleteService.deleteLaw(law2);
+    }
+
+    @Test
+    public void AddAndDeleteUserPassport() {
+        TestUtility dummy = new TestUtility();
+        UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
+                dummy.createBirthCertificate(), dummy.createLivingPlace());
+        testUser = searchService.findUsersByPassport(testUser.getPassport());
+        assertNotNull(testUser);
+        testUser.setPassport(dummy.createPassport());
+        testUser = persistService.save(testUser);
+        assertNotNull(testUser);
+        PassportsEntity pass = testUser.getPassport();
+        deleteService.deleteUser(pass);
+    }
+    @Test
+    public void AddAndDeleteUserBirthCertificate (){
+        TestUtility dummy = new TestUtility();
+        UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
+                dummy.createBirthCertificate(), dummy.createLivingPlace());
+        testUser = searchService.findUsersByCertificate(testUser.getBirthCertificate());
+        assertNotNull(testUser);
+        testUser.setPassport(dummy.createPassport());
+        testUser = persistService.save(testUser);
+        assertNotNull(testUser);
+        BirthCertificateEntity certificate = testUser.getBirthCertificate();
+        deleteService.deleteUser(certificate);
+    }
+
+    @Test
+    public void AddFindAndDeleteUserByCertificate () {
+        TestUtility dummy = new TestUtility();
+        BirthCertificateEntity certificate = dummy.createBirthCertificate();
+        UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(), certificate
+                , dummy.createLivingPlace());
+        testUser = searchService.findUsersByCertificate(testUser.getBirthCertificate());
+        assertNotNull(testUser);
+        testUser.setPassport(dummy.createPassport());
+        testUser = persistService.save(testUser);
+        assertNotNull(testUser);
+        deleteService.deleteUser(certificate);
+
+
+    }
+
 
 
 }
