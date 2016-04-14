@@ -20,12 +20,15 @@
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/admin.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-<button class="btn btn-success pull-right btn-sm" type="button" data-toggle="modal" data-target="#myModal">
-    Log out
-</button>
 
-<h1></h1>
-<h1></h1>
+<form action="/logout">
+    <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
+        Покинути кабінет Адміністратора
+    </button>
+</form>
+
+<br>
+<br>
 <h1>Введіть дані із свідоцтва про народження нового правопорушника:</h1>
 <h1></h1>
 <h1></h1>

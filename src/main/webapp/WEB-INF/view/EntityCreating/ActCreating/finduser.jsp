@@ -25,6 +25,13 @@
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 
+<form action="/logout">
+    <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
+        Покинути кабінет Адміністратора
+    </button>
+</form>
+<br>
+<br>
 <div style="text-align: center">
     <h1>
         Додати новий кримінальний акт
