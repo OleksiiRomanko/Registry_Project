@@ -78,11 +78,10 @@
     <%
         if (error != null) {
     %>
-        <div class="col-lg-12 col-lg-offset-5" style="width: 20%;">
-            <h2 style="background: #f2dede">
-
-
-            </h2>
+        <div class="col-lg-12 col-lg-offset-4" style="width: 33%;">
+            <h4 style="background: #f2dede">
+                Помилка авторизації! Неправильно введений логін чи пароль.
+            </h4>
         </div>
 
 

@@ -25,30 +25,53 @@
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 
+
+
 <form action="/admin/">
     <button class="btn btn-success pull-right btn-sm" type="submit">
         Увійти як Адміністратор
     </button>
 </form>
 
+<div style="text-align: center">
+    <br>
+    <br>
+    <br>
+    <h1>
+        Єдиний державний реєстр України осіб, що вчинили корупційні правопорущення
+    </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <h1>Введіть анкетні дані потрібної персони</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4 col-md-offset-3">
-            <form action="" class="search-form">
-                <div class="form-group has-feedback">
-                    <label for="search" class="sr-only">Search</label>
-                    <input type="text" class="form-control" name="search" id="search"
-                           placeholder="Наприклад: Ратошнюк Максим Юрійович">
-                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            <h2 style="text-align: center">Введіть анкетні дані потрібної персони</h2>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12">
+                                <input type="text" class="form-control input-lg"
+                                       placeholder="Наприклад: Ратошнюк Максим Юрійович" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
+
 </div>
 
 

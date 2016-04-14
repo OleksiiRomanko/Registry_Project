@@ -25,8 +25,12 @@
         Покинути кабінет Адміністратора
     </button>
 </form>
-
+<br>
 <h1>Ви увійшли до кабинету Адміністратора.</h1>
+<br>
+<br>
+<br>
+<br>
 <h1></h1>
 <div style="text-align:center;">
     <button class="myButton" type="button">
