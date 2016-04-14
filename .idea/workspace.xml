@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1ccb56-8781-4c8b-a4cd-892c733e6db3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestUtility.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/CriminalActTest.java" afterPath="$PROJECT_DIR$/src/test/java/CriminalActTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ExtractionTests.java" afterPath="$PROJECT_DIR$/src/test/java/ExtractionTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/ServicesTests.java" afterPath="$PROJECT_DIR$/src/test/java/ServicesTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/UsersTest.java" afterPath="$PROJECT_DIR$/src/test/java/UsersTest.java" />
     </list>
     <ignored path="Registry.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +60,7 @@
       <file leaf-file-name="UsersTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/UsersTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21269296">
+            <state vertical-scroll-proportion="0.30017152">
               <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -632,9 +627,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/CriminalActRepository.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Services/DeleteServiceImpl.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -642,9 +635,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IAddService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Services/AddServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/ServicesTests.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -1411,7 +1402,7 @@
       <option name="number" value="Default" />
       <updated>1457195621220</updated>
       <workItem from="1457195624445" duration="1752000" />
-      <workItem from="1460559210991" duration="23734000" />
+      <workItem from="1460559210991" duration="23776000" />
     </task>
     <task id="LOCAL-00001" summary="Setuped project">
       <created>1460564310685</created>
@@ -1473,7 +1464,13 @@
       <option name="project" value="LOCAL" />
       <updated>1460585302008</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Updates tests">
+      <created>1460625677747</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1460625677747</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1509,7 +1506,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25486000" />
+    <option name="totallyTimeSpent" value="25528000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1561,7 +1558,8 @@
     <MESSAGE value="Many to many mapping" />
     <MESSAGE value="Delete Service" />
     <MESSAGE value="Orphan test(All tests working)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Orphan test(All tests working)" />
+    <MESSAGE value="Updates tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2041,7 +2039,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/UsersTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21269296">
+        <state vertical-scroll-proportion="0.30017152">
           <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
