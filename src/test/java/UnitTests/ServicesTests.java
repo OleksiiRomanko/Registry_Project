@@ -13,6 +13,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import static junit.framework.TestCase.assertNotNull;
+
 /**
  * Created by maxymratoshniuk on 4/14/16.
  */
@@ -39,9 +41,13 @@ public class ServicesTests {
     @Test
     public void AddAndDeleteUser() {
         TestUtility dummy = new TestUtility();
-
         UsersEntity testUser = persistService.addUser("Max", "James", "Sanders", dummy.createPassport(), dummy.createWorkplace(),
                 dummy.createBirthCertificate(), dummy.createLivingPlace());
+        testUser = searchService.findUsersByPassport(testUser.getPassport());
+        assertNotNull(testUser);
+        testUser.setPassport(dummy.createPassport());
+        testUser = persistService.save(testUser);
+        assertNotNull(testUser);
         deleteService.deleteUser(testUser);
     }
 
