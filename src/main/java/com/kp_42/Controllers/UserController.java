@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 
 import javax.validation.Valid;
 
-/**
- * Created by user on 14.04.2016.
- */
+
 
 @Controller
 @RequestMapping("/admin/user")
@@ -22,6 +20,8 @@ import javax.validation.Valid;
         "BirthCertificateEntity",
         "LivingPlaceEntity",
         "WorkPlaceEntity"})
+
+
 public class UserController {
 
 

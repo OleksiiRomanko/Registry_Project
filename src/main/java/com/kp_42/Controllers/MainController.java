@@ -83,7 +83,7 @@ public class MainController {
     @RequestMapping(value = {"addlaw"},method = RequestMethod.GET )
     public String addlaw(ModelAndView mav){
 
-        return "EntityCreating/addlaw";
+        return "EntityCreating/LawCreating/addlaw";
     }
 
     @RequestMapping(value = {"createact"},method = RequestMethod.GET )

@@ -28,7 +28,7 @@
     </button>
 </form>
 
-<form:form modelAttribute="LawEntity" method="post" action="/admin/law/add">
+<form:form modelAttribute="LawEntity" method="post" action="/admin/law/addlaw">
     <br>
     <br>
     <h1 style="text-align: center">Введіть нову статтю із Закону:</h1>
@@ -38,11 +38,11 @@
 
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Номер статті"/>
+                <form:input type="text" path="name" class="form-control" placeholder="Номер статті"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Опис статті"/>
+                <form:input type="text" path="type" class="form-control" placeholder="Опис статті"/>
             </div>
             <br>
         </div>
@@ -51,7 +51,7 @@
 
     <div style="text-align: center">
         <br>
-        <button class="myButton" type="button">
+        <button class="myButton" type="submit">
             Додати
         </button>
     </div>

@@ -53,9 +53,12 @@
         Додати акт
     </button>
     <h1></h1>
-    <button class="myButton" type="button">
-        Додати закон
-    </button>
+    <form:form action="/admin/law/addlaw" method="get">
+        <button class="myButton" type="submit">
+            Додати закон
+        </button>
+    </form:form>
+
     <h1></h1>
     <button class="myButton" type="button">
         Знайти особу
