@@ -97,7 +97,8 @@ public class UserController {
                                   @ModelAttribute("BirthCertificateEntity")BirthCertificateEntity certificate,
                                   @ModelAttribute("LivingPlaceEntity") LivingPlaceEntity livingPlace,
                                   @Valid @ModelAttribute("WorkPlaceEntity")WorkplaceEntity workplace,
-                                  BindingResult result){
+                                  BindingResult result,
+                                  ModelMap mav){
 
         if(result.hasErrors())return "EntityCreating/UserCreating/workplace";
         System.out.println();
@@ -107,6 +108,7 @@ public class UserController {
         System.out.println(livingPlace.toString());
         System.out.println(workplace.toString());
 
+//        mav.put("success","Нова особа успішно додана до бази даних!");
 
         return "redirect:/admin";
     }

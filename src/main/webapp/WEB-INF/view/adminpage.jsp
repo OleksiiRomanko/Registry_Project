@@ -18,8 +18,16 @@
 
 </head>
 
+<body>
+
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+
+<%
+
+    String success = (String) request.getAttribute("success");
+
+%>
 
 <form action="/logout">
     <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
@@ -58,6 +66,20 @@
     </button>
 </div>
 
+<%
+    if (success != null) {
+%>
+<div class="col-lg-12 col-lg-offset-4" style="width: 33%;">
+    <h4 style="background: #3c763d; color: #2b542c">
+        Новий правопорушник успішно доданий до Бази даних!.
+    </h4>
+</div>
+
+<%
+    }
+
+
+%>
 
 
 </body>

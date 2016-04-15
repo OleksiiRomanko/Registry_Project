@@ -55,13 +55,13 @@
 
             <div class="checkbox">
                 <label>
-                    <input type="checkbox" name="_spring_security_remember_me"> Remember me
+                    <input type="checkbox" name="_spring_security_remember_me"> Запам'ятати
                 </label>
             </div>
             <!-- /.checkbox -->
 
             <div class="modal-footer">
-                <button class="form-control btn btn-primary" type="submit">Ok</button>
+                <button class="form-control btn btn-primary" type="submit">Увійти</button>
 
 
             </div>
