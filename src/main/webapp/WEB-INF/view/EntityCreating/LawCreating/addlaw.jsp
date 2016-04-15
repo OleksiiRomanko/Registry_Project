@@ -28,7 +28,7 @@
     </button>
 </form>
 
-<form:form modelAttribute="LawEntity" method="post" action="/admin/law/addlaw">
+<form:form modelAttribute="LawEntity" method="post" action="/admin/law/add">
     <br>
     <br>
     <h1 style="text-align: center">Введіть нову статтю із Закону:</h1>

@@ -2,7 +2,6 @@ package com.kp_42.Controllers;
 
 
 import com.kp_42.Model.Entity.LawEntity;
-import com.kp_42.Model.Entity.UsersEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -25,16 +24,13 @@ public class LawController {
         return new LawEntity();
     }
 
-    @RequestMapping(value  = "/addlaw", method = RequestMethod.GET)
+    @RequestMapping(value  = "/add", method = RequestMethod.GET)
     public String getPage(ModelMap map){
-        LawEntity entity = new LawEntity();
-        map.addAttribute("LawEntity", entity);
-
         return "/EntityCreating/LawCreating/addlaw";
     }
 
 
-    @RequestMapping(value = "/addlaw",method = RequestMethod.POST)
+    @RequestMapping(value = "/add",method = RequestMethod.POST)
     public String createLaw(ModelMap map,
                             @Valid @ModelAttribute("LawEntity")LawEntity lawEntity,
                             BindingResult result) {

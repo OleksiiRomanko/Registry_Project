@@ -25,7 +25,7 @@
 
 <%
 
-    String success = (String) request.getAttribute("success");
+    String extra_text = (String) request.getAttribute("EXTRA_TEXT");
 
 %>
 
@@ -53,7 +53,7 @@
         Додати акт
     </button>
     <h1></h1>
-    <form:form action="/admin/law/addlaw" method="get">
+    <form:form action="/admin/law/add" method="get">
         <button class="myButton" type="submit">
             Додати закон
         </button>
@@ -70,11 +70,11 @@
 </div>
 
 <%
-    if (success != null) {
+    if (extra_text != null) {
 %>
 <div class="col-lg-12 col-lg-offset-4" style="width: 33%;">
     <h4 style="background: #3c763d; color: #2b542c">
-        Новий правопорушник успішно доданий до Бази даних!.
+        <%=extra_text%>
     </h4>
 </div>
 

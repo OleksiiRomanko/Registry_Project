@@ -46,45 +46,7 @@ public class MainController {
 
 
     //
-    @RequestMapping(value = {"adminpage"},method = RequestMethod.GET )
-    public String adminpage(ModelAndView mav){
 
-        return "adminpage";
-    }
-
-    @RequestMapping(value = {"personalinformation"},method = RequestMethod.GET )
-    public String personalinformation(ModelAndView mav){
-
-        return "EntityCreating/UserCreating/personalinformation";
-    }
-
-    @RequestMapping(value = {"passport"},method = RequestMethod.GET )
-    public String passporte(ModelAndView mav){
-
-        return "EntityCreating/UserCreating/passport";
-    }
-
-    @RequestMapping(value = {"certificate"},method = RequestMethod.GET )
-    public String certificate(ModelAndView mav){
-
-        return "EntityCreating/UserCreating/certificate";
-    }
-
-    @RequestMapping(value = {"workplace"},method = RequestMethod.GET )
-    public String workplace(ModelAndView mav){
-
-        return "EntityCreating/UserCreating/workplace";
-    }
-
-
-
-
-    //other entities
-    @RequestMapping(value = {"addlaw"},method = RequestMethod.GET )
-    public String addlaw(ModelAndView mav){
-
-        return "EntityCreating/LawCreating/addlaw";
-    }
 
     @RequestMapping(value = {"createact"},method = RequestMethod.GET )
     public String createact(ModelAndView mav){
