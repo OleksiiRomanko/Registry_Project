@@ -41,5 +41,10 @@ public class LawController {
         return "redirect:/admin";
     }
 
+    @RequestMapping(value = "/add/tomenu",method = RequestMethod.GET)
+    public String backToAdmin(ModelMap map){
+        return "redirect:/admin";
+    }
+
 
 }

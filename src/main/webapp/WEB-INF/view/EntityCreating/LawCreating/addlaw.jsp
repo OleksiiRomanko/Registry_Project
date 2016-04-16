@@ -28,6 +28,12 @@
     </button>
 </form>
 
+<form action="/admin/law/add//tomenu" method="get">
+    <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
+        Повернутися до головного меню
+    </button>
+</form>
+
 <form:form modelAttribute="LawEntity" method="post" action="/admin/law/add">
     <br>
     <br>

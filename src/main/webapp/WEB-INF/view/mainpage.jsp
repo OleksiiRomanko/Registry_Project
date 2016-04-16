@@ -60,9 +60,12 @@
                                 <input type="text" class="form-control input-lg"
                                        placeholder="Наприклад: Ратошнюк Максим Юрійович" />
                     <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
+                        <form:form action="/mainpage/result" method="get">
+                            <button class="btn btn-info btn-lg" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </form:form>
+
                     </span>
                             </div>
                         </div>
