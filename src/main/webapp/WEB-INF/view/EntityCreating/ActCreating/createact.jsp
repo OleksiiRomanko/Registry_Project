@@ -15,6 +15,7 @@
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/search.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/button.css" />" rel="stylesheet">
 
 
 
@@ -25,9 +26,16 @@
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 
+
 <form action="/logout">
     <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
         Покинути кабінет Адміністратора
+    </button>
+</form>
+
+<form action="/admin/user/add/step/tomenu" method="get">
+    <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
+        Повернутися до головного меню
     </button>
 </form>
 <br>
@@ -54,68 +62,80 @@
 </div>
 
 
+<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/act/add/step/5">
 
-<div class="row" style="text-align: center">
+    <div class="row" style="text-align: center">
 
-    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+        <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
 
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Опис правопорушення"/>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Опис правопорушення"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Тип правопорушення"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <p>Дата судового рішення</p>
+                <input type="data" class="form-control" placeholder="Дата судового рішення"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <p>Дата набрання законності</p>
+                <input type="data" class="form-control" placeholder="Дата набрання законності"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Вид покарання"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <p>Дата погашення судимості</p>
+                <input type="data" class="form-control" placeholder="Дата погашення судимості"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Підстава для погашення"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Реквізити наказу про накладання судимості"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Вид дисциплінарного стягнення"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Спосіб вчинення стягнення"/>
+            </div>
+            <br>
+            <div class="input-group">
+                <p>Дата дисциплінарного стягнення</p>
+                <input type="data" class="form-control" placeholder="Дата дисциплінарного стягнення"/>
+            </div>
+            <br>
         </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Тип правопорушення"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата судового рішення"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата набрання законності"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Вид покарання"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата погашення судимості"/>
-        </div>
-        <br>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Підстава для погашення"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Реквізити наказу про накладання судимості"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Вид дисциплінарного стягнення"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Спосіб вчинення стягнення"/>
-        </div>
-        <br>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Дата дисциплінарного стягнення"/>
-        </div>
-        <br>
     </div>
-</div>
+
+    <div style="text-align:center;">
+        <button class="myButton" type="submit">
+            Додати до бази
+        </button>
+
+    </div>
+</form:form>
+
+<br>
 
 <div style="text-align:center;">
-    <button class="myButton" type="button">
-        NEXT
-    </button>
-
+    <form:form action="/admin/act/add/step/from4to3" method="get">
+        <button class="myButton" type="submit">
+            Назад
+        </button>
+    </form:form>
 </div>
-
-
-
 
 </body>
 </html>

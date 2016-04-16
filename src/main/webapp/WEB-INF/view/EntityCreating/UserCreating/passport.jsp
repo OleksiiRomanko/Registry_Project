@@ -43,7 +43,6 @@
 <h1></h1>
 <div class="row" style="text-align: center">
 
-
     <form:form method="post" modelAttribute="PassportsEntity" action="/admin/user/add/step/3">
     <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
         <div class="input-group">

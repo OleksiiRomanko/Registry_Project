@@ -52,9 +52,11 @@
         </button>
     </form:form>
     <h1></h1>
-    <button class="myButton" type="button">
-        Додати акт
-    </button>
+    <form:form action="/admin/act/add/step/1" method="get">
+        <button class="myButton" type="submit">
+            Додати акт
+        </button>
+    </form:form>
     <h1></h1>
     <form:form action="/admin/law/add" method="get">
         <button class="myButton" type="submit">

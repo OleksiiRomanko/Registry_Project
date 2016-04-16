@@ -15,6 +15,7 @@
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/search.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
+    <link href="<c:url value="/resources/css/button.css" />" rel="stylesheet">
 
 
 
@@ -30,6 +31,12 @@
         Покинути кабінет Адміністратора
     </button>
 </form>
+
+<form action="/admin/user/add/step/tomenu" method="get">
+    <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
+        Повернутися до головного меню
+    </button>
+</form>
 <br>
 <br>
 <div style="text-align: center">
@@ -42,34 +49,45 @@
     <br>
     <br>
 </div>
+<form:form method="post" modelAttribute="UsersEntity" action="/admin/act/add/step/2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 style="text-align: center">Будь ласка, виберіть із бази даних людину,
+                    до якої причетний створюваний
+                    кримінальний акт
+                </h2>
+                <br>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <h2 style="text-align: center">Будь ласка, виберіть із бази даних людину,
-                до якої причетний створюваний
-                кримінальний акт
-            </h2>
-            <br>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                                <input type="text" class="form-control input-lg"
-                                       placeholder="Наприклад: Ратошнюк Максим Юрійович" />
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="custom-search-input">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-lg"
+                                           placeholder="Наприклад: Ратошнюк Максим Юрійович" />
                     <span class="input-group-btn">
                         <button type="submit" class="btn btn-primary btn-sm">Search</button>
                     </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
+</form:form>
+
+
+<br>
+<div style="text-align:center;">
+    <form:form action="/admin/act/add/step/tomenu" method="get">
+        <button class="myButton" type="submit">
+            Назад
+        </button>
+    </form:form>
 </div>
 
 
