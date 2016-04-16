@@ -134,9 +134,10 @@ There is no license...
 - [Tomcat Apache Server](http://tomcat.apache.org/){:target="_blank"}
 
 ## Creators
-- [Oleksandr Chepurnyu](http://vk.com/granium){:target="_blank"}
-- [Maksym Ratoshniuk](http://vk.com/maxym6969){:target="_blank"}
-- [Dmytro Lysogor](http://vk.com/uponthisdawn){:target="_blank"}
+- [Oleksandr Chepurnyu](http://vk.com/granium)
+- [Maksym Ratoshniuk](http://vk.com/maxym6969)
+- [Dmytro Lysogor]()
+- <a href="http://vk.com/uponthisdawn" target="_blank">Dmytro Lysogor</a>
 
 
 
