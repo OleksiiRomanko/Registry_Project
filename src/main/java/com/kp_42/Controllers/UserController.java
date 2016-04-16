@@ -53,7 +53,7 @@ public class UserController {
     }
 
     //backward mapping
-    @RequestMapping(value = "/add/step/from1to0",method = RequestMethod.GET)
+    @RequestMapping(value = "/add/step/tomenu",method = RequestMethod.GET)
     public String backToAdmin(ModelMap map){
         return "redirect:/admin";
     }
@@ -141,6 +141,8 @@ public class UserController {
 
         return "redirect:/admin";
     }
+
+
 
 
 

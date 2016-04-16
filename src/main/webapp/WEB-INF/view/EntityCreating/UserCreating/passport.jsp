@@ -28,6 +28,11 @@
         Покинути кабінет Адміністратора
     </button>
 </form>
+<form action="/admin/user/add/step/tomenu" method="get">
+    <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
+        Повернутися до головного меню
+    </button>
+</form>
 <br>
 <br>
 
