@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a1ccb56-8781-4c8b-a4cd-892c733e6db3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating/addlaw.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating/addlaw.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp" />
     </list>
     <ignored path="Registry.iws" />
@@ -106,21 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectuser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="resultpage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+            <state relative-caret-position="540">
+              <caret line="127" column="33" selection-start-line="104" selection-start-column="28" selection-end-line="127" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -140,7 +125,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
+              <caret line="66" column="36" selection-start-line="62" selection-start-column="23" selection-end-line="66" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unauthorized.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unauthorized.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1474,7 +1469,7 @@
       <workItem from="1460711445701" duration="2308000" />
       <workItem from="1460735458441" duration="341000" />
       <workItem from="1460738732045" duration="255000" />
-      <workItem from="1460784622549" duration="8963000" />
+      <workItem from="1460784622549" duration="9211000" />
     </task>
     <task id="LOCAL-00001" summary="were added Data Base to main project and created entities for tables">
       <created>1459449770787</created>
@@ -1714,7 +1709,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460801488582</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="was added searching result page">
+      <created>1460803407672</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1460803407672</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1750,7 +1752,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73043000" />
+    <option name="totallyTimeSpent" value="73291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
@@ -1859,7 +1861,8 @@
     <MESSAGE value="add law controller" />
     <MESSAGE value="law controller works fine" />
     <MESSAGE value="were added back buttons while adding user to db" />
-    <option name="LAST_COMMIT_MESSAGE" value="were added back buttons while adding user to db" />
+    <MESSAGE value="was added searching result page" />
+    <option name="LAST_COMMIT_MESSAGE" value="was added searching result page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2141,14 +2144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unauthorized.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -2208,14 +2203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="66" column="36" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -2230,10 +2217,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="66" column="36" selection-start-line="62" selection-start-column="23" selection-end-line="66" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unauthorized.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+        <state relative-caret-position="540">
+          <caret line="127" column="33" selection-start-line="104" selection-start-column="28" selection-end-line="127" selection-end-column="33" />
           <folding />
         </state>
       </provider>

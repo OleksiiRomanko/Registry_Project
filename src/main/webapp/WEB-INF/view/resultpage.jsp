@@ -27,6 +27,16 @@
 <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
 <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 
+<div class="btn-group">
+
+    <form:form action="/mainpage/goback" method="get">
+        <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
+            На головну
+        </button>
+    </form:form>
+
+</div>
+
 <br>
 
 <br>
@@ -92,30 +102,30 @@
                             <td>ВН</td>
                             <td>602507</td>
                         </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">2</td>
-                            <td>Лисогор</td>
-                            <td>Дмитро</td>
-                            <td>Юрійович</td>
-                            <td>ВК</td>
-                            <td>122054</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">3</td>
-                            <td>Чепурний</td>
-                            <td>Олександр</td>
-                            <td>Дмитрович</td>
-                            <td>КП</td>
-                            <td>422016</td>
-                        </tr>
+                        <%--<tr>--%>
+                            <%--<td align="center">--%>
+                                <%--<a class="btn btn-default"><em class="fa fa-pencil"></em></a>--%>
+                                <%--<a class="btn btn-danger"><em class="fa fa-trash"></em></a>--%>
+                            <%--</td>--%>
+                            <%--<td class="hidden-xs">2</td>--%>
+                            <%--<td>Лисогор</td>--%>
+                            <%--<td>Дмитро</td>--%>
+                            <%--<td>Юрійович</td>--%>
+                            <%--<td>ВК</td>--%>
+                            <%--<td>122054</td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td align="center">--%>
+                                <%--<a class="btn btn-default"><em class="fa fa-pencil"></em></a>--%>
+                                <%--<a class="btn btn-danger"><em class="fa fa-trash"></em></a>--%>
+                            <%--</td>--%>
+                            <%--<td class="hidden-xs">3</td>--%>
+                            <%--<td>Чепурний</td>--%>
+                            <%--<td>Олександр</td>--%>
+                            <%--<td>Дмитрович</td>--%>
+                            <%--<td>КП</td>--%>
+                            <%--<td>422016</td>--%>
+                        <%--</tr>--%>
 
 
                         </tbody>
