@@ -4,8 +4,112 @@
 This is simple client-server web-application created for keeping track of corrupt officials and it's available for all users.
 You just have to write down Name and Sirname needed person and find out everything about him and his legality violations.
 ## Code Example
+This is shortcut example of using Spring Security in the project which provide authorization for Administrator(he has accept to Register Data Base except simple watching and searching corrupt officials and can add personals, edit their information and delete from data base if it's neccessaty. Also he can add laws and criminal acts).
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+[security.xml](https://github.com/CorruptRegistryProject/Registry_Project/blob/master/src/main/resources/spring/security.xml)
+
+<http auto-config="true" >
+        <intercept-url pattern="/" access="permitAll" />
+        <intercept-url pattern="/admin**" access="hasRole('ADMIN')" />
+        <intercept-url pattern="/admin/**" access="hasRole('ADMIN')" />
+
+        <form-login
+                login-page="/login"
+                default-target-url="/admin"
+                authentication-failure-url="/login?retry"
+                username-parameter="j_username"
+                password-parameter="j_password" />
+
+        <logout logout-url="/logout" logout-success-url="/" />
+        <csrf disabled="true"/>
+
+    </http>
+
+    <authentication-manager >
+        <authentication-provider>
+            <user-service>
+                <user name="yourLogin" password="yourPassword" authorities="ROLE_ADMIN" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+    
+[AdminController.java]()
+
+@Controller
+@RequestMapping("/admin")
+public class AdminController {
+
+
+    @RequestMapping("")
+    public String adminpage(ModelAndView mav){
+
+        return "adminpage";
+    }
+
+}
+
+[loginpage.jsp]()
+
+<html>
+  <head></head>
+  <body>
+    <% String error = (String) request.getAttribute("error"); %>
+    <div class="col-lg-12 col-lg-offset-4">
+      <div class="modal-body" style="width: 33%;">
+         <spring:url value="/login" var="loginUrl"/>
+          <form:form role="form" action="${loginUrl}" method="post">
+              <h3 style="text-align: center">
+                  Будь ласка, введіть коректні дані для доступу до бази даних:
+              </h3>
+              <div class="form-group">
+                  <div class="input-group">
+                      <input type="text" class="form-control" id="j_username" name="j_username" placeholder="Login">
+                      <label for="j_username" class="input-group-addon glyphicon glyphicon-user"></label>
+                  </div>
+              </div>
+              <!-- /.form-group -->
+
+              <div class="form-group">
+                  <div class="input-group">
+                      <input type="password" class="form-control" id="j_password" name="j_password"
+                             placeholder="Password">
+                      <label for="j_password" class="input-group-addon glyphicon glyphicon-lock"></label>
+                  </div> <!-- /.input-group -->
+              </div>
+              <!-- /.form-group -->
+
+              <div class="checkbox">
+                  <label>
+                      <input type="checkbox" name="_spring_security_remember_me"> Запам'ятати
+                  </label>
+              </div>
+              <!-- /.checkbox -->
+
+              <div class="modal-footer">
+                  <button class="form-control btn btn-primary" type="submit">Увійти</button>
+              </div>
+              <!-- /.modal-footer -->
+
+          </form:form>
+
+      </div> <!-- /.modal-body -->
+</div>
+<div>
+    <%
+        if (error != null) {
+    %>
+        <div class="col-lg-12 col-lg-offset-4" style="width: 33%;">
+            <h4 style="background: #f2dede">
+                <%=error%>
+            </h4>
+        </div>
+    <%
+        }
+    %>
+</div>
+</body>
+</html>
+
 
 ## Motivation
 
@@ -15,14 +119,6 @@ It was created for hope that it could helps in the future our government create 
 
 For setting up the project you have to download data base file from [here](https://github.com/CorruptRegistryProject/CorruptRegisterDataBase) and include Tomcat to your project and select path to tomcat folder if it will be neccessary.
 
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
 ## Contributors
 
 Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
@@ -31,11 +127,11 @@ Let people know how they can dive into the project, include important links to t
 
 
 ##Techologies which were used for creating project
--[Spring Framework](https://projects.spring.io/spring-framework/)
--[MySQL Data Base](https://www.mysql.com/)
--[Bootstrap](http://getbootstrap.com/)
--[Hybernate](http://hibernate.org/)
--[Tomcat Apache Server](http://tomcat.apache.org/)
+- [Spring Framework](https://projects.spring.io/spring-framework/)
+- [MySQL Data Base](https://www.mysql.com/)
+- [Bootstrap](http://getbootstrap.com/)
+- [Hybernate](http://hibernate.org/)
+- [Tomcat Apache Server](http://tomcat.apache.org/)
 
 
 ## Articles
