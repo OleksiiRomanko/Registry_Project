@@ -133,11 +133,10 @@ There is no license...
 - [Hybernate](http://hibernate.org/){:target="_blank"}
 - [Tomcat Apache Server](http://tomcat.apache.org/){:target="_blank"}
 
-## Creators
+## Creators(link in VK.com)
 - [Oleksandr Chepurnyu](http://vk.com/granium)
 - [Maksym Ratoshniuk](http://vk.com/maxym6969)
-- [Dmytro Lysogor]()
-- <a href="http://vk.com/uponthisdawn" target="_blank">Dmytro Lysogor</a>
+- [Dmytro Lysogor](http://vk.com/uponthisdawn)
 
 
 
