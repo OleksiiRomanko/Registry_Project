@@ -121,7 +121,7 @@ For setting up the project you have to download data base file from [here](https
 Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
 
 ## License
-
+There is no license...
 
 ##Techologies which were used for creating project
 - [Spring Framework](https://projects.spring.io/spring-framework/)
@@ -130,17 +130,10 @@ Let people know how they can dive into the project, include important links to t
 - [Hybernate](http://hibernate.org/)
 - [Tomcat Apache Server](http://tomcat.apache.org/)
 
+## Creators
+- [Oleksandr Chepurnyu](http://vk.com/granium)
+- [Maksym Ratoshniuk](http://vk.com/maxym6969)
+- [Dmytro Lysogor](http://vk.com/uponthisdawn)
 
-## Articles
-- ["How To Write A Readme"](http://jfhbrook.github.io/2011/11/09/readmes.html) - *Joshua Holbrook*
-- ["How To Write A Great README"](https://robots.thoughtbot.com/how-to-write-a-great-readme) - *Caleb Thompson (thoughtbot)*
-- ["Readme Driven Development"](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html) - *Tom Preston-Werner*
-- ["Top ten reasons why I won’t use your open source project"](https://changelog.com/top-ten-reasons-why-i-wont-use-your-open-source-project/) - *Adam Stacoviak*
-
-
-## Contribute
-
-Contributions are always welcome!
-Please read the [contribution guidelines](contributing.md) first.
 
 
