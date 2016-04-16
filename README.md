@@ -120,8 +120,9 @@ It was created for hope that it could helps in the future our government create 
 For setting up the project you have to download data base file from [here](https://github.com/CorruptRegistryProject/CorruptRegisterDataBase){:target="_blank"} and include Tomcat to your project and select path to tomcat folder if it will be neccessary.
 
 ## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+- [Dmytro Lysogor](http://vk.com/uponthisdawn)
+- [Oleksandr Chepurnyu](http://vk.com/granium)
+- [Maksym Ratoshniuk](http://vk.com/maxym6969)
 
 ## License
 There is no license...
@@ -133,8 +134,5 @@ There is no license...
 - [Hybernate](http://hibernate.org/){:target="_blank"}
 - [Tomcat Apache Server](http://tomcat.apache.org/){:target="_blank"}
 
-## Creators(link in VK.com)
-- [Dmytro Lysogor](http://vk.com/uponthisdawn)
-- [Oleksandr Chepurnyu](http://vk.com/granium)
-- [Maksym Ratoshniuk](http://vk.com/maxym6969)
+
 
