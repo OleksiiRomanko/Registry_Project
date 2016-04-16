@@ -83,13 +83,6 @@
 
 <br>
 
-<div style="text-align:center;">
-        <form:form action="/admin/user/add/step/tomenu" method="get">
-            <button class="myButton" type="submit">
-                Назад до кабінету
-            </button>
-        </form:form>
-</div>
 
 </body>
 </html>

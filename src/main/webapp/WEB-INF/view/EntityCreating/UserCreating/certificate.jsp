@@ -45,6 +45,7 @@
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
 
             <div class="input-group">
+                <p>Дата народження</p>
                 <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
             </div>
             <div class="input-group">

@@ -61,6 +61,7 @@
         </div>
         <br>
         <div class="input-group">
+            <p>Дата видачі</p>
             <form:input type="date" path="date" class="form-control" placeholder="Дата видачі"/>
         </div>
         <div class="input-group">
@@ -75,6 +76,7 @@
         </div>
         <br>
         <div class="input-group">
+            <p>Дата народження</p>
             <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
         </div>
         <div class="input-group">
