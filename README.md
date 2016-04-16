@@ -6,8 +6,10 @@ You just have to write down Name and Sirname needed person and find out everythi
 ## Code Example
 This is shortcut example of using Spring Security in the project which provide authorization for Administrator(he has accept to Register Data Base except simple watching and searching corrupt officials and can add personals, edit their information and delete from data base if it's neccessaty. Also he can add laws and criminal acts).
 
+<img src="https://www.dropbox.com/s/0u0btc1nw5zqz22/Screen%20Shot%202016-04-16%20at%2008.52.44.png?dl=0" align="center">
+
 [security.xml](https://github.com/CorruptRegistryProject/Registry_Project/blob/master/src/main/resources/spring/security.xml
-){:target="_blank"}
+)
 
         <http auto-config="true" >
                 <intercept-url pattern="/" access="permitAll" />
