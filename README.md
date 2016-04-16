@@ -117,7 +117,7 @@ It was created for hope that it could helps in the future our government create 
 
 ## Installation
 
-For setting up the project you have to download data base file from [here](https://github.com/CorruptRegistryProject/CorruptRegisterDataBase){:target="_blank"} and include Tomcat to your project and select path to tomcat folder if it will be neccessary.
+For setting up the project you have to download data base file from [here](https://github.com/CorruptRegistryProject/CorruptRegisterDataBase) and include Tomcat to your project and select path to tomcat folder if it will be neccessary.
 
 ## Contributors
 - [Dmytro Lysogor](http://vk.com/uponthisdawn)
@@ -128,11 +128,11 @@ For setting up the project you have to download data base file from [here](https
 There is no license...
 
 ##Techologies which were used for creating project
-- [Spring Framework](https://projects.spring.io/spring-framework/){:target="_blank"}
-- [MySQL Data Base](https://www.mysql.com/){:target="_blank"}
-- [Bootstrap](http://getbootstrap.com/){:target="_blank"}
-- [Hybernate](http://hibernate.org/){:target="_blank"}
-- [Tomcat Apache Server](http://tomcat.apache.org/){:target="_blank"}
+- [Spring Framework](https://projects.spring.io/spring-framework/)
+- [MySQL Data Base](https://www.mysql.com/)
+- [Bootstrap](http://getbootstrap.com/)
+- [Hybernate](http://hibernate.org/)
+- [Tomcat Apache Server](http://tomcat.apache.org/)
 
 
 
