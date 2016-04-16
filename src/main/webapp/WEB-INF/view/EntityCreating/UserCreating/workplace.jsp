@@ -8,7 +8,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>AdminPage</title>
+    <title>Робота</title>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
@@ -73,12 +73,21 @@
     </div>
 
     <div style="text-align:center;">
-        <button class="myButton" type="submit">
-            ADD USER
-        </button>
-
+        <div class="btn-group">
+            <button class="myButton" type="submit">
+                Додати правопорушника
+            </button>
+        </div>
     </div>
 
 </Form:form>
+<br>
+<div style="text-align:center;">
+    <form:form action="/admin/user/add/step/from5to4" method="get">
+        <button class="myButton" type="submit">
+            Назад
+        </button>
+    </form:form>
+</div>
 </body>
 </html>

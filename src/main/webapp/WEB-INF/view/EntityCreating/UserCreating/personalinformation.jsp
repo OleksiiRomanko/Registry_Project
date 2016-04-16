@@ -7,7 +7,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>AdminPage</title>
+    <title>Персональна інформація</title>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
@@ -66,14 +66,23 @@
     </div>
 
     <div style="text-align:center;">
-        <button class="myButton" type="submit">
-            NEXT
-        </button>
+            <button class="myButton" type="submit">
+                Далі
+            </button>
 
     </div>
 
 </form:form>
 
+<br>
+
+<div style="text-align:center;">
+        <form:form action="/admin/user/add/step/from1to0" method="get">
+            <button class="myButton" type="submit">
+                Назад до кабінету
+            </button>
+        </form:form>
+</div>
 
 </body>
 </html>

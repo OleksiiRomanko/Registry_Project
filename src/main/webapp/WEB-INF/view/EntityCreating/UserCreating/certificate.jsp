@@ -7,7 +7,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>AdminPage</title>
+    <title>Свідоцтво про народження</title>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
@@ -43,14 +43,14 @@
                 <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
             </div>
             <div class="input-group">
-                <form:errors path="birthDate" cssClass="error" />
+                <form:errors path="birthDate" cssClass="error"/>
             </div>
             <br>
             <div class="input-group">
                 <form:input type="text" path="bitrhPlace" class="form-control" placeholder="Місце народження"/>
             </div>
             <div class="input-group">
-                <form:errors path="bitrhPlace" cssClass="error" />
+                <form:errors path="bitrhPlace" cssClass="error"/>
             </div>
             <br>
         </div>
@@ -58,14 +58,24 @@
 
     </div>
 
-    <div style="text-align:center;">
-        <button class="myButton" type="submit">
-            NEXT
-        </button>
 
+    <div style="text-align:center;">
+        <div class="btn-group">
+            <button class="myButton" type="submit">
+                Далі
+            </button>
+        </div>
     </div>
 
 </form:form>
+<br>
+<div style="text-align:center;">
+    <form:form action="/admin/user/add/step/from3to2" method="get">
+        <button class="myButton" type="submit">
+            Назад
+        </button>
+    </form:form>
+</div>
 
 
 </body>

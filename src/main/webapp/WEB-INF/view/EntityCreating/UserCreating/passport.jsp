@@ -8,7 +8,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>AdminPage</title>
+    <title>Паспорт</title>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
@@ -40,64 +40,74 @@
 
 
     <form:form method="post" modelAttribute="PassportsEntity" action="/admin/user/add/step/3">
-        <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
-            <div class="input-group">
-                <form:input type="text" path="series" class="form-control" placeholder="Серія"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="series" cssClass="error" />
-            </div>
-            <br>
-            <div class="input-group">
-                <form:input type="text" path="number" class="form-control" placeholder="Номер"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="number" cssClass="error" />
-            </div>
-            <br>
-            <div class="input-group">
-                <form:input type="date" path="date" class="form-control" placeholder="Дата видачі"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="date" cssClass="error" />
-            </div>
-            <br>
-            <div class="input-group">
-                <form:input type="text" path="author" class="form-control" placeholder="Ким виданий"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="author" cssClass="error" />
-            </div>
-            <br>
-            <div class="input-group">
-                <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="birthDate" cssClass="error" />
-            </div>
-            <br>
-            <div class="input-group">
-                <form:input type="text" path="birthPlace" class="form-control" placeholder="Місце народження"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="birthPlace" cssClass="error" />
-            </div>
-            <br>
+    <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
+        <div class="input-group">
+            <form:input type="text" path="series" class="form-control" placeholder="Серія"/>
         </div>
-
-
-    </div>
-
-
-    <div style="text-align: center">
+        <div class="input-group">
+            <form:errors path="series" cssClass="error"/>
+        </div>
         <br>
-        <button class="myButton" type="submit">
-            NEXT
-        </button>
-
+        <div class="input-group">
+            <form:input type="text" path="number" class="form-control" placeholder="Номер"/>
+        </div>
+        <div class="input-group">
+            <form:errors path="number" cssClass="error"/>
+        </div>
+        <br>
+        <div class="input-group">
+            <form:input type="date" path="date" class="form-control" placeholder="Дата видачі"/>
+        </div>
+        <div class="input-group">
+            <form:errors path="date" cssClass="error"/>
+        </div>
+        <br>
+        <div class="input-group">
+            <form:input type="text" path="author" class="form-control" placeholder="Ким виданий"/>
+        </div>
+        <div class="input-group">
+            <form:errors path="author" cssClass="error"/>
+        </div>
+        <br>
+        <div class="input-group">
+            <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
+        </div>
+        <div class="input-group">
+            <form:errors path="birthDate" cssClass="error"/>
+        </div>
+        <br>
+        <div class="input-group">
+            <form:input type="text" path="birthPlace" class="form-control" placeholder="Місце народження"/>
+        </div>
+        <div class="input-group">
+            <form:errors path="birthPlace" cssClass="error"/>
+        </div>
+        <br>
     </div>
+
+
+</div>
+
+
+<div style="text-align:center;">
+    <div class="btn-group">
+        <button class="myButton" type="submit">
+            Далі
+        </button>
+    </div>
+</div>
 
 </form:form>
+
+<br>
+
+<div style="text-align:center;">
+    <form:form action="/admin/user/add/step/from2to1" method="get">
+        <button class="myButton" type="submit">
+            Назад
+        </button>
+    </form:form>
+</div>
 
 
 </body>

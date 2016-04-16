@@ -34,7 +34,7 @@
 <br>
 <div style="text-align: center">
     <h1>
-        Додати новий кримінальний акт
+        Редагування персональних даних
     </h1>
     <br>
     <br>
@@ -46,8 +46,8 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
-            <h2 style="text-align: center">Будь ласка, виберіть із бази даних статтю із закону,
-                до якої відноситься створюваний
+            <h2 style="text-align: center">Будь ласка, виберіть із бази даних людину,
+                до якої причетний створюваний
                 кримінальний акт
             </h2>
             <br>
@@ -57,39 +57,67 @@
                 <thead>
                 <tr>
                     <th>No</th>
-                    <th>Номер статті</th>
-                    <th>Опис</th>
+                    <th>Прізвище</th>
+                    <th>Ім'я</th>
+                    <th>По батькові</th>
+                    <th>Серія</th>
+                    <th>Номер паспорта</th>
+                    <th style="width: 6%"></th>
                     <th style="width: 6%"></th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
-                    <td>69</td>
-                    <td>Про 1</td>
+                    <td>Ратошнюк</td>
+                    <td>Максим</td>
+                    <td>Юрійович</td>
+                    <td>ВН</td>
+                    <td>602507</td>
                     <td>
                         <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                            Обрати
+                            Редагувати
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
+                            Видалити
                         </button>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>14</td>
-                    <td>Про 2</td>
+                    <td>Лисогор</td>
+                    <td>Дмитро</td>
+                    <td>Юрійович</td>
+                    <td>ВК</td>
+                    <td>122054</td>
                     <td>
                         <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                            Обрати
+                            Редагувати
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
+                            Видалити
                         </button>
                     </td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>88</td>
-                    <td>Про 3</td>
+                    <td>Чепурний</td>
+                    <td>Олександр</td>
+                    <td>Дмитрович</td>
+                    <td>КП</td>
+                    <td>422016</td>
                     <td>
                         <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                            Обрати
+                            Редагувати
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
+                            Видалити
                         </button>
                     </td>
                 </tr>

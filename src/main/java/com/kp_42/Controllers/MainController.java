@@ -42,12 +42,6 @@ public class MainController {
     }
 
 
-
-
-
-    //
-
-
     @RequestMapping(value = {"createact"},method = RequestMethod.GET )
     public String createact(ModelAndView mav){
 
@@ -70,6 +64,22 @@ public class MainController {
 
         return "EntityCreating/ActCreating/selectuser";
     }
+
+
+    //editing entities
+    @RequestMapping(value = {"selectforedit"},method = RequestMethod.GET )
+    public String selectforedit(ModelAndView mav){
+
+        return "EntityEditing/UserEditing/selectforedit";
+    }
+
+
+    @RequestMapping(value = {"findforedit"},method = RequestMethod.GET )
+    public String findforedit(ModelAndView mav){
+
+        return "EntityEditing/UserEditing/findforedit";
+    }
+
 
 
 }

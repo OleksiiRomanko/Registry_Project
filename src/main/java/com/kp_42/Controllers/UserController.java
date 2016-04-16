@@ -52,10 +52,22 @@ public class UserController {
         return "EntityCreating/UserCreating/personalinformation";
     }
 
+    //backward mapping
+    @RequestMapping(value = "/add/step/from1to0",method = RequestMethod.GET)
+    public String backToAdmin(ModelMap map){
+        return "redirect:/admin";
+    }
+
     @RequestMapping(value = "/add/step/2", method = RequestMethod.POST)
     public String createPassport(@Valid @ModelAttribute("UsersEntity") UsersEntity user, BindingResult result){
         if(result.hasErrors())return "EntityCreating/UserCreating/personalinformation";
         return "EntityCreating/UserCreating/passport";
+    }
+
+    //backward mapping
+    @RequestMapping(value = "/add/step/from2to1",method = RequestMethod.GET)
+    public String backToPersonalInfo(ModelMap map){
+        return "EntityCreating/UserCreating/personalinformation";
     }
 
     @RequestMapping(value = "/add/step/3", method = RequestMethod.POST)
@@ -64,6 +76,12 @@ public class UserController {
                                     BindingResult result){
         if(result.hasErrors())return "EntityCreating/UserCreating/passport";
         return "EntityCreating/UserCreating/certificate";
+    }
+
+    //backward mapping
+    @RequestMapping(value = "/add/step/from3to2",method = RequestMethod.GET)
+    public String backToPassport(ModelMap map){
+        return "EntityCreating/UserCreating/passport";
     }
 
     @RequestMapping(value = "/add/step/4", method = RequestMethod.POST)
@@ -75,6 +93,12 @@ public class UserController {
         if(result.hasErrors())return "EntityCreating/UserCreating/certificate";
         return "EntityCreating/UserCreating/livingplace";
 
+    }
+
+    //backward mapping
+    @RequestMapping(value = "/add/step/from4to3",method = RequestMethod.GET)
+    public String backToCertificate(ModelMap map){
+        return "EntityCreating/UserCreating/certificate";
     }
 
     @RequestMapping(value = "/add/step/5", method = RequestMethod.POST)
@@ -90,6 +114,11 @@ public class UserController {
     }
 
 
+    //backward mapping
+    @RequestMapping(value = "/add/step/from5to4",method = RequestMethod.GET)
+    public String backToWorkPlace(ModelMap map){
+        return "EntityCreating/UserCreating/workplace";
+    }
 
     @RequestMapping(value = "/add/step/6", method = RequestMethod.POST)
     public String createUser(@ModelAttribute("UsersEntity") UsersEntity user,
@@ -112,6 +141,7 @@ public class UserController {
 
         return "redirect:/admin";
     }
+
 
 
 
