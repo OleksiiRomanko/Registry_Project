@@ -8,65 +8,62 @@ This is shortcut example of using Spring Security in the project which provide a
 
 [security.xml](https://github.com/CorruptRegistryProject/Registry_Project/blob/master/src/main/resources/spring/security.xml)
 
-<http auto-config="true" >
-        <intercept-url pattern="/" access="permitAll" />
-        <intercept-url pattern="/admin**" access="hasRole('ADMIN')" />
-        <intercept-url pattern="/admin/**" access="hasRole('ADMIN')" />
+        <http auto-config="true" >
+                <intercept-url pattern="/" access="permitAll" />
+                <intercept-url pattern="/admin**" access="hasRole('ADMIN')" />
+                <intercept-url pattern="/admin/**" access="hasRole('ADMIN')" />
 
-        <form-login
-                login-page="/login"
-                default-target-url="/admin"
-                authentication-failure-url="/login?retry"
-                username-parameter="j_username"
-                password-parameter="j_password" />
+                <form-login
+                        login-page="/login"
+                        default-target-url="/admin"
+                        authentication-failure-url="/login?retry"
+                        username-parameter="j_username"
+                        password-parameter="j_password" />
 
-        <logout logout-url="/logout" logout-success-url="/" />
-        <csrf disabled="true"/>
+                <logout logout-url="/logout" logout-success-url="/" />
+                <csrf disabled="true"/>
 
-    </http>
+        </http>
 
-    <authentication-manager >
-        <authentication-provider>
-            <user-service>
-                <user name="yourLogin" password="yourPassword" authorities="ROLE_ADMIN" />
-            </user-service>
-        </authentication-provider>
-    </authentication-manager>
+        <authentication-manager >
+                <authentication-provider>
+                        <user-service>
+                                <user name="yourLogin" password="yourPassword" authorities="ROLE_ADMIN" />
+                        </user-service>
+                </authentication-provider>
+        </authentication-manager>
     
 [AdminController.java]()
 
-@Controller
-@RequestMapping("/admin")
-public class AdminController {
+        @Controller
+        @RequestMapping("/admin")
+        public class AdminController {
+                @RequestMapping("")
+                public String adminpage(ModelAndView mav){
+                   return "adminpage";
+                }
 
-
-    @RequestMapping("")
-    public String adminpage(ModelAndView mav){
-
-        return "adminpage";
-    }
-
-}
+        }
 
 [loginpage.jsp]()
 
-<html>
-  <head></head>
-  <body>
-    <% String error = (String) request.getAttribute("error"); %>
-    <div class="col-lg-12 col-lg-offset-4">
-      <div class="modal-body" style="width: 33%;">
-         <spring:url value="/login" var="loginUrl"/>
-          <form:form role="form" action="${loginUrl}" method="post">
-              <h3 style="text-align: center">
-                  Будь ласка, введіть коректні дані для доступу до бази даних:
-              </h3>
-              <div class="form-group">
-                  <div class="input-group">
-                      <input type="text" class="form-control" id="j_username" name="j_username" placeholder="Login">
+        <html>
+        <head></head>
+        <body>
+                <% String error = (String) request.getAttribute("error"); %>
+                <div class="col-lg-12 col-lg-offset-4">
+                        <div class="modal-body" style="width: 33%;">
+                                <spring:url value="/login" var="loginUrl"/>
+                                <form:form role="form" action="${loginUrl}" method="post">
+                                <h3 style="text-align: center">
+                                        Будь ласка, введіть коректні дані для доступу до бази даних:
+                                </h3>
+                        <div class="form-group">
+                        <div class="input-group">
+                                <input type="text" class="form-control" id="j_username" name="j_username" placeholder="Login">
                       <label for="j_username" class="input-group-addon glyphicon glyphicon-user"></label>
-                  </div>
-              </div>
+                         </div>
+                        </div>
               <!-- /.form-group -->
 
               <div class="form-group">
@@ -92,23 +89,23 @@ public class AdminController {
 
           </form:form>
 
-      </div> <!-- /.modal-body -->
-</div>
-<div>
-    <%
+        </div> <!-- /.modal-body -->
+        </div>
+        <div>
+         <%
         if (error != null) {
-    %>
+        %>
         <div class="col-lg-12 col-lg-offset-4" style="width: 33%;">
             <h4 style="background: #f2dede">
                 <%=error%>
             </h4>
         </div>
-    <%
-        }
-    %>
-</div>
-</body>
-</html>
+        <%
+                }
+         %>
+        </div>
+        </body>
+        </html>
 
 
 ## Motivation
