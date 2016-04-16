@@ -1470,7 +1470,7 @@
       <workItem from="1460711445701" duration="2308000" />
       <workItem from="1460735458441" duration="341000" />
       <workItem from="1460738732045" duration="255000" />
-      <workItem from="1460784622549" duration="3652000" />
+      <workItem from="1460784622549" duration="3769000" />
     </task>
     <task id="LOCAL-00001" summary="were added Data Base to main project and created entities for tables">
       <created>1459449770787</created>
@@ -1682,7 +1682,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460790380000</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="were added back buttons while adding user to db">
+      <created>1460790404861</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1460790404861</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1718,7 +1725,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67732000" />
+    <option name="totallyTimeSpent" value="67849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
