@@ -6,7 +6,7 @@ You just have to write down Name and Sirname needed person and find out everythi
 ## Code Example
 This is shortcut example of using Spring Security in the project which provide authorization for Administrator(he has accept to Register Data Base except simple watching and searching corrupt officials and can add personals, edit their information and delete from data base if it's neccessaty. Also he can add laws and criminal acts).
 
-[security.xml](https://github.com/CorruptRegistryProject/Registry_Project/blob/master/src/main/resources/spring/security.xml)
+[security.xml](https://github.com/CorruptRegistryProject/Registry_Project/blob/master/src/main/resources/spring/security.xml@blank)
 
         <http auto-config="true" >
                 <intercept-url pattern="/" access="permitAll" />
@@ -114,7 +114,7 @@ It was created for hope that it could helps in the future our government create 
 
 ## Installation
 
-For setting up the project you have to download data base file from [here](https://github.com/CorruptRegistryProject/CorruptRegisterDataBase) and include Tomcat to your project and select path to tomcat folder if it will be neccessary.
+For setting up the project you have to download data base file from [here](https://github.com/CorruptRegistryProject/CorruptRegisterDataBase@blank) and include Tomcat to your project and select path to tomcat folder if it will be neccessary.
 
 ## Contributors
 
@@ -124,16 +124,16 @@ Let people know how they can dive into the project, include important links to t
 There is no license...
 
 ##Techologies which were used for creating project
-- [Spring Framework](https://projects.spring.io/spring-framework/)
-- [MySQL Data Base](https://www.mysql.com/)
-- [Bootstrap](http://getbootstrap.com/)
-- [Hybernate](http://hibernate.org/)
-- [Tomcat Apache Server](http://tomcat.apache.org/)
+- [Spring Framework](https://projects.spring.io/spring-framework/@blank)
+- [MySQL Data Base](https://www.mysql.com/@blank)
+- [Bootstrap](http://getbootstrap.com/@blank)
+- [Hybernate](http://hibernate.org/@blank)
+- [Tomcat Apache Server](http://tomcat.apache.org/@blank)
 
 ## Creators
-- [Oleksandr Chepurnyu](http://vk.com/granium)
-- [Maksym Ratoshniuk](http://vk.com/maxym6969)
-- [Dmytro Lysogor](http://vk.com/uponthisdawn)
+- [Oleksandr Chepurnyu](http://vk.com/granium@blank)
+- [Maksym Ratoshniuk](http://vk.com/maxym6969@blank)
+- [Dmytro Lysogor](http://vk.com/uponthisdawn@blank)
 
 
 
