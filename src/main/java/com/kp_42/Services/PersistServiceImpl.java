@@ -72,4 +72,9 @@ public class PersistServiceImpl implements IPersistService {
     public ExtractionEntity save(ExtractionEntity extractionEntity) {
         return extractionRepository.saveAndFlush(extractionEntity);
     }
+
+    @Override
+    public LawEntity save(LawEntity lawEntity) {
+        return lawRepository.save(lawEntity);
+    }
 }

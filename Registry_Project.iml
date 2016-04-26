@@ -28,8 +28,8 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="NewPersistenceUnit" value="e05a8d65-99b6-479e-81f2-16a3b657cb84" />
-          <factory-entry name="entityManagerFactory" value="e05a8d65-99b6-479e-81f2-16a3b657cb84" />
+          <factory-entry name="NewPersistenceUnit" value="7a3847bc-682c-433a-9c0a-76062ec93077" />
+          <factory-entry name="entityManagerFactory" value="7a3847bc-682c-433a-9c0a-76062ec93077" />
         </datasource-mapping>
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/src/main/resources/persistence.xml" />
       </configuration>

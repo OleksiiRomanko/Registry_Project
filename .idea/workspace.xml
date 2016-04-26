@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a1ccb56-8781-4c8b-a4cd-892c733e6db3" name="Default" comment="Minor fixes&#10;">
+    <list default="true" id="3a1ccb56-8781-4c8b-a4cd-892c733e6db3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/ISearchService.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/ISearchService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/UsersRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/UsersRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/root-context.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/root-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/security.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/security.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/view-resolver.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/view-resolver.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/workplace.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/workplace.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/RawTests/UsersTest.java" afterPath="$PROJECT_DIR$/src/test/java/RawTests/UsersTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/Utility/TestUtility.java" afterPath="$PROJECT_DIR$/src/test/java/Utility/TestUtility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Registry_Project.iml" afterPath="$PROJECT_DIR$/Registry_Project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IPersistService.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IPersistService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Registry/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Registry/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Registry/WEB-INF/classes/spring/root-context.xml" afterPath="$PROJECT_DIR$/target/Registry/WEB-INF/classes/spring/root-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Registry/WEB-INF/classes/spring/view-resolver.xml" afterPath="$PROJECT_DIR$/target/Registry/WEB-INF/classes/spring/view-resolver.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/root-context.xml" afterPath="$PROJECT_DIR$/target/classes/spring/root-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/view-resolver.xml" afterPath="$PROJECT_DIR$/target/classes/spring/view-resolver.xml" />
     </list>
     <ignored path="Registry.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,6 +41,20 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - mydb@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="Law" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -67,48 +62,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ActController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6792453">
-              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-              <folding>
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1181#1182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SearchServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding>
-                <element signature="e#1898#1899#0" expanded="true" />
-                <element signature="e#1959#1960#0" expanded="true" />
-                <element signature="e#2208#2209#0" expanded="true" />
-                <element signature="e#2261#2262#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectuser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.346153">
-              <caret line="83" column="95" selection-start-line="83" selection-start-column="95" selection-end-line="83" selection-end-column="95" />
+            <state relative-caret-position="466">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mydb.users" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/1fd9aa1d/e05a8d65-99b6-479e-81f2-16a3b657cb84/mydb.users">
+      <file leaf-file-name="PersistServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VisitorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainpage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LawController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1080">
+              <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mydb.Users" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/26fba3b6/7a3847bc-682c-433a-9c0a-76062ec93077/mydb.Users">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -120,66 +137,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finduser.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp">
+      <file leaf-file-name="IPersistService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IPersistService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.423077">
-              <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+            <state relative-caret-position="60">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java">
+      <file leaf-file-name="IDeleteService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IDeleteService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
-              <folding>
-                <element signature="method#createPassport#0;class#UserController#0" expanded="false" />
-                <element signature="method#createCertificate#0;class#UserController#0" expanded="false" />
-                <element signature="method#createLivingPlace#0;class#UserController#0" expanded="false" />
-                <element signature="method#createWorkplace#0;class#UserController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/UsersEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state relative-caret-position="105">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PassportsEntity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java">
+      <file leaf-file-name="ISearchService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/ISearchService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="certificate.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.346153">
-              <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectlaw.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -190,11 +172,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="HTML File" />
         <option value="Jsp File" />
         <option value="Class" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -210,59 +192,62 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Services/DeleteServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Services/AddServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IAddService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IPersistService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RawTests/CriminalActTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RawTests/ExtractionTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Hello.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/view-resolver.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/Hello.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/js/admin.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/button.css.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/HelloWorldController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/GlobalDefaultExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/kekis.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unauthorized.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/UserCreating/personalinformation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/UserCreating/passport.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/UserCreating/certificate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/UserCreating/livingplace.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/UserCreating/workplace.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/text_styles.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/personalinformation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/UsersEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/LivingPlaceEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/WorkplaceEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/WorktitleEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/BirthCertificateEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/workplace.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/personalinformation.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/passport.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/livingplace.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/certificate.jsp" />
+        <option value="$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/login.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/search.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/law.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/act.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/chooselaw.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/chooseuser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/button.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/addlaw.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/LawEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginpage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/root-context.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/security.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/ActEditing/editact.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/UserEditing/findforedit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/searchresult.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/UserEditing/selectforedit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating/addlaw.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginpage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/security.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/root-context.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Utility/TestUtility.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RawTests/UsersTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/view-resolver.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/personalinformation.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/workplace.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/UsersRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/createact.jsp" />
+        <option value="dbtable:/26fba3b6/e05a8d65-99b6-479e-81f2-16a3b657cb84/mydb.Law" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java" />
       </list>
     </option>
+  </component>
+  <component name="JavaeeView">
+    <option name="frameworksView" value="false" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -289,10 +274,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -301,7 +285,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -352,70 +336,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utility" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registry_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UnitTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registry_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RawTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -503,45 +423,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EntityCreating" />
+              <option name="myItemId" value="EntityEditing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UserCreating" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registry" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Registry_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EntityCreating" />
+              <option name="myItemId" value="UserEditing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -575,11 +461,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EntityCreating" />
+              <option name="myItemId" value="EntityEditing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ActCreating" />
+              <option name="myItemId" value="ActEditing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,14 +488,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -718,10 +596,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repositories" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -835,28 +709,29 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="JPA.DatabaseSchemaImportDialog" value="7e49b780-9952-420c-a0f0-8496110e5cb8" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="7e49b780-9952-420c-a0f0-8496110e5cb8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="ImportMappingsDialog.RecentPackages">
-      <recent name="model" />
-      <recent name="models.tmp" />
+      <recent name="models" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GitRepos\Registry_Project\src\main\webapp\WEB-INF\view\UserCreating" />
-      <recent name="E:\GitRepos\Registry_Project\src\main\webapp\WEB-INF\view" />
-      <recent name="E:\GitRepos\Registry_Project\src\main\resources" />
-      <recent name="E:\GitRepos\Registry_Project\src\main\webapp" />
-      <recent name="E:\GitRepos\Registry_Project\src\main\webapp\WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/bootstrap" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -873,26 +748,31 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/MainController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/ISearchService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/UsersRepository.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/root-context.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/createact.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/security.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/resources/spring/view-resolver.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating/addlaw.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/personalinformation.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/workplace.jsp</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/RawTests/UsersTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/test/java/Utility/TestUtility.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Registry/META-INF/MANIFEST.MF</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Registry/WEB-INF/classes/spring/root-context.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/Registry/WEB-INF/classes/spring/view-resolver.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/root-context.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/target/classes/spring/view-resolver.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -900,13 +780,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/ActEditing/editact.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/UserEditing/findforedit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/UserEditing/selectforedit.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/searchresult.css</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -996,15 +869,15 @@
     </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
-    <configuration default="false" name="UsersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CriminalActTest.complexTestOfCreatingCriminalAct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Registry_Project" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="RawTests" />
-      <option name="MAIN_CLASS_NAME" value="RawTests.UsersTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CriminalActTest" />
+      <option name="METHOD_NAME" value="complexTestOfCreatingCriminalAct" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -1017,14 +890,56 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="UsersTest.OrphanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="UsersTest.complexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Registry_Project" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="RawTests" />
-      <option name="MAIN_CLASS_NAME" value="RawTests.UsersTest" />
-      <option name="METHOD_NAME" value="OrphanTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UsersTest" />
+      <option name="METHOD_NAME" value="complexTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CriminalActTest.createAndDeleteCriminalAct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Registry_Project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CriminalActTest" />
+      <option name="METHOD_NAME" value="createAndDeleteCriminalAct" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ServicesTests.AddAndDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Registry_Project" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ServicesTests" />
+      <option name="METHOD_NAME" value="AddAndDeleteUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1044,59 +959,12 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="UsersTest.CreateUserAndDeleteByPassportRef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Registry_Project" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="RawTests" />
-      <option name="MAIN_CLASS_NAME" value="RawTests.UsersTest" />
-      <option name="METHOD_NAME" value="CreateUserAndDeleteByPassportRef" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ServicesTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="UnitTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Registry_Project" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="UnitTests" />
-      <option name="MAIN_CLASS_NAME" value="UnitTests.ServicesTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -1125,31 +993,21 @@
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -1159,27 +1017,15 @@
       <option name="METHOD_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
       <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
-      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
-      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
-      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
-      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
-      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -1203,65 +1049,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
@@ -1349,13 +1136,12 @@
       <method />
     </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
       <setting name="vmparams" value="" />
       <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
       <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1437,42 +1223,24 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -1537,7 +1305,21 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -1548,6 +1330,7 @@
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run-script" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -1557,23 +1340,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.27" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Registry_Project:war exploded">
@@ -1647,28 +1414,25 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.UsersTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.UsersTest.OrphanTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.All in Registry_Project" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.UsersTest.CreateUserAndDeleteByPassportRef" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ServicesTests" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CriminalActTest.complexTestOfCreatingCriminalAct" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UsersTest.complexTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CriminalActTest.createAndDeleteCriminalAct" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddAndDeleteUser" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in Registry_Project" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in Registry_Project" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ServicesTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UsersTest.CreateUserAndDeleteByPassportRef" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UsersTest.OrphanTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.UsersTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddAndDeleteUser" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CriminalActTest.createAndDeleteCriminalAct" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CriminalActTest.complexTestOfCreatingCriminalAct" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UsersTest.complexTest" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -1677,201 +1441,418 @@
       <changelist id="3a1ccb56-8781-4c8b-a4cd-892c733e6db3" name="Default" comment="" />
       <created>1457195621220</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1457195621220</updated>
       <workItem from="1457195624445" duration="1752000" />
-      <workItem from="1460559210991" duration="55793000" />
-      <workItem from="1460728517266" duration="92000" />
-      <workItem from="1461697267875" duration="7501000" />
+      <workItem from="1459448721749" duration="1968000" />
+      <workItem from="1459509312524" duration="181000" />
+      <workItem from="1459708836898" duration="5779000" />
+      <workItem from="1460495138265" duration="643000" />
+      <workItem from="1460559083838" duration="394000" />
+      <workItem from="1460559788570" duration="947000" />
+      <workItem from="1460565576762" duration="73000" />
+      <workItem from="1460565909462" duration="754000" />
+      <workItem from="1460567161739" duration="11815000" />
+      <workItem from="1460616591068" duration="284000" />
+      <workItem from="1460619408657" duration="199000" />
+      <workItem from="1460619636327" duration="54000" />
+      <workItem from="1460619796997" duration="182000" />
+      <workItem from="1460624492362" duration="18141000" />
+      <workItem from="1460649326290" duration="3195000" />
+      <workItem from="1460655973585" duration="9086000" />
+      <workItem from="1460666873833" duration="1403000" />
+      <workItem from="1460669316681" duration="90000" />
+      <workItem from="1460669610677" duration="2758000" />
+      <workItem from="1460705731732" duration="1478000" />
+      <workItem from="1460711445701" duration="2308000" />
+      <workItem from="1460735458441" duration="341000" />
+      <workItem from="1460738732045" duration="255000" />
+      <workItem from="1460784622549" duration="13769000" />
+      <workItem from="1460814474914" duration="27000" />
+      <workItem from="1460816618663" duration="52000" />
+      <workItem from="1460822952394" duration="940000" />
+      <workItem from="1461702878788" duration="1040000" />
+      <workItem from="1461710143893" duration="471000" />
     </task>
-    <task id="LOCAL-00001" summary="Setuped project">
-      <created>1460564310685</created>
+    <task id="LOCAL-00001" summary="were added Data Base to main project and created entities for tables">
+      <created>1459449770787</created>
       <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1460564310685</updated>
+      <updated>1459449770787</updated>
     </task>
-    <task id="LOCAL-00002" summary="Dates fix&#10;">
-      <created>1460567128315</created>
+    <task id="LOCAL-00002" summary="were added entity repositories&#10;">
+      <created>1459451071142</created>
       <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1460567128315</updated>
+      <updated>1459451071142</updated>
     </task>
-    <task id="LOCAL-00003" summary="Dates fix&#10;">
-      <created>1460567168346</created>
+    <task id="LOCAL-00003" summary="were added entity repositories&#10;">
+      <created>1460559365204</created>
       <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1460567168346</updated>
+      <updated>1460559365204</updated>
     </task>
-    <task id="LOCAL-00004" summary="Dates fix&#10;">
-      <created>1460567451873</created>
+    <task id="LOCAL-00004" summary="were added entity repositories&#10;">
+      <created>1460568553059</created>
       <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1460567451873</updated>
+      <updated>1460568553059</updated>
     </task>
-    <task id="LOCAL-00005" summary="User tests">
-      <created>1460571488001</created>
+    <task id="LOCAL-00005" summary="Added criminalActTest">
+      <created>1460575105855</created>
       <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1460571488002</updated>
+      <updated>1460575105855</updated>
     </task>
-    <task id="LOCAL-00006" summary="Cascades update">
-      <created>1460574737415</created>
+    <task id="LOCAL-00006" summary="Added criminalActTest">
+      <created>1460575178224</created>
       <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1460574737415</updated>
+      <updated>1460575178224</updated>
     </task>
-    <task id="LOCAL-00007" summary="User tests done">
-      <created>1460575365817</created>
+    <task id="LOCAL-00007" summary="Act test passed">
+      <created>1460578596222</created>
       <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1460575365817</updated>
+      <updated>1460578596222</updated>
     </task>
-    <task id="LOCAL-00008" summary="Many to many mapping">
-      <created>1460579618981</created>
+    <task id="LOCAL-00008" summary="Criminal Act test successfully passed!">
+      <created>1460581157458</created>
       <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1460579618981</updated>
+      <updated>1460581157458</updated>
     </task>
-    <task id="LOCAL-00009" summary="Delete Service">
-      <created>1460583185266</created>
+    <task id="LOCAL-00009" summary="Criminal Act test successfully passed!">
+      <created>1460581351019</created>
       <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1460583185266</updated>
+      <updated>1460581351020</updated>
     </task>
-    <task id="LOCAL-00010" summary="Orphan test(All tests working)">
-      <created>1460585302008</created>
+    <task id="LOCAL-00010" summary="Adding Service">
+      <created>1460583257485</created>
       <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1460585302008</updated>
+      <updated>1460583257485</updated>
     </task>
-    <task id="LOCAL-00011" summary="Updates tests">
-      <created>1460625677747</created>
+    <task id="LOCAL-00011" summary="Services Tests successful">
+      <created>1460584467255</created>
       <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1460625677747</updated>
+      <updated>1460584467255</updated>
     </task>
-    <task id="LOCAL-00012" summary="Updates tests">
-      <created>1460625713711</created>
+    <task id="LOCAL-00012" summary="Services Tests successful">
+      <created>1460619961479</created>
       <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1460625713711</updated>
+      <updated>1460619961479</updated>
     </task>
-    <task id="LOCAL-00013" summary="Added services for searching,persisting and deletion. Structured tests.">
-      <created>1460628211463</created>
+    <task id="LOCAL-00013" summary="Added bootstrap files">
+      <created>1460628317046</created>
       <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1460628211463</updated>
+      <updated>1460628317046</updated>
     </task>
-    <task id="LOCAL-00014" summary="First small test">
-      <created>1460629211665</created>
+    <task id="LOCAL-00014" summary="Added bootstrap files">
+      <created>1460628369915</created>
       <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1460629211665</updated>
+      <updated>1460628369915</updated>
     </task>
-    <task id="LOCAL-00015" summary="Error handling class">
-      <created>1460631167373</created>
+    <task id="LOCAL-00015" summary="Added html pages">
+      <created>1460632661769</created>
       <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1460631167373</updated>
+      <updated>1460632661769</updated>
     </task>
-    <task id="LOCAL-00016" summary="Error handling class">
-      <created>1460633266880</created>
+    <task id="LOCAL-00016" summary="Added html pages">
+      <created>1460632704340</created>
       <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
       <option name="project" value="LOCAL" />
-      <updated>1460633266880</updated>
+      <updated>1460632704340</updated>
     </task>
-    <task id="LOCAL-00017" summary="Spring security configuration done for admin panel.&#10;">
-      <created>1460646193381</created>
+    <task id="LOCAL-00017" summary="Added html pages">
+      <created>1460634500570</created>
       <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
       <option name="project" value="LOCAL" />
-      <updated>1460646193381</updated>
+      <updated>1460634500570</updated>
     </task>
-    <task id="LOCAL-00018" summary="User adding cycle fully working. Added validation and error messages for user and related entities when adding User from admin panel.">
-      <created>1460678310530</created>
+    <task id="LOCAL-00018" summary="modified adminpage.html">
+      <created>1460637640017</created>
       <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
       <option name="project" value="LOCAL" />
-      <updated>1460678310530</updated>
+      <updated>1460637640017</updated>
     </task>
-    <task id="LOCAL-00019" summary="Minor fixes&#10;">
-      <created>1460711198165</created>
+    <task id="LOCAL-00019" summary="modified personalinformation.html">
+      <created>1460639612533</created>
       <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1460711198165</updated>
+      <updated>1460639612533</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary=".html was updated">
+      <created>1460643139461</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1460643139461</updated>
+    </task>
+    <task id="LOCAL-00021" summary=".html was updated">
+      <created>1460643627231</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1460643627231</updated>
+    </task>
+    <task id="LOCAL-00022" summary="log in page was modified">
+      <created>1460652561803</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1460652561803</updated>
+    </task>
+    <task id="LOCAL-00023" summary="light models update">
+      <created>1460657842309</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1460657842310</updated>
+    </task>
+    <task id="LOCAL-00024" summary="added new viewers">
+      <created>1460660598453</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1460660598453</updated>
+    </task>
+    <task id="LOCAL-00025" summary="added new viewers">
+      <created>1460660712472</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1460660712472</updated>
+    </task>
+    <task id="LOCAL-00026" summary="filled new viewers">
+      <created>1460663263622</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1460663263622</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add law controller">
+      <created>1460669366201</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1460669366201</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add law controller">
+      <created>1460704067994</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1460704067994</updated>
+    </task>
+    <task id="LOCAL-00029" summary="law controller works fine">
+      <created>1460707328090</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1460707328090</updated>
+    </task>
+    <task id="LOCAL-00030" summary="were added back buttons while adding user to db">
+      <created>1460790380000</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1460790380000</updated>
+    </task>
+    <task id="LOCAL-00031" summary="were added back buttons while adding user to db">
+      <created>1460790404861</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1460790404861</updated>
+    </task>
+    <task id="LOCAL-00032" summary="were added back buttons while adding user to db">
+      <created>1460797176262</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1460797176262</updated>
+    </task>
+    <task id="LOCAL-00033" summary="were added back buttons while adding user to db">
+      <created>1460801463778</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1460801463778</updated>
+    </task>
+    <task id="LOCAL-00034" summary="were added back buttons while adding user to db">
+      <created>1460801488582</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1460801488582</updated>
+    </task>
+    <task id="LOCAL-00035" summary="was added searching result page">
+      <created>1460803407672</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1460803407672</updated>
+    </task>
+    <task id="LOCAL-00036" summary="was added searching result page and posibillity go back">
+      <created>1460803706814</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1460803706814</updated>
+    </task>
+    <task id="LOCAL-00037" summary="was added searching result page and posibillity go back">
+      <created>1460810820505</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1460810820505</updated>
+    </task>
+    <task id="LOCAL-00038" summary="were added controllers and completed possibility to add entities to DB">
+      <created>1460814284338</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1460814284338</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Registry_Project - 2016.04.14 at 12h 45m 11s.xml">
+    <history-entry file="All_in_Registry_Project - 2016.04.14 at 01h 09m 11s.xml">
       <configuration name="All in Registry_Project" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.14 at 12h 46m 54s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="CriminalActTest_createAndDeleteCriminalAct - 2016.04.13 at 23h 57m 26s.xml">
+      <configuration name="CriminalActTest.createAndDeleteCriminalAct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.14 at 13h 02m 47s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="CriminalActTest_createAndDeleteCriminalAct - 2016.04.13 at 23h 58m 11s.xml">
+      <configuration name="CriminalActTest.createAndDeleteCriminalAct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.15 at 12h 41m 22s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="CriminalActTest_createAndDeleteCriminalAct - 2016.04.13 at 23h 58m 44s.xml">
+      <configuration name="CriminalActTest.createAndDeleteCriminalAct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.15 at 12h 44m 44s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="ServicesTests_AddAndDeleteUser - 2016.04.14 at 00h 45m 03s.xml">
+      <configuration name="ServicesTests.AddAndDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.15 at 12h 46m 55s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="ServicesTests_AddAndDeleteUser - 2016.04.14 at 00h 45m 49s.xml">
+      <configuration name="ServicesTests.AddAndDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.15 at 12h 47m 18s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="ServicesTests_AddAndDeleteUser - 2016.04.14 at 00h 46m 26s.xml">
+      <configuration name="ServicesTests.AddAndDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.15 at 12h 48m 03s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="ServicesTests_AddAndDeleteUser - 2016.04.14 at 00h 47m 58s.xml">
+      <configuration name="ServicesTests.AddAndDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Registry_Project - 2016.04.15 at 12h 52m 48s.xml">
-      <configuration name="All in Registry_Project" configurationId="JUnit" />
+    <history-entry file="ServicesTests_AddAndDeleteUser - 2016.04.14 at 00h 50m 33s.xml">
+      <configuration name="ServicesTests.AddAndDeleteUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ServicesTests - 2016.04.14 at 13h 19m 39s.xml">
-      <configuration name="ServicesTests" configurationId="JUnit" />
+    <history-entry file="ServicesTests_AddAndDeleteUser - 2016.04.14 at 00h 53m 28s.xml">
+      <configuration name="ServicesTests.AddAndDeleteUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65138000" />
+    <option name="totallyTimeSpent" value="80379000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="821" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17246597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26609442" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58919805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28120714" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30178326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.512275" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962178" sideWeight="0.48772505" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29756796" sideWeight="0.5260323" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27038628" sideWeight="0.47396767" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5057283" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3513889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36051503" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985073" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.49427754" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28194445" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30277777" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29756796" sideWeight="0.5260323" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2911302" sideWeight="0.47396767" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3513889" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1885,26 +1866,33 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Setuped project" />
-    <MESSAGE value="Dates fix&#10;" />
-    <MESSAGE value="User tests" />
-    <MESSAGE value="Cascades update" />
-    <MESSAGE value="User tests done" />
-    <MESSAGE value="Many to many mapping" />
-    <MESSAGE value="Delete Service" />
-    <MESSAGE value="Orphan test(All tests working)" />
-    <MESSAGE value="Updates tests" />
-    <MESSAGE value="Added services for searching,persisting and deletion. Structured tests." />
-    <MESSAGE value="First small test" />
-    <MESSAGE value="Error handling class" />
-    <MESSAGE value="Spring security configuration done for admin panel.&#10;" />
-    <MESSAGE value="User adding cycle fully working. Added validation and error messages for user and related entities when adding User from admin panel." />
-    <MESSAGE value="Minor fixes&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor fixes&#10;" />
+    <MESSAGE value="were added Data Base to main project and created entities for tables" />
+    <MESSAGE value="were added entity repositories&#10;" />
+    <MESSAGE value="Added criminalActTest" />
+    <MESSAGE value="Act test passed" />
+    <MESSAGE value="Criminal Act test successfully passed!" />
+    <MESSAGE value="Adding Service" />
+    <MESSAGE value="Services Tests successful" />
+    <MESSAGE value="Added bootstrap files" />
+    <MESSAGE value="Added html pages" />
+    <MESSAGE value="modified adminpage.html" />
+    <MESSAGE value="modified personalinformation.html" />
+    <MESSAGE value=".html was updated" />
+    <MESSAGE value="log in page was modified" />
+    <MESSAGE value="light models update" />
+    <MESSAGE value="added new viewers" />
+    <MESSAGE value="filled new viewers" />
+    <MESSAGE value="add law controller" />
+    <MESSAGE value="law controller works fine" />
+    <MESSAGE value="were added back buttons while adding user to db" />
+    <MESSAGE value="was added searching result page" />
+    <MESSAGE value="was added searching result page and posibillity go back" />
+    <MESSAGE value="were added controllers and completed possibility to add entities to DB" />
+    <option name="LAST_COMMIT_MESSAGE" value="were added controllers and completed possibility to add entities to DB" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1913,426 +1901,280 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/ExtractionEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7619048">
-          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="60">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/button.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="49.03846">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/text_styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/WorkplaceEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/WorktitleEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating/addlaw.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="30" column="74" selection-start-line="30" selection-start-column="74" selection-end-line="30" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.3846154">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.730769">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="98">
+          <caret line="5073" column="16" selection-start-line="5073" selection-start-column="9" selection-end-line="5073" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/GlobalDefaultExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="80" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#828#829#0" expanded="false" />
-            <element signature="e#887#888#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="22" selection-start-line="53" selection-start-column="22" selection-end-line="53" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/BirthCertificateEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/LivingPlaceEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RawTests/ExtractionTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utility/TestUtility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/CriminalActRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RawTests/CriminalActTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="-456">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="-396">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/loginpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/bootstrap/css/searchresult.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/LawCreating/addlaw.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/UserEditing/selectforedit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="226" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="244" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/unauthorized.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/resultpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="127" column="33" selection-start-line="104" selection-start-column="28" selection-end-line="127" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="1" selection-start-line="10" selection-start-column="0" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/workplace.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="45" column="92" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/personalinformation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/CriminalActEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding>
-            <element signature="e#976#977#0" expanded="false" />
-            <element signature="e#1001#1002#0" expanded="false" />
-            <element signature="e#1034#1035#0" expanded="false" />
-            <element signature="e#1062#1063#0" expanded="false" />
-            <element signature="e#1161#1162#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-            <element signature="e#1335#1336#0" expanded="false" />
-            <element signature="e#1420#1421#0" expanded="false" />
-            <element signature="e#1455#1456#0" expanded="false" />
-            <element signature="e#1511#1512#0" expanded="false" />
-            <element signature="e#1559#1560#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1677#1678#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1779#1780#0" expanded="false" />
-            <element signature="e#1866#1867#0" expanded="false" />
-            <element signature="e#1903#1904#0" expanded="false" />
-            <element signature="e#1961#1962#0" expanded="false" />
-            <element signature="e#2013#2014#0" expanded="false" />
-            <element signature="e#2096#2097#0" expanded="false" />
-            <element signature="e#2130#2131#0" expanded="false" />
-            <element signature="e#2184#2185#0" expanded="false" />
-            <element signature="e#2230#2231#0" expanded="false" />
-            <element signature="e#2340#2341#0" expanded="false" />
-            <element signature="e#2392#2393#0" expanded="false" />
-            <element signature="e#2642#2643#0" expanded="false" />
-            <element signature="e#2688#2689#0" expanded="false" />
-            <element signature="e#2947#2948#0" expanded="false" />
-            <element signature="e#2996#2997#0" expanded="false" />
-            <element signature="e#3251#3252#0" expanded="false" />
-            <element signature="e#3291#3292#0" expanded="false" />
-            <element signature="e#3357#3358#0" expanded="false" />
-            <element signature="e#3415#3416#0" expanded="false" />
-            <element signature="e#3507#3508#0" expanded="false" />
-            <element signature="e#3545#3546#0" expanded="false" />
-            <element signature="e#3607#3608#0" expanded="false" />
-            <element signature="e#3661#3662#0" expanded="false" />
-            <element signature="e#3748#3749#0" expanded="false" />
-            <element signature="e#3785#3786#0" expanded="false" />
-            <element signature="e#3843#3844#0" expanded="false" />
-            <element signature="e#3895#3896#0" expanded="false" />
-            <element signature="e#7124#7125#0" expanded="false" />
-            <element signature="e#7151#7152#0" expanded="false" />
-            <element signature="e#7196#7197#0" expanded="false" />
-            <element signature="e#7228#7229#0" expanded="false" />
-            <element signature="e#7508#7509#0" expanded="false" />
-            <element signature="e#7534#7535#0" expanded="false" />
-            <element signature="e#7581#7582#0" expanded="false" />
-            <element signature="e#7611#7612#0" expanded="false" />
-            <element signature="e#7760#7761#0" expanded="false" />
-            <element signature="e#7793#7794#0" expanded="false" />
-            <element signature="e#7855#7856#0" expanded="false" />
-            <element signature="e#7899#7900#0" expanded="false" />
-            <marker date="1460579338541" expanded="true" signature="7008:7090" placeholder="@{...}" />
-          </folding>
+        <state relative-caret-position="945">
+          <caret line="63" column="96" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="78" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="78" selection-start-line="17" selection-start-column="78" selection-end-line="17" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/createact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="119" column="10" selection-start-line="119" selection-start-column="10" selection-end-line="119" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/ActEditing/editact.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/26fba3b6/e05a8d65-99b6-479e-81f2-16a3b657cb84/mydb.LivingPlace" />
+    <entry file="dbDummy://dbtable:/26fba3b6/e05a8d65-99b6-479e-81f2-16a3b657cb84/mydb.Law" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityEditing/UserEditing/findforedit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7a3847bc-682c-433a-9c0a-76062ec93077/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/view-resolver.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.735849">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/personalinformation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/livingplace.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.615385">
-          <caret line="110" column="59" selection-start-line="110" selection-start-column="59" selection-end-line="110" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.615385">
-          <caret line="110" column="59" selection-start-line="110" selection-start-column="59" selection-end-line="110" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/workplace.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.923077">
-          <caret line="92" column="59" selection-start-line="92" selection-start-column="59" selection-end-line="92" selection-end-column="59" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/security.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.6603775">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/List.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/root-context.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
+        <state relative-caret-position="405">
+          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Override.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/DeleteServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#985#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/ISearchService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/util/stream/Stream.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/CriminalActEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="358" column="14" selection-start-line="358" selection-start-column="14" selection-end-line="358" selection-end-column="14" />
+        <state relative-caret-position="135">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/ExtractionEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="135">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/createact.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/LivingPlaceEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Repositories/UsersRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/adminpage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RawTests/UsersTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/certificate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.346153">
-          <caret line="78" column="55" selection-start-line="78" selection-start-column="55" selection-end-line="78" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/1fd9aa1d/e05a8d65-99b6-479e-81f2-16a3b657cb84/mydb.users">
+    <entry file="dbDummy://dbtable:/26fba3b6/7a3847bc-682c-433a-9c0a-76062ec93077/mydb.Law">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -2343,72 +2185,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/LawEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1959#1960#0" expanded="true" />
-            <element signature="e#2208#2209#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="990">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="405">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="115" column="44" selection-start-line="115" selection-start-column="44" selection-end-line="115" selection-end-column="44" />
-          <folding>
-            <element signature="method#createPassport#0;class#UserController#0" expanded="false" />
-            <element signature="method#createCertificate#0;class#UserController#0" expanded="false" />
-            <element signature="method#createLivingPlace#0;class#UserController#0" expanded="false" />
-            <element signature="method#createWorkplace#0;class#UserController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/finduser.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.423077">
-          <caret line="59" column="20" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
+        <state relative-caret-position="1080">
+          <caret line="73" column="34" selection-start-line="73" selection-start-column="34" selection-end-line="73" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/UsersEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IPersistService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectuser.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/IDeleteService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153">
-          <caret line="83" column="95" selection-start-line="83" selection-start-column="95" selection-end-line="83" selection-end-column="95" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/ActController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Interface/ISearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6792453">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding>
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1181#1182#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Services/PersistServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/26fba3b6/7a3847bc-682c-433a-9c0a-76062ec93077/mydb.Users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -2431,7 +2297,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>JPA (Registry_Project)|JPA</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2443,7 +2309,6 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-sdk-2.11.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2467,12 +2332,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Registry_Project</last-edited>
+          <last-edited>Spring|Registry_Project</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

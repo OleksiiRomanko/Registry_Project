@@ -20,4 +20,5 @@ public interface IPersistService {
     public List<LawEntity> save(List<LawEntity> law);
 
 
+    LawEntity save(LawEntity lawEntity);
 }
