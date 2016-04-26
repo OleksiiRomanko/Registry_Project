@@ -59,8 +59,8 @@ public class TestUtility {
         entity.setBirthDate(new Date().getTime());
         entity.setBirthPlace("Place " + SERIAL );
         entity.setDate(new Date().getTime());
-        entity.setNumber(959659656);
-        entity.setSeries("Series "+ SERIAL);
+        entity.setNumber(5454445);
+        entity.setSeries("SS");
 
         return entity;
 

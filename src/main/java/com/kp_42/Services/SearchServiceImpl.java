@@ -9,7 +9,9 @@ import com.kp_42.Model.Repositories.*;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by user on 14.04.2016.
@@ -41,8 +43,19 @@ public class SearchServiceImpl implements ISearchService {
 
 
     @Override
-    public UsersEntity findUsersByCredentials(String credentials) {
-        return null;
+    public List<UsersEntity> findUsersByCredentials(String credentials) {
+
+        List<UsersEntity> result =  new ArrayList<>();
+        String [] arr = credentials.split(" ");
+        if(arr.length != 3)return null;
+        System.out.println(arr[0] + " " + arr[1] + " " +arr[2]);
+        result.addAll(usersRepository.findBySurnameLike(arr[0]));
+        result = result.stream()
+                .filter(usersEntity -> usersEntity.getName().contains(arr[1]))
+                .filter(usersEntity1 -> usersEntity1.getSecondName().contains(arr[2]))
+                .distinct().collect(Collectors.toList());
+        return result;
+
     }
 
     @Override

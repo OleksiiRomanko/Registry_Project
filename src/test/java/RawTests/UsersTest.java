@@ -55,7 +55,7 @@ public class UsersTest {
         entity.setBirthPlace("Place 2");
         entity.setDate(new Date().getTime());
         entity.setNumber(959659656);
-        entity.setSeries("Series 2");
+        entity.setSeries("SU");
 
         user = usersRepository.save(user);
         user.setPassport(entity);

@@ -49,7 +49,6 @@
     <br>
     <br>
 </div>
-<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/act/add/step/3">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -73,51 +72,31 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Ратошнюк</td>
-                        <td>Максим</td>
-                        <td>Юрійович</td>
-                        <td>ВН</td>
-                        <td>602507</td>
-                        <td>
-                            <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                                Обрати
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Лисогор</td>
-                        <td>Дмитро</td>
-                        <td>Юрійович</td>
-                        <td>ВК</td>
-                        <td>122054</td>
-                        <td>
-                            <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                                Обрати
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Чепурний</td>
-                        <td>Олександр</td>
-                        <td>Дмитрович</td>
-                        <td>КП</td>
-                        <td>422016</td>
-                        <td>
-                            <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                                Обрати
-                            </button>
-                        </td>
-                    </tr>
+                    <c:forEach var="user" items="${users}">
+                        <form:form method="post" action="/admin/act/add/${user.id}/">
+                        <tr>
+                            <td>1</td>
+                            <td>${user.name}</td>
+                            <td>${user.surname}</td>
+                            <td>${user.secondName}</td>
+                            <td>${user.passport.series}</td>
+                            <td>
+                                <button class="btn btn-success pull-right btn-sm" type="submit">
+                                    Обрати
+                                </button>
+                            </td>
+                        </tr>
+                        </form:form>
+
+                    </c:forEach>
+
+
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-</form:form>
+
 
 
 <br>

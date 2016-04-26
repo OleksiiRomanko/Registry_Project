@@ -49,6 +49,7 @@ public class PassportsEntity {
     @Basic
     @Column(name = "number")
     @NotNull(message = "Введіть номер паспорту")
+
     public Integer getNumber() {
         return number;
     }

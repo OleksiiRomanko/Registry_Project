@@ -1,6 +1,7 @@
 package com.kp_42.Controllers;
 
 import com.kp_42.Model.Entity.*;
+import com.kp_42.Model.Interface.IPersistService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import javax.validation.Valid;
 
 
@@ -25,6 +28,10 @@ import javax.validation.Valid;
 public class UserController {
 
 
+
+    @Inject
+    @Named("PersistService")
+    private IPersistService persistService;
 
     @ModelAttribute("UsersEntity")
     public UsersEntity userModel(){
@@ -52,23 +59,12 @@ public class UserController {
         return "EntityCreating/UserCreating/personalinformation";
     }
 
-    //backward mapping
-    @RequestMapping(value = "/add/step/tomenu",method = RequestMethod.GET)
-    public String backToAdmin(ModelMap map){
-        return "redirect:/admin";
-    }
-
     @RequestMapping(value = "/add/step/2", method = RequestMethod.POST)
     public String createPassport(@Valid @ModelAttribute("UsersEntity") UsersEntity user, BindingResult result){
         if(result.hasErrors())return "EntityCreating/UserCreating/personalinformation";
         return "EntityCreating/UserCreating/passport";
     }
 
-    //backward mapping
-    @RequestMapping(value = "/add/step/from2to1",method = RequestMethod.GET)
-    public String backToPersonalInfo(ModelMap map){
-        return "EntityCreating/UserCreating/personalinformation";
-    }
 
     @RequestMapping(value = "/add/step/3", method = RequestMethod.POST)
     public String createCertificate(@ModelAttribute("UsersEntity") UsersEntity user,
@@ -78,11 +74,7 @@ public class UserController {
         return "EntityCreating/UserCreating/certificate";
     }
 
-    //backward mapping
-    @RequestMapping(value = "/add/step/from3to2",method = RequestMethod.GET)
-    public String backToPassport(ModelMap map){
-        return "EntityCreating/UserCreating/passport";
-    }
+
 
     @RequestMapping(value = "/add/step/4", method = RequestMethod.POST)
     public String createLivingPlace(@ModelAttribute("UsersEntity") UsersEntity user,
@@ -95,11 +87,6 @@ public class UserController {
 
     }
 
-    //backward mapping
-    @RequestMapping(value = "/add/step/from4to3",method = RequestMethod.GET)
-    public String backToCertificate(ModelMap map){
-        return "EntityCreating/UserCreating/certificate";
-    }
 
     @RequestMapping(value = "/add/step/5", method = RequestMethod.POST)
     public String createWorkplace(@ModelAttribute("UsersEntity") UsersEntity user,
@@ -114,11 +101,6 @@ public class UserController {
     }
 
 
-    //backward mapping
-    @RequestMapping(value = "/add/step/from5to4",method = RequestMethod.GET)
-    public String backToWorkPlace(ModelMap map){
-        return "EntityCreating/UserCreating/workplace";
-    }
 
     @RequestMapping(value = "/add/step/6", method = RequestMethod.POST)
     public String createUser(@ModelAttribute("UsersEntity") UsersEntity user,
@@ -137,7 +119,12 @@ public class UserController {
         System.out.println(livingPlace.toString());
         System.out.println(workplace.toString());
 
-//        mav.put("success","Нова особа успішно додана до бази даних!");
+        user.setBirthCertificate(certificate);
+        user.setLivingPlace(livingPlace);
+        user.setPassport(passport);
+        user.setWorkplace(workplace);
+        persistService.save(user);
+
 
         return "redirect:/admin";
     }

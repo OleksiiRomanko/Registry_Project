@@ -12,7 +12,7 @@ import java.util.List;
  */
 public interface ISearchService {
 
-    public UsersEntity findUsersByCredentials(String credentials);
+    public List<UsersEntity> findUsersByCredentials(String credentials);
     public UsersEntity findUsersByPassport(PassportsEntity entity);
     public UsersEntity findUsersByCertificate(BirthCertificateEntity entity);
 
