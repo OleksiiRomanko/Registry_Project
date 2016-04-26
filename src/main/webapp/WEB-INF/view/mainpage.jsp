@@ -31,7 +31,7 @@
     <button class="btn btn-success pull-right btn-sm" type="submit">
         Увійти як Адміністратор
     </button>
-</form>
+    </form>
 
 <div style="text-align: center">
     <br>

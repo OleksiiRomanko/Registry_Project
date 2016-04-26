@@ -38,8 +38,6 @@ public class ServicesTests {
     @Named("SearchService")
     private ISearchService searchService;
 
-    @Inject
-    private LawRepository lawRepository;
 
 
     @Test
