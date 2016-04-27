@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a1ccb56-8781-4c8b-a4cd-892c733e6db3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/classes/spring/root-context.xml" afterPath="$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/classes/spring/root-context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/classes/spring/view-resolver.xml" afterPath="$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/classes/spring/view-resolver.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java" afterPath="$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Registry/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/Registry/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="Registry.iws" />
@@ -40,33 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mainpage.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LawController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/LawController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view-resolver.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/localserver/webapps/ROOT/WEB-INF/classes/spring/view-resolver.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,11 +64,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VisitorController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VisitorController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="passport.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PassportsEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="131" column="72" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testAddAndSearch" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebTests/testAddAndSearch">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.49804688">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -127,16 +129,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicesTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -193,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/BirthCertificateEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/ExtractionEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/LivingPlaceEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/UsersEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/WorkplaceEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/WorktitleEntity.java" />
@@ -217,6 +208,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/ActCreating/selectlaw.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/UnitTests/ServicesTests.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/mainpage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java" />
       </list>
     </option>
   </component>
@@ -248,8 +240,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="35" />
-    <option name="y" value="23" />
+    <option name="x" value="157" />
+    <option name="y" value="33" />
     <option name="width" value="1381" />
     <option name="height" value="873" />
   </component>
@@ -278,7 +270,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,6 +287,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Registry_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Registry" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Registry_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -584,6 +591,10 @@
               <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -831,8 +842,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -846,7 +856,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -1484,7 +1494,8 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.33" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http:/localhost:8080" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080" />
+      <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Registry_Project:war">
@@ -1557,12 +1568,12 @@
       </method>
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddFindAndDeleteUserByCertificate" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.All in Registry_Project" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddAndDeleteUser" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddAndDeleteUserAct" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ServicesTests.CheckAddAndDeleteActWithoutUser" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddFindAndDeleteUserByCertificate" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.All in Registry_Project" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddAndDeleteUser" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ServicesTests.AddAndDeleteUserAct" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ServicesTests.CheckAddAndDeleteActWithoutUser" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1605,6 +1616,8 @@
       <workItem from="1460819747315" duration="140000" />
       <workItem from="1461709625057" duration="899000" />
       <workItem from="1461711194441" duration="1337000" />
+      <workItem from="1461712845986" duration="6719000" />
+      <workItem from="1461759443687" duration="650000" />
     </task>
     <task id="LOCAL-00001" summary="were added Data Base to main project and created entities for tables">
       <created>1459449770787</created>
@@ -1684,11 +1697,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53365000" />
+    <option name="totallyTimeSpent" value="60734000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="35" y="23" width="1381" height="873" extended-state="0" />
-    <editor active="false" />
+    <frame x="157" y="33" width="1381" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55597013" sideWeight="0.16040462" order="7" side_tool="true" content_ui="tabs" />
@@ -1748,21 +1761,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/ExtractionEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/root-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1782,13 +1780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1870,7 +1861,7 @@
         <state vertical-scroll-proportion="0.5859375">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1951,7 +1942,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <marker date="1460704060000" expanded="false" signature="4779:4784" placeholder=" }" />
           </folding>
         </state>
@@ -1970,8 +1961,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
           <folding>
-            <element signature="e#1984#1985#0" expanded="true" />
-            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="false" />
+            <element signature="e#2030#2031#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2013,7 +2004,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2081,7 +2072,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2121,9 +2114,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2153,8 +2144,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Controllers/VisitorController.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/EntityCreating/UserCreating/passport.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kp_42/Model/Entity/PassportsEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="131" column="72" selection-start-line="131" selection-start-column="72" selection-end-line="131" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebTests/testAddAndSearch">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49804688">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
