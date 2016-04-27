@@ -130,6 +130,11 @@ public class UserController {
         return "redirect:/admin";
     }
 
+    @RequestMapping(value = "/add/admin",method = RequestMethod.GET)
+    public String backToAdmin(ModelMap mav){
+        return "redirect:/admin";
+    }
+
 
 
 

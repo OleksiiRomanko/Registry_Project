@@ -83,6 +83,14 @@
 
 <br>
 
+<div style="text-align:center;">
+    <form:form action="/admin/user/add/admin" method="get">
+        <button class="myButton" type="submit">
+            Назад
+        </button>
+    </form:form>
+</div>
+
 
 </body>
 </html>

@@ -108,7 +108,7 @@
 <br>
 
 <div style="text-align:center;">
-    <form:form action="/admin/user/add/step/1" method="post">
+    <form:form action="/admin/user/add/step/1" method="get">
         <button class="myButton" type="submit">
             Назад
         </button>
