@@ -62,58 +62,58 @@
 </div>
 
 
-<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/act/add/step/5">
+<form:form method="post" modelAttribute="CriminalActEntity" action="/admin/act/add/${user.id}/act/add">
 
     <div class="row" style="text-align: center">
 
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
 
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Опис правопорушення"/>
+                <form:input path="criminalDescription" type="text" class="form-control" placeholder="Опис правопорушення"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Тип правопорушення"/>
+                <form:input path="criminalType" type="text" class="form-control" placeholder="Тип правопорушення"/>
             </div>
             <br>
             <div class="input-group">
                 <p>Дата судового рішення</p>
-                <input type="data" class="form-control" placeholder="Дата судового рішення"/>
+                <form:input path="tribunalDate" type="date" class="form-control" placeholder="Дата судового рішення"/>
             </div>
             <br>
             <div class="input-group">
                 <p>Дата набрання законності</p>
-                <input type="data" class="form-control" placeholder="Дата набрання законності"/>
+                <form:input path="activationDate" type="date" class="form-control" placeholder="Дата набрання законності"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Вид покарання"/>
+                <form:input path="penaltyType" type="text" class="form-control" placeholder="Вид покарання"/>
             </div>
             <br>
             <div class="input-group">
                 <p>Дата погашення судимості</p>
-                <input type="data" class="form-control" placeholder="Дата погашення судимості"/>
+                <form:input path="dateRepaymentConvitions" type="date" class="form-control" placeholder="Дата погашення судимості"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Підстава для погашення"/>
+                <form:input path="RepaymentConvictions" type="text" class="form-control" placeholder="Підстава для погашення"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Реквізити наказу про накладання судимості"/>
+                <form:input  path="requisitesOfPaymentPenalty" type="text" class="form-control" placeholder="Реквізити наказу про накладання судимості"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Вид дисциплінарного стягнення"/>
+                <form:input  path="processOfCriminal" type="text" class="form-control" placeholder="Вид дисциплінарного стягнення"/>
             </div>
             <br>
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Спосіб вчинення стягнення"/>
+                <form:input path="groundOfPenalty" type="text" class="form-control" placeholder="Спосіб вчинення стягнення"/>
             </div>
             <br>
             <div class="input-group">
                 <p>Дата дисциплінарного стягнення</p>
-                <input type="data" class="form-control" placeholder="Дата дисциплінарного стягнення"/>
+                <form:input path="dateoffPenalty" type="date" class="form-control" placeholder="Дата дисциплінарного стягнення"/>
             </div>
             <br>
         </div>

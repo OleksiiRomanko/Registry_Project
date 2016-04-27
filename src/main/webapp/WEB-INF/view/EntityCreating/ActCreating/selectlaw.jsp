@@ -48,7 +48,8 @@
     <br>
     <br>
 </div>
-<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/act/add/step/4">
+
+<form:form method="post" modelAttribute="LawWrapper" action="/admin/act/add/${user.id}/act">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
@@ -69,39 +70,22 @@
                     </tr>
                     </thead>
                     <tbody>
+
+                    <c:forEach var="lawEntity" items="${laws}">
                     <tr>
                         <td>1</td>
-                        <td>69</td>
-                        <td>Про 1</td>
-                        <td>
-                            <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                                Обрати
-                            </button>
-                        </td>
+                        <td>${lawEntity.name}</td>
+                        <td>${lawEntity.type}</td>
+                        <td><form:checkbox path="lawsId" value = "${lawEntity.id}"/></td>
                     </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>14</td>
-                        <td>Про 2</td>
-                        <td>
-                            <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                                Обрати
-                            </button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>88</td>
-                        <td>Про 3</td>
-                        <td>
-                            <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
-                                Обрати
-                            </button>
-                        </td>
-                    </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
+
             </div>
+            <button class="btn btn-success  btn-sm" type="submit" data-toggle="modal">
+                Обрати
+            </button>
         </div>
     </div>
 

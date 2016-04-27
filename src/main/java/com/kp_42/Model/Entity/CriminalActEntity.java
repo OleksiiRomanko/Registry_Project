@@ -1,8 +1,11 @@
 package com.kp_42.Model.Entity;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 /**
@@ -41,6 +44,7 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "criminalDescription")
+    @Size(min = 1,message = "Введіть Опис Акту" )
     public String getCriminalDescription() {
         return criminalDescription;
     }
@@ -61,6 +65,8 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "tribunalDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату")
     public Long getTribunalDate() {
         return tribunalDate;
     }
@@ -71,6 +77,8 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "activationDate")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату")
     public Long getActivationDate() {
         return activationDate;
     }
@@ -101,6 +109,8 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "dateRepaymentConvitions")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату")
     public Long getDateRepaymentConvitions() {
         return dateRepaymentConvitions;
     }
@@ -142,6 +152,8 @@ public class CriminalActEntity {
 
     @Basic
     @Column(name = "dateoffPenalty")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NotNull(message = "Виберіть дату")
     public Long getDateoffPenalty() {
         return dateoffPenalty;
     }
@@ -228,5 +240,27 @@ public class CriminalActEntity {
 
     public void setExtraction(ExtractionEntity extraction) {
         this.extraction = extraction;
+    }
+
+
+    @Override
+    public String toString() {
+        return "CriminalActEntity{" +
+                "id=" + id +
+                ", criminalDescription='" + criminalDescription + '\'' +
+                ", criminalType='" + criminalType + '\'' +
+                ", tribunalDate=" + tribunalDate +
+                ", activationDate=" + activationDate +
+                ", penaltyType='" + penaltyType + '\'' +
+                ", reasonForRepaymentConvictions='" + reasonForRepaymentConvictions + '\'' +
+                ", dateRepaymentConvitions=" + dateRepaymentConvitions +
+                ", requisitesOfPaymentPenalty='" + requisitesOfPaymentPenalty + '\'' +
+                ", processOfCriminal='" + processOfCriminal + '\'' +
+                ", groundOfPenalty='" + groundOfPenalty + '\'' +
+                ", dateoffPenalty=" + dateoffPenalty +
+                ", user=" + user +
+                ", law=" + law +
+                ", extraction=" + extraction +
+                '}';
     }
 }

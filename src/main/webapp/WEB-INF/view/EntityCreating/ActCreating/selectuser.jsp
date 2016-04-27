@@ -80,6 +80,7 @@
                             <td>${user.surname}</td>
                             <td>${user.secondName}</td>
                             <td>${user.passport.series}</td>
+                            <td>${user.passport.number}</td>
                             <td>
                                 <button class="btn btn-success pull-right btn-sm" type="submit">
                                     Обрати

@@ -3,37 +3,61 @@ package com.kp_42.Controllers;
 import com.kp_42.Model.Entity.CriminalActEntity;
 import com.kp_42.Model.Entity.LawEntity;
 import com.kp_42.Model.Entity.UsersEntity;
+import com.kp_42.Model.Interface.IPersistService;
 import com.kp_42.Model.Interface.ISearchService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.support.SessionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
 @RequestMapping("/admin/act")
-@SessionAttributes(value = {"UsersEntity",
-        "LawEntity",
-        "CriminalActEntity"})
+@SessionAttributes(value = {"CriminalActEntity",
+        "LawWrapper"})
 
 public class ActController {
+
+    class LawWrapper{
+        private List<Integer> lawsId = new ArrayList<>();
+
+        public List<Integer> getLawsId() {
+            return lawsId;
+        }
+
+        public void setLawsId(List<Integer> lawsId) {
+            this.lawsId = lawsId;
+        }
+
+        @Override
+        public String toString() {
+            return "LawWrapper{" +
+                    "lawsId=" + lawsId +
+                    '}';
+        }
+    }
+
 
 
     @Inject
     @Named("SearchService")
     private ISearchService searchService;
-    @ModelAttribute("UsersEntity")
-    public UsersEntity userModel(){
-        return new UsersEntity();
-    }
-
-    @ModelAttribute("LawEntity")
-    public LawEntity lawModel() { return new LawEntity(); }
+    @Inject
+    @Named("PersistService")
+    private IPersistService persistService;
 
     @ModelAttribute("CriminalActEntity")
     public CriminalActEntity actModel(){ return new CriminalActEntity(); }
+
+    @ModelAttribute("LawWrapper")
+    public LawWrapper lawWrapperModel(){ return new LawWrapper(); }
+
 
 
 
@@ -52,11 +76,52 @@ public class ActController {
         return "EntityCreating/ActCreating/selectuser";
     }
 
-    @RequestMapping(value = "/add/{id}",method = RequestMethod.POST)
-    public String addLaw(ModelMap map,@PathVariable Integer id){
-        System.out.printf("id - " + id);
-        return "EntityCreating/ActCreating/finduser";
+    @ModelAttribute("SelectedLaws")
+    public List<Integer> getLawModel(){
+
+        return new ArrayList<Integer>();
     }
+
+    @RequestMapping(value = "/add/{id}",method = RequestMethod.POST)
+    public String selectLaws(ModelMap map,@PathVariable Integer id){
+        System.out.printf("id - " + id);
+        map.addAttribute("user",searchService.findUser(id));
+        List<LawEntity> laws = searchService.getAllLaws();
+        map.addAttribute("laws",laws);
+        return "EntityCreating/ActCreating/selectlaw";
+    }
+
+    @RequestMapping(value = "/add/{id}/act",method = RequestMethod.POST)
+    public String fillAct(ModelMap map, @PathVariable Integer id,
+                          @ModelAttribute("LawWrapper") LawWrapper wrapper){
+        map.addAttribute("user",searchService.findUser(id));
+        System.out.println(wrapper.toString());
+        return "EntityCreating/ActCreating/createact";
+    }
+
+    @RequestMapping(value = "/add/{id}/act/add",method = RequestMethod.POST)
+    public String bindAct(ModelMap map, @PathVariable Integer id,
+                          @ModelAttribute("LawWrapper") LawWrapper wrapper,
+                          @Valid @ModelAttribute("CriminalActEntity") CriminalActEntity act,
+                          BindingResult result, SessionStatus status){
+
+        if(result.hasErrors())return "EntityCreating/ActCreating/createact";
+        UsersEntity user = searchService.findUser(id);
+        List<LawEntity> laws = new ArrayList<>();
+        wrapper.getLawsId().forEach(integer -> laws.add(searchService.findLaw(integer)));
+        act.setUser(user);
+        act.setLaw(laws);
+        System.out.println(act.toString());
+        persistService.save(act);
+        status.setComplete();
+        return "redirect:/admin/";
+    }
+
+
+
+
+
+
 
 
 }

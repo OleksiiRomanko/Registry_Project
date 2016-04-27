@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -103,13 +104,14 @@ public class UserController {
 
 
     @RequestMapping(value = "/add/step/6", method = RequestMethod.POST)
-    public String createUser(@ModelAttribute("UsersEntity") UsersEntity user,
+    public String createUser(     @ModelAttribute("UsersEntity") UsersEntity user,
                                   @ModelAttribute("PassportsEntity")PassportsEntity passport,
                                   @ModelAttribute("BirthCertificateEntity")BirthCertificateEntity certificate,
                                   @ModelAttribute("LivingPlaceEntity") LivingPlaceEntity livingPlace,
                                   @Valid @ModelAttribute("WorkPlaceEntity")WorkplaceEntity workplace,
                                   BindingResult result,
-                                  ModelMap mav){
+                                  ModelMap mav,
+                                  SessionStatus status){
 
         if(result.hasErrors())return "EntityCreating/UserCreating/workplace";
         System.out.println();
@@ -124,8 +126,7 @@ public class UserController {
         user.setPassport(passport);
         user.setWorkplace(workplace);
         persistService.save(user);
-
-
+        status.setComplete();
         return "redirect:/admin";
     }
 

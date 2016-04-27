@@ -1,9 +1,6 @@
 package com.kp_42.Services;
 
-import com.kp_42.Model.Entity.BirthCertificateEntity;
-import com.kp_42.Model.Entity.CriminalActEntity;
-import com.kp_42.Model.Entity.PassportsEntity;
-import com.kp_42.Model.Entity.UsersEntity;
+import com.kp_42.Model.Entity.*;
 import com.kp_42.Model.Interface.ISearchService;
 import com.kp_42.Model.Repositories.*;
 
@@ -71,5 +68,20 @@ public class SearchServiceImpl implements ISearchService {
     @Override
     public List<CriminalActEntity> findActsByUsers(UsersEntity user) {
         return actRepository.findByUser(user);
+    }
+
+    @Override
+    public List<LawEntity> getAllLaws() {
+        return lawRepository.findAll();
+    }
+
+    @Override
+    public UsersEntity findUser(Integer id) {
+        return usersRepository.findOne(id);
+    }
+
+    @Override
+    public LawEntity findLaw(Integer id) {
+        return lawRepository.findOne(id);
     }
 }

@@ -1,9 +1,6 @@
 package com.kp_42.Model.Interface;
 
-import com.kp_42.Model.Entity.BirthCertificateEntity;
-import com.kp_42.Model.Entity.CriminalActEntity;
-import com.kp_42.Model.Entity.PassportsEntity;
-import com.kp_42.Model.Entity.UsersEntity;
+import com.kp_42.Model.Entity.*;
 
 import java.util.List;
 
@@ -15,8 +12,9 @@ public interface ISearchService {
     public List<UsersEntity> findUsersByCredentials(String credentials);
     public UsersEntity findUsersByPassport(PassportsEntity entity);
     public UsersEntity findUsersByCertificate(BirthCertificateEntity entity);
-
+    public UsersEntity findUser(Integer id);
     public List<CriminalActEntity> findActsByUsers(UsersEntity user);
 
-
+    public LawEntity findLaw(Integer id);
+    public List<LawEntity> getAllLaws();
 }
