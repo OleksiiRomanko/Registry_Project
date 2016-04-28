@@ -76,6 +76,11 @@ public class SearchServiceImpl implements ISearchService {
     }
 
     @Override
+    public List<UsersEntity> getAllUsers() {
+        return usersRepository.findAll();
+    }
+
+    @Override
     public UsersEntity findUser(Integer id) {
         return usersRepository.findOne(id);
     }

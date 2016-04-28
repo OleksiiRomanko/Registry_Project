@@ -46,6 +46,12 @@
 <h1></h1>
 <div style="text-align:center;">
 
+    <form:form action="/admin/fulltable" method="post">
+        <button class="myButton" type="submit">
+            Переглянути базу даних
+        </button>
+    </form:form>
+    <h1></h1>
     <form:form action="/admin/user/add/step/1" method="get">
         <button class="myButton" type="submit">
             Додати порушника

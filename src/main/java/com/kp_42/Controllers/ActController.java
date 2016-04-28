@@ -71,7 +71,6 @@ public class ActController {
     public String findUser(@RequestParam("credentials") String credentials, ModelMap map){
         List<UsersEntity> list = searchService.findUsersByCredentials(credentials);
         if(list == null) return "EntityCreating/ActCreating/finduser";
-
         map.addAttribute("users",list);
         return "EntityCreating/ActCreating/selectuser";
     }

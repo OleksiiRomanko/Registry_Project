@@ -9,7 +9,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>Example</title>
+    <title>Таблиця правопорушників</title>
     <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
@@ -19,8 +19,9 @@
     <%--<link href="<c:url value="/resources/css/searchresult.css" />" rel="stylesheet">--%>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
           type='text/css'>
-    <link href="<c:url value="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />" rel = "stylesheet">
-    <link href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />" rel = "stylesheet">
+    <link href="<c:url value="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />" rel="stylesheet">
+    <link href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />"
+          rel="stylesheet">
 
 </head>
 
@@ -34,7 +35,7 @@
 
 <div class="btn-group">
 
-    <form:form action="/mainpage/goback" method="get">
+    <form:form action="/admin/tomenu" method="get">
         <button class="btn btn-success pull-right btn-sm" type="submit" data-toggle="modal">
             На головну
         </button>
@@ -62,7 +63,6 @@
 
         <p></p>
         <h1> Результуюча таблиця Вашого запиту</h1>
-
 
         <br>
 
@@ -99,41 +99,21 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-paper-plane"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Ратошнюк</td>
-                            <td>Максим</td>
-                            <td>Юрійович</td>
-                            <td>ВН</td>
-                            <td>602507</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-paper-plane"></em></a>
-                            </td>
-                            <td class="hidden-xs">2</td>
-                            <td>Лисогор</td>
-                            <td>Дмитро</td>
-                            <td>Юрійович</td>
-                            <td>ВК</td>
-                            <td>122054</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-paper-plane"></em></a>
-                            </td>
-                            <td class="hidden-xs">3</td>
-                            <td>Чепурний</td>
-                            <td>Олександр</td>
-                            <td>Дмитрович</td>
-                            <td>КП</td>
-                            <td>422016</td>
-                        </tr>
 
-
+                            <c:forEach var="userEntity" items="${allusers}">
+                                    <tr>
+                                        <td align="center">
+                                            <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
+                                            <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
+                                        </td>
+                                        <td class="hidden-xs">${userEntity.id}</td>
+                                        <td>${userEntity.name}</td>
+                                        <td>${userEntity.surname}</td>
+                                        <td>${userEntity.secondName}</td>
+                                        <td>${userEntity.passport.series}</td>
+                                        <td>${userEntity.passport.number}</td>
+                                    </tr>
+                            </c:forEach>
                         </tbody>
                     </table>
 
@@ -162,10 +142,6 @@
         </div>
     </div>
 </div>
-
-
-
-
 
 
 </body>

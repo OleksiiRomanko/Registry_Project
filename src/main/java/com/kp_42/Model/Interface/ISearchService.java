@@ -2,6 +2,7 @@ package com.kp_42.Model.Interface;
 
 import com.kp_42.Model.Entity.*;
 
+import javax.xml.registry.infomodel.User;
 import java.util.List;
 
 /**
@@ -17,4 +18,5 @@ public interface ISearchService {
 
     public LawEntity findLaw(Integer id);
     public List<LawEntity> getAllLaws();
+    public List<UsersEntity> getAllUsers();
 }

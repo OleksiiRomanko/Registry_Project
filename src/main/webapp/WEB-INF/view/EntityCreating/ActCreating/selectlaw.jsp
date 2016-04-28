@@ -73,7 +73,7 @@
 
                     <c:forEach var="lawEntity" items="${laws}">
                     <tr>
-                        <td>1</td>
+                        <td>${lawEntity.id}</td>
                         <td>${lawEntity.name}</td>
                         <td>${lawEntity.type}</td>
                         <td><form:checkbox path="lawsId" value = "${lawEntity.id}"/></td>
