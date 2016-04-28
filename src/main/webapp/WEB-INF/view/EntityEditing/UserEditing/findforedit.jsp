@@ -43,6 +43,7 @@
     <br>
 </div>
 
+<form:form action="/admin/user/search" method="get">
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -56,7 +57,7 @@
                     <div class="col-md-6">
                         <div id="custom-search-input">
                             <div class="input-group col-md-12">
-                                <input type="text" class="form-control input-lg"
+                                <input name="Credentials" type="text" class="form-control input-lg"
                                        placeholder="Наприклад: Ратошнюк Максим Юрійович" />
                     <span class="input-group-btn">
                         <button type="submit" class="btn btn-primary btn-sm">Search</button>
@@ -68,6 +69,7 @@
             </div>
         </div>
     </div>
+</form:form>
 
 </div>
 

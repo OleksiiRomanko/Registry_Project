@@ -43,7 +43,7 @@
 <h1></h1>
 
 
-<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/user/add/step/5">
+<form:form method="post" modelAttribute="LivingPlaceEntity" action="/admin/user/${UsersEntity.id}/edit/livingplace">
     <div class="row" style="text-align: center">
 
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
@@ -100,7 +100,7 @@
      <div style="text-align:center;">
         <div class="btn-group">
             <button class="myButton" type="submit">
-            Далі
+                Зберігти
             </button>
         </div>
     </div>
@@ -108,13 +108,21 @@
 </form:form>
 <br>
 <div style="text-align:center;">
-    <form:form action="/admin/user/add/step/3" method="get">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/workplace"  method="get">
+        <button class="myButton" type="submit">
+            Редагувати місце роботи
+        </button>
+    </form:form>
+</div>
+<br>
+
+<div style="text-align:center;">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/certificate" method="get">
         <button class="myButton" type="submit">
             Назад
         </button>
     </form:form>
 </div>
-
 
 </body>
 </html>

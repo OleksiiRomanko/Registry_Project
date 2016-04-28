@@ -10,7 +10,7 @@ public interface IDeleteService {
     public void deleteUser(UsersEntity user);
     public void deleteUser(BirthCertificateEntity entity);
     public void deleteUser(PassportsEntity entity);
-
+    public void deleteUser(Integer id);
     public void deleteAct(Integer id);
     public void deleteAct(CriminalActEntity act);
     public void deleteLaw(LawEntity law);

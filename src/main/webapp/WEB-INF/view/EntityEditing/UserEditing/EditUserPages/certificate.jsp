@@ -7,7 +7,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>Персональна інформація</title>
+    <title>Свідоцтво про народження</title>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
@@ -27,7 +27,6 @@
         Покинути кабінет Адміністратора
     </button>
 </form>
-
 <form action="/admin/" method="get">
     <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
         Повернутися до головного меню
@@ -36,55 +35,57 @@
 
 <br>
 <br>
-
-<h1>Введіть анкетні дані нового правопорушника:</h1>
+<h1>Введіть дані із свідоцтва про народження нового правопорушника:</h1>
+<h1></h1>
 <h1></h1>
 
-
-<form:form method="post" modelAttribute="UsersEntity" action="/admin/user/add/step/2">
+<form:form method="post" modelAttribute="BirthCertificateEntity" action="/admin/user/${UsersEntity.id}/edit/certificate">
     <div class="row" style="text-align: center">
 
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
 
-
             <div class="input-group">
-                <form:input type="text" path="surname" class="form-control" placeholder="Прівище"/>
+                <p>Дата народження</p>
+                <form:input type="date" path="birthDate" class="form-control" placeholder="Дата народження"/>
             </div>
             <div class="input-group">
-                <form:errors path="surname" cssClass="error" />
-            </div>
-
-            <br>
-            <div class="input-group">
-                <form:input type="text" path="name" class="form-control" placeholder="Ім'я"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="name" cssClass="error" />
+                <form:errors path="birthDate" cssClass="error"/>
             </div>
             <br>
             <div class="input-group">
-                <form:input type="text" path="secondName" class="form-control" placeholder="По батькові"/>
+                <form:input type="text" path="bitrhPlace" class="form-control" placeholder="Місце народження"/>
             </div>
             <div class="input-group">
-                <form:errors path="secondName" cssClass="error" />
+                <form:errors path="bitrhPlace" cssClass="error"/>
             </div>
             <br>
         </div>
     </div>
 
-    <div style="text-align:center;">
-            <button class="myButton" type="submit">
-                Далі
-            </button>
+    </div>
 
+
+    <div style="text-align:center;">
+        <div class="btn-group">
+            <button class="myButton" type="submit">
+                Зберігти
+            </button>
+        </div>
     </div>
 
 </form:form>
-
+<br>
+<div style="text-align:center;">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/livingplace"  method="get">
+        <button class="myButton" type="submit">
+            Редагувати місце проживання
+        </button>
+    </form:form>
+</div>
 <br>
 
 <div style="text-align:center;">
-    <form:form action="/admin/user/add/admin" method="get">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/passport" method="get">
         <button class="myButton" type="submit">
             Назад
         </button>

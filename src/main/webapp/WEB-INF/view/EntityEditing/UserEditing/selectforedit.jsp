@@ -164,51 +164,44 @@
                         <thead>
                         <tr>
                             <th><em class="fa fa-cog"></em></th>
-                            <th class="hidden-xs">ID</th>
                             <th>Прізвище</th>
                             <th>Ім'я</th>
                             <th>По батькові</th>
                             <th>Серія</th>
                             <th>Номер паспорту</th>
+                            <th>Редагувати</th>
+                            <th>Видалити</th>
+
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Ратошнюк</td>
-                            <td>Максим</td>
-                            <td>Юрійович</td>
-                            <td>ВН</td>
-                            <td>602507</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">2</td>
-                            <td>Лисогор</td>
-                            <td>Дмитро</td>
-                            <td>Юрійович</td>
-                            <td>ВК</td>
-                            <td>122054</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-pencil"></em></a>
-                                <a class="btn btn-danger"><em class="fa fa-trash"></em></a>
-                            </td>
-                            <td class="hidden-xs">3</td>
-                            <td>Чепурний</td>
-                            <td>Олександр</td>
-                            <td>Дмитрович</td>
-                            <td>КП</td>
-                            <td>422016</td>
-                        </tr>
+                        <c:forEach var="user" items="${users}">
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>${user.name}</td>
+                                    <td>${user.surname}</td>
+                                    <td>${user.secondName}</td>
+                                    <td>${user.passport.series}</td>
+                                    <td>${user.passport.number}</td>
+                                    <td>
+                                    <form:form method="get" action="/admin/user/${user.id}/edit/info">
+                                        <button class="btn btn-success pull-right btn-sm" type="submit">
+                                            Редагувати
+                                        </button>
+                                    </form:form>
+                                    </td>
+                                    <td>
+                                        <form:form method="post" action="/admin/user/${user.id}/delete">
+                                            <button class="btn btn-success pull-right btn-sm" type="submit">
+                                                Видалити
+                                            </button>
+                                        </form:form>
+                                    </td>
+                                </tr>
+
+
+                        </c:forEach>
 
 
                         </tbody>

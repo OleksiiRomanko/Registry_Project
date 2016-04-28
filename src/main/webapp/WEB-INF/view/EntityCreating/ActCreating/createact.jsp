@@ -33,7 +33,7 @@
     </button>
 </form>
 
-<form action="/admin/user/add/step/tomenu" method="get">
+<form action="/admin/" method="get">
     <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
         Повернутися до головного меню
     </button>
@@ -130,7 +130,7 @@
 <br>
 
 <div style="text-align:center;">
-    <form:form action="/admin/act/add/step/from4to3" method="get">
+    <form:form action="/admin/act/add/${user.id}" method="POST">
         <button class="myButton" type="submit">
             Назад
         </button>

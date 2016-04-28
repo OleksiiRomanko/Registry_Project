@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="Form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
@@ -7,7 +8,7 @@
 <head>
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-    <title>Персональна інформація</title>
+    <title>Робота</title>
 
     <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
@@ -28,7 +29,7 @@
     </button>
 </form>
 
-<form action="/admin/" method="get">
+<<form action="/admin/" method="get">
     <button class="btn btn-success pull-left btn-sm" type="submit" data-toggle="modal">
         Повернутися до головного меню
     </button>
@@ -37,60 +38,63 @@
 <br>
 <br>
 
-<h1>Введіть анкетні дані нового правопорушника:</h1>
+<h1>Введіть дані про місця роботи:</h1>
 <h1></h1>
 
 
-<form:form method="post" modelAttribute="UsersEntity" action="/admin/user/add/step/2">
+<Form:form modelAttribute="WorkPlaceEntity" method="post" action="/admin/user/${UsersEntity.id}/edit/workplace">
+
     <div class="row" style="text-align: center">
 
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
-
-
             <div class="input-group">
-                <form:input type="text" path="surname" class="form-control" placeholder="Прівище"/>
+                <form:input type="text" path="worksphere" class="form-control" placeholder="Сфера діяльності"/>
             </div>
             <div class="input-group">
-                <form:errors path="surname" cssClass="error" />
-            </div>
-
-            <br>
-            <div class="input-group">
-                <form:input type="text" path="name" class="form-control" placeholder="Ім'я"/>
-            </div>
-            <div class="input-group">
-                <form:errors path="name" cssClass="error" />
+                <form:errors path="worksphere" cssClass="error" />
             </div>
             <br>
             <div class="input-group">
-                <form:input type="text" path="secondName" class="form-control" placeholder="По батькові"/>
+                <form:input type="text" path="adress" class="form-control" placeholder="Назва організації"/>
             </div>
             <div class="input-group">
-                <form:errors path="secondName" cssClass="error" />
+                <form:errors path="adress" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="workplaceName" class="form-control" placeholder="Адреса організації"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="workplaceName" cssClass="error" />
+            </div>
+            <br>
+            <div class="input-group">
+                <form:input type="text" path="worktitle.title" class="form-control" placeholder="Посада"/>
+            </div>
+            <div class="input-group">
+                <form:errors path="worktitle.title" cssClass="error" />
             </div>
             <br>
         </div>
+
     </div>
 
     <div style="text-align:center;">
+        <div class="btn-group">
             <button class="myButton" type="submit">
-                Далі
+                Зберігти
             </button>
-
+        </div>
     </div>
 
-</form:form>
-
+</Form:form>
 <br>
-
 <div style="text-align:center;">
-    <form:form action="/admin/user/add/admin" method="get">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/livingplace" method="get">
         <button class="myButton" type="submit">
             Назад
         </button>
     </form:form>
 </div>
-
-
 </body>
 </html>

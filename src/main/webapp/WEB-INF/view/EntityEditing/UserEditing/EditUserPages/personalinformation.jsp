@@ -37,11 +37,11 @@
 <br>
 <br>
 
-<h1>Введіть анкетні дані нового правопорушника:</h1>
+<h1>Редагувати правопорушника:</h1>
 <h1></h1>
 
 
-<form:form method="post" modelAttribute="UsersEntity" action="/admin/user/add/step/2">
+<form:form method="post" modelAttribute="UsersEntity" action="/admin/user/${UsersEntity.id}/edit/info">
     <div class="row" style="text-align: center">
 
         <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
@@ -74,13 +74,22 @@
 
     <div style="text-align:center;">
             <button class="myButton" type="submit">
-                Далі
+                Зберігти
             </button>
 
     </div>
 
 </form:form>
 
+
+<br>
+<div style="text-align:center;">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/passport"  method="get">
+        <button class="myButton" type="submit">
+            Редагувати паспорт
+        </button>
+    </form:form>
+</div>
 <br>
 
 <div style="text-align:center;">

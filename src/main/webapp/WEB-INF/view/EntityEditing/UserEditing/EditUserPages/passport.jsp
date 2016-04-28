@@ -43,7 +43,7 @@
 <h1></h1>
 <div class="row" style="text-align: center">
 
-    <form:form method="post" modelAttribute="PassportsEntity" action="/admin/user/add/step/3">
+    <form:form method="post" modelAttribute="PassportsEntity" action="/admin/user/${UsersEntity.id}/edit/passport">
     <div class="col-lg-12 col-lg-offset-5" style="text-align: center">
         <div class="input-group">
             <form:input type="text" path="series" class="form-control" placeholder="Серія"/>
@@ -98,7 +98,7 @@
 <div style="text-align:center;">
     <div class="btn-group">
         <button class="myButton" type="submit">
-            Далі
+            Зберігти
         </button>
     </div>
 </div>
@@ -106,9 +106,17 @@
 </form:form>
 
 <br>
+<div style="text-align:center;">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/certificate"  method="get">
+        <button class="myButton" type="submit">
+            Редагувати Сертифікат
+        </button>
+    </form:form>
+</div>
+<br>
 
 <div style="text-align:center;">
-    <form:form action="/admin/user/add/step/1" method="get">
+    <form:form action="/admin/user/${UsersEntity.id}/edit/info" method="get">
         <button class="myButton" type="submit">
             Назад
         </button>

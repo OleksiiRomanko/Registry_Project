@@ -1,20 +1,19 @@
 package com.kp_42.Controllers;
 
 import com.kp_42.Model.Entity.*;
+import com.kp_42.Model.Interface.IDeleteService;
 import com.kp_42.Model.Interface.IPersistService;
+import com.kp_42.Model.Interface.ISearchService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.validation.Valid;
-
+import java.util.List;
 
 
 @Controller
@@ -28,11 +27,16 @@ import javax.validation.Valid;
 
 public class UserController {
 
-
-
     @Inject
     @Named("PersistService")
     private IPersistService persistService;
+    @Inject
+    @Named("SearchService")
+    private ISearchService searchService;
+
+    @Inject
+    @Named("DeleteService")
+    private IDeleteService deleteService;
 
     @ModelAttribute("UsersEntity")
     public UsersEntity userModel(){
@@ -132,6 +136,28 @@ public class UserController {
 
     @RequestMapping(value = "/add/admin",method = RequestMethod.GET)
     public String backToAdmin(ModelMap mav){
+        return "redirect:/admin";
+    }
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String findPersonPage(ModelMap map){
+        return "EntityEditing/UserEditing/findforedit";
+    }
+
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    public String findUser(ModelMap map, @RequestParam("Credentials") String credentials){
+
+        List<UsersEntity> list = searchService.findUsersByCredentials(credentials);
+        if(list == null) return "EntityEditing/UserEditing/findforedit";
+        map.addAttribute("users",list);
+        return "EntityEditing/UserEditing/selectforedit";
+
+    }
+
+    @RequestMapping(value = "/{id}/delete", method = RequestMethod.POST)
+    public String deleteUser(ModelMap map, @PathVariable Integer id) {
+        deleteService.deleteUser(id);
+
         return "redirect:/admin";
     }
 

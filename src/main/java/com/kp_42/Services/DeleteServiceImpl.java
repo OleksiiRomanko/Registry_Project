@@ -43,6 +43,11 @@ public class DeleteServiceImpl implements IDeleteService {
     }
 
     @Override
+    public void deleteUser(Integer id) {
+        usersRepository.delete(id);
+    }
+
+    @Override
     public void deleteUser(BirthCertificateEntity entity) {
         birthCertificateRepository.delete(entity);
     }
