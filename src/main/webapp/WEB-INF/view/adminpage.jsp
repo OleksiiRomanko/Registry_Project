@@ -77,9 +77,12 @@
         </button>
     </form:form>
     <h1></h1>
-    <button class="myButton" type="button">
-        Знайти акт
-    </button>
+    <form:form action="/admin/act/" method="get">
+        <button class="myButton" type="submit">
+            Знайти акт
+        </button>
+    </form:form>
+
 </div>
 
 <%

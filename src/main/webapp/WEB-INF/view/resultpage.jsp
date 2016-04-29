@@ -17,7 +17,7 @@
     <link href="<c:url value="/resources/css/search.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
     <%--<link href="<c:url value="/resources/css/searchresult.css" />" rel="stylesheet">--%>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
+    <link href="wwwwhttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
           type='text/css'>
     <link href="<c:url value="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />" rel = "stylesheet">
     <link href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />" rel = "stylesheet">

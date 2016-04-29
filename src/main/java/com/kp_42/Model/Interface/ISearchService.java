@@ -14,8 +14,8 @@ public interface ISearchService {
     public UsersEntity findUsersByPassport(PassportsEntity entity);
     public UsersEntity findUsersByCertificate(BirthCertificateEntity entity);
     public UsersEntity findUser(Integer id);
-    public List<CriminalActEntity> findActsByUsers(UsersEntity user);
-
+    public CriminalActEntity findActByUser(UsersEntity user);
+    public CriminalActEntity findAct(Integer id);
     public LawEntity findLaw(Integer id);
     public List<LawEntity> getAllLaws();
     public List<UsersEntity> getAllUsers();

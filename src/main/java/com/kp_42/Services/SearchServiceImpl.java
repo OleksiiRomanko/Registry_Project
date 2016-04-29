@@ -65,9 +65,10 @@ public class SearchServiceImpl implements ISearchService {
         return usersRepository.findByBirthCertificate(entity);
     }
 
+
     @Override
-    public List<CriminalActEntity> findActsByUsers(UsersEntity user) {
-        return actRepository.findByUser(user);
+    public CriminalActEntity findAct(Integer id) {
+        return actRepository.findOne(id);
     }
 
     @Override
@@ -84,6 +85,13 @@ public class SearchServiceImpl implements ISearchService {
     public UsersEntity findUser(Integer id) {
         return usersRepository.findOne(id);
     }
+
+    @Override
+    public CriminalActEntity findActByUser(UsersEntity user) {
+        return actRepository.findByUser(user);
+    }
+
+
 
     @Override
     public LawEntity findLaw(Integer id) {

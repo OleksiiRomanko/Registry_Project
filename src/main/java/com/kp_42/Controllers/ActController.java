@@ -117,7 +117,20 @@ public class ActController {
     }
 
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String findActByPersonPage(ModelMap map){
+        return "EntityEditing/ActEditing/findactbyuser";
+    }
 
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
+    public String findUser(ModelMap map, @RequestParam("Credentials") String credentials){
+
+        List<UsersEntity> list = searchService.findUsersByCredentials(credentials);
+        if(list == null) return "EntityEditing/ActEditing/findactbyuser";
+        map.addAttribute("users",list);
+        return "EntityEditing/ActEditing/selectuser";
+
+    }
 
 
 

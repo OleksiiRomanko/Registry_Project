@@ -161,6 +161,6 @@ public class UserEditController {
         place.setAdress(workplace.getAdress());
         persistService.save(user);
         status.setComplete();
-        return "EntityEditing/UserEditing/EditUserPages/workplace";
+        return "redirect:/admin";
     }
 }

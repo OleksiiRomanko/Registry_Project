@@ -11,7 +11,7 @@ public interface CriminalActRepository extends JpaRepository<CriminalActEntity, 
 
     public CriminalActEntity findActByCriminalDescription(String description);
     public List<CriminalActEntity> findByLawContaining(List<LawEntity> law);
-    public List<CriminalActEntity> findByUser(UsersEntity entity);
+    public CriminalActEntity findByUser(UsersEntity entity);
 
 }
 

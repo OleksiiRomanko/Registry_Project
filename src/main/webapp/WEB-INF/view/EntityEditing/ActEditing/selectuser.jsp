@@ -61,6 +61,9 @@
             <div class="panel panel-default panel-table">
                 <div class="panel-heading">
                     <div class="row">
+                        <div class="col col-xs-6">
+                            <h3 class="panel-title">Panel Heading</h3>
+                        </div>
                         <div class="col col-xs-6 text-right">
                             <form:form action="/admin/user/add/step/1" method="get">
                                 <button type="submit"
@@ -82,41 +85,30 @@
                             <th>По батькові</th>
                             <th>Серія</th>
                             <th>Номер паспорту</th>
-                            <th>Редагувати</th>
-                            <th>Видалити</th>
+                            <th>Обрати</th>
 
                         </tr>
                         </thead>
                         <tbody>
                         <c:forEach var="user" items="${users}">
 
-                                <tr>
-                                    <td>1</td>
-                                    <td>${user.name}</td>
-                                    <td>${user.surname}</td>
-                                    <td>${user.secondName}</td>
-                                    <td>${user.passport.series}</td>
-                                    <td>${user.passport.number}</td>
-                                    <td>
-                                    <form:form method="get" action="/admin/user/${user.id}/edit/info">
+                            <tr>
+                                <td>${user.id}</td>
+                                <td>${user.name}</td>
+                                <td>${user.surname}</td>
+                                <td>${user.secondName}</td>
+                                <td>${user.passport.series}</td>
+                                <td>${user.passport.number}</td>
+                                <td>
+                                    <form:form method="get" action="/admin/act/${user.id}/changelaw">
                                         <button class="btn btn-success pull-right btn-sm" type="submit">
-                                            Редагувати
+                                            Акти
                                         </button>
                                     </form:form>
-                                    </td>
-                                    <td>
-                                        <form:form method="post" action="/admin/user/${user.id}/delete">
-                                            <button class="btn btn-success pull-right btn-sm" type="submit">
-                                                Видалити
-                                            </button>
-                                        </form:form>
-                                    </td>
-                                </tr>
-
+                                </td>
+                            </tr>
 
                         </c:forEach>
-
-
                         </tbody>
                     </table>
 
