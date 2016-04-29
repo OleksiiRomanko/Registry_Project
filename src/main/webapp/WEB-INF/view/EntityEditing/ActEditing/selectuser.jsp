@@ -100,7 +100,7 @@
                                 <td>${user.passport.series}</td>
                                 <td>${user.passport.number}</td>
                                 <td>
-                                    <form:form method="get" action="/admin/act/${user.id}/changelaw">
+                                    <form:form method="get" action="/admin/act/${user.id}/edit/extrafields">
                                         <button class="btn btn-success pull-right btn-sm" type="submit">
                                             Акти
                                         </button>

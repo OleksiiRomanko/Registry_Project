@@ -9,12 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * Created by user on 14.04.2016.
  */
-@ControllerAdvice
+
 public class GlobalDefaultExceptionHandler {
 
     public static final String DEFAULT_ERROR_VIEW = "error";
 
-    @ExceptionHandler(value = Exception.class)
+
     public ModelAndView defaultErrorHandler(HttpServletRequest req, Exception e){
 
         ModelAndView mav = new ModelAndView();

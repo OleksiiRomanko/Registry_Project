@@ -94,7 +94,7 @@ public class ActEditController {
         return "EntityEditing/ActEditing/changeact";
     }
 
-    @RequestMapping(value = "/{id}/changelaw",method = RequestMethod.POST)
+    @RequestMapping(value = "/{id}/changelaws",method = RequestMethod.POST)
     public String selectLaws(ModelMap map, @PathVariable Integer id,
                              @ModelAttribute("LawsWrapper") LawsWrapper wrapper,
                              @ModelAttribute("CriminalActEntity") CriminalActEntity act,
@@ -114,7 +114,7 @@ public class ActEditController {
     }
 
 
-    @RequestMapping(value = "/{id}/changelaw",method = RequestMethod.GET)
+    @RequestMapping(value = "/{id}/changelaws",method = RequestMethod.GET)
     public String getselectLaws(ModelMap map,@PathVariable Integer id){
         System.out.printf("id - " + id);
         CriminalActEntity actEntity = searchService.findUser(id).getCriminalAct();

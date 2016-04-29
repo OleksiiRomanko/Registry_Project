@@ -49,7 +49,7 @@
     <br>
 </div>
 
-<form:form method="post" modelAttribute="LawsWrapper" action="/admin/act/${user.id}/сhangelaw">
+<form:form method="post" modelAttribute="LawsWrapper" action="/admin/act/${user.id}/сhangelaws">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
