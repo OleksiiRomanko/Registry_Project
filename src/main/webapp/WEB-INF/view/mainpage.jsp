@@ -31,7 +31,7 @@
     <button class="btn btn-success pull-right btn-sm" type="submit">
         Увійти як Адміністратор
     </button>
-    </form>
+</form>
 
 <div style="text-align: center">
     <br>
@@ -57,14 +57,14 @@
                     <div class="col-md-6">
                         <div id="custom-search-input">
                             <div class="input-group col-md-12">
-                                <input type="text" class="form-control input-lg"
+                                <form:form action="/mainpage/result" method="get">
+                                <input name="credentials" type="text" class="form-control input-lg"
                                        placeholder="Наприклад: Ратошнюк Максим Юрійович" />
-                    <span class="input-group-btn">
-                        <form:form action="/mainpage/result" method="get">
+                            <span class="input-group-btn">
                             <button class="btn btn-info btn-lg" type="submit">
                                 <i class="glyphicon glyphicon-search"></i>
                             </button>
-                        </form:form>
+                                 </form:form>
 
                     </span>
                             </div>

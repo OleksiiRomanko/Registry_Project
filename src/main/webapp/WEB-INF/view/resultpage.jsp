@@ -17,7 +17,7 @@
     <link href="<c:url value="/resources/css/search.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
     <%--<link href="<c:url value="/resources/css/searchresult.css" />" rel="stylesheet">--%>
-    <link href="wwwwhttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
           type='text/css'>
     <link href="<c:url value="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />" rel = "stylesheet">
     <link href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />" rel = "stylesheet">
@@ -89,74 +89,41 @@
                     <table class="table table-striped table-bordered table-list">
                         <thead>
                         <tr>
-                            <th><em class="fa fa-cog"></em></th>
                             <th class="hidden-xs">ID</th>
                             <th>Прізвище</th>
                             <th>Ім'я</th>
                             <th>По батькові</th>
                             <th>Серія</th>
                             <th>Номер паспорту</th>
+                            <th>Обрати</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-paper-plane"></em></a>
-                            </td>
-                            <td class="hidden-xs">1</td>
-                            <td>Ратошнюк</td>
-                            <td>Максим</td>
-                            <td>Юрійович</td>
-                            <td>ВН</td>
-                            <td>602507</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-paper-plane"></em></a>
-                            </td>
-                            <td class="hidden-xs">2</td>
-                            <td>Лисогор</td>
-                            <td>Дмитро</td>
-                            <td>Юрійович</td>
-                            <td>ВК</td>
-                            <td>122054</td>
-                        </tr>
-                        <tr>
-                            <td align="center">
-                                <a class="btn btn-default"><em class="fa fa-paper-plane"></em></a>
-                            </td>
-                            <td class="hidden-xs">3</td>
-                            <td>Чепурний</td>
-                            <td>Олександр</td>
-                            <td>Дмитрович</td>
-                            <td>КП</td>
-                            <td>422016</td>
-                        </tr>
+                        <c:forEach var="user" items="${users}">
+                            <form:form method="get" action="/mainpage/${user.id}/extraction">
+                                <tr>
+                                    <td>1</td>
+                                    <td>${user.name}</td>
+                                    <td>${user.surname}</td>
+                                    <td>${user.secondName}</td>
+                                    <td>${user.passport.series}</td>
+                                    <td>${user.passport.number}</td>
+                                    <td>
+                                        <button class="btn btn-success pull-right btn-sm" type="submit">
+                                            Обрати
+                                        </button>
+                                    </td>
+                                </tr>
+                            </form:form>
+
+                        </c:forEach>
 
 
                         </tbody>
                     </table>
 
                 </div>
-                <div class="panel-footer">
-                    <div class="row">
-                        <div class="col col-xs-4">Page 1 of 5
-                        </div>
-                        <div class="col col-xs-8">
-                            <ul class="pagination hidden-xs pull-right">
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                            </ul>
-                            <ul class="pagination visible-xs pull-right">
-                                <li><a href="#">«</a></li>
-                                <li><a href="#">»</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
             </div>
 
         </div>
