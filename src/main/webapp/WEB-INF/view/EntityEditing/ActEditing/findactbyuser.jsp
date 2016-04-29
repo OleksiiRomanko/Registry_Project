@@ -59,7 +59,7 @@
                             <div class="input-group col-md-12">
                                 <input name="Credentials" type="text" class="form-control input-lg"
                                        placeholder="Наприклад: Ратошнюк Максим Юрійович" />
-                    <span class="input-group-btn">
+                      <span class="input-group-btn">
                         <button type="submit" class="btn btn-primary btn-sm">Search</button>
                     </span>
                             </div>
