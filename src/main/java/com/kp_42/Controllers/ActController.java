@@ -3,6 +3,7 @@ package com.kp_42.Controllers;
 import com.kp_42.Model.Entity.CriminalActEntity;
 import com.kp_42.Model.Entity.LawEntity;
 import com.kp_42.Model.Entity.UsersEntity;
+import com.kp_42.Model.Interface.IDeleteService;
 import com.kp_42.Model.Interface.IPersistService;
 import com.kp_42.Model.Interface.ISearchService;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ import javax.inject.Named;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/admin/act")
@@ -51,6 +53,9 @@ public class ActController {
     @Inject
     @Named("PersistService")
     private IPersistService persistService;
+    @Inject
+    @Named("DeleteService")
+    private IDeleteService deleteService;
 
     @ModelAttribute("CriminalActEntity")
     public CriminalActEntity actModel(){ return new CriminalActEntity(); }
@@ -125,11 +130,20 @@ public class ActController {
     @RequestMapping(value = "/search", method = RequestMethod.GET)
     public String findUser(ModelMap map, @RequestParam("Credentials") String credentials){
 
-        List<UsersEntity> list = searchService.findUsersByCredentials(credentials);
+        List<UsersEntity> list = searchService.findUsersByCredentials(credentials).stream()
+                .filter((usersEntity -> usersEntity.getCriminalAct()!=null))
+                .collect(Collectors.toList());
         if(list == null) return "EntityEditing/ActEditing/findactbyuser";
         map.addAttribute("users",list);
         return "EntityEditing/ActEditing/selectuser";
 
+    }
+
+    @RequestMapping(value = "/{id}/delete", method = RequestMethod.POST)
+    public String deleteUser(ModelMap map, @PathVariable Integer id) {
+        CriminalActEntity actEntity = searchService.findUser(id).getCriminalAct();
+        deleteService.deleteAct(actEntity);
+        return "redirect:/admin";
     }
 
 

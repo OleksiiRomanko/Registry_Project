@@ -101,8 +101,13 @@
                                 <td>${user.passport.number}</td>
                                 <td>
                                     <form:form method="get" action="/admin/act/${user.id}/edit/extrafields">
+                                        <button c lass="btn btn-success pull-right btn-sm" type="submit">
+                                            Редагувати
+                                        </button>
+                                    </form:form>
+                                    <form:form method="post" action="/admin/act/${user.id}/delete">
                                         <button class="btn btn-success pull-right btn-sm" type="submit">
-                                            Акт
+                                            Видалити
                                         </button>
                                     </form:form>
                                 </td>
