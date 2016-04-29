@@ -118,9 +118,11 @@
             <br>
         </div>
     </div>
-    <button class="myButton" type="submit">
-            Додати до бази
+<div style="text-align:center;">
+    <button class="myButton"  type="submit">
+            Зберігти
     </button>
+</div>
 </form:form>
 
 <br>

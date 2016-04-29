@@ -74,18 +74,20 @@
                         </thead>
                         <tbody>
 
+                        <%if(((ExtractionEntity) request.getAttribute("extract")) != null && ((ExtractionEntity) request.getAttribute("extract")).getCriminalAct() != null) {%>
                         <tr>
                             <td>${extract.user.name}</td>
                             <td>${extract.user.surname}</td>
                             <td>${extract.user.secondName}</td>
                             <td>${extract.user.workplace.workplaceName}</td>
-                            <td>${extract.user.workplace.worktitle}</td>
+                            <td>${extract.user.workplace.worktitle.title}</td>
                             <td>${extract.user.criminalAct.criminalDescription}</td>
                             <td>${extract.user.criminalAct.criminalType}</td>
                             <td>${extract.user.criminalAct.penaltyType}</td>
                             <td><%=new SimpleDateFormat("yyyy-MM-dd").format((new Date(((ExtractionEntity) request.getAttribute("extract")).getUser().getCriminalAct().getActivationDate())))%></td>
                         </tr>
 
+                        <%}%>
                         </tbody>
                     </table>
 
