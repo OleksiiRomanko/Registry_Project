@@ -22,18 +22,18 @@
 
 <body>
 
-<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
-<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
+    <script src="<c:url value="/resources/js/jquery.min.js" />"></script>
+    <script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
 
 
 
-<form action="/admin/">
+    <form action="/admin/">
     <button class="btn btn-success pull-right btn-sm" type="submit">
         Увійти як Адміністратор
     </button>
 </form>
 
-<div style="text-align: center">
+    <div style="text-align: center">
     <br>
     <br>
     <br>
@@ -47,37 +47,35 @@
     <br>
 </div>
 
-<div class="container">
+    <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h2 style="text-align: center">Введіть анкетні дані потрібної персони</h2>
 
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="custom-search-input">
-                            <div class="input-group col-md-12">
-                                <form:form action="/mainpage/result" method="get">
-                                <input name="credentials" type="text" class="form-control input-lg"
-                                       placeholder="Наприклад: Ратошнюк Максим Юрійович" />
-                            <span class="input-group-btn">
-                            <button class="btn btn-info btn-lg" type="submit">
-                                <i class="glyphicon glyphicon-search"></i>
-                            </button>
-                                 </form:form>
-
-                    </span>
+            <form:form action="/mainpage/result" method="get">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="custom-search-input">
+                                <div class="input-group col-md-12">
+                                    <input name="credentials" type="text" class="form-control input-lg"
+                                           placeholder="Наприклад: Ратошнюк Максим Юрійович" />
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary btn-sm">Search</button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </form:form>
+
+
         </div>
     </div>
 
 </div>
 
-
-
 </body>
+
 </html>

@@ -37,10 +37,15 @@ public class VisitorController {
     @RequestMapping(value = "/result", method = RequestMethod.GET)
     public String getSearchingResult(ModelMap map, @RequestParam("credentials") String credentials) {
 
+        if (credentials.length() == 0)
+            return "redirect:/mainpage";
+
         List<UsersEntity> users = searchService.findUsersByCredentials(credentials);
+
+        if (users.size() == 0)
+            return "redirect:/mainpage";
+
         map.addAttribute("users",users);
-
-
         return "resultpage";
     }
 
