@@ -11,27 +11,24 @@
 
     <title>Таблиця правопорушників</title>
     <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
-
-    <link href="<c:url value="/resources/css/bootstrap.min.css" />" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href="" type="text/css" rel="stylesheet">
+    <link href="<c:url value="/resources/css/vendor/bootstrap.min.css" />" type="text/css" rel="stylesheet">
+    <link href="<c:url value="/resources/css/vendor/font-awesome.min.css" />" type="text/css" rel="stylesheet">
+    <link href="<c:url value="/resources/css/style.css" />" type="text/css" rel="stylesheet">
     <link href="<c:url value="/resources/css/bootstrap-theme.min.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/search.css" />" rel="stylesheet">
     <link href="<c:url value="/resources/css/login.css" />" rel="stylesheet">
-    <%--<link href="<c:url value="/resources/css/searchresult.css" />" rel="stylesheet">--%>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet'
-          type='text/css'>
-    <link href="<c:url value="https://cdn.datatables.net/1.10.11/css/dataTables.bootstrap.min.css" />" rel="stylesheet">
-    <link href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />"
-          rel="stylesheet">
 
 </head>
 
 <body>
 
-<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
-<script src="<c:url value="/resources/js/bootstrap.min.js" />"></script>
-<script src="<c:url value="/resources/js/helper.js" />"></script>
-<script src="<c:url value="/resources/js/dataTables.bootstrap.min.js" />"></script>
-<script src="<c:url value="/resources/js/jquery.dataTables.min.js" />"></script>
+<script src="<c:url value="/resources/js/jquery.min.js" /> " type="text/javascript"></script>
+<script src="<c:url value="/resources/js/bootstrap-datatable.js" />"></script>
+<script src="<c:url value="/resources/js/vendor/bootstrap.min.js" />" type="text/javascript"></script>
+<script src="<c:url value="/resources/js/vendor/jquery.sortelements.js" />" type="text/javascript"></script>
+<script src="<c:url value="/resources/js/jquery.bdt.js" />" type="text/javascript"></script>
 
 <div class="btn-group">
 
@@ -43,82 +40,59 @@
 
 </div>
 
-<br>
-
-<br>
 <div style="text-align: center">
     <h1>
-        Результат пошуку особи
+        Список корупціонерів
     </h1>
     <br>
     <br>
     <br>
-    <br>
-    <br>
 </div>
 
+<p></p>
 
 <div class="container">
     <div class="row">
+        <div class="box clearfix">
+            <h3>Результуюча таблиця</h3>
 
-        <p></p>
-        <h1> Результуюча таблиця Вашого запиту</h1>
+            <table class="table table-hover" id="bootstrap-table">
+                <thead>
+                <tr>
+                    <th class="hidden-xs">ID</th>
+                    <th>Прізвище</th>
+                    <th>Ім'я</th>
+                    <th>По батькові</th>
+                    <th>Серія</th>
+                    <th>Номер паспорту</th>
+                </tr>
+                </thead>
+                <tbody>
 
-        <br>
+                <c:forEach var="userEntity" items="${allusers}">
+                    <tr>
+                        <td class="hidden-xs">${userEntity.id}</td>
+                        <td>${userEntity.name}</td>
+                        <td>${userEntity.surname}</td>
+                        <td>${userEntity.secondName}</td>
+                        <td>${userEntity.passport.series}</td>
+                        <td>${userEntity.passport.number}</td>
+                    </tr>
+                </c:forEach>
+                </tbody>
 
-        <div class="col-md-12 col-md-offset-0">
-
-            <div class="panel panel-default panel-table">
-                <div class="panel-heading">
-                    <div class="row">
-                        <div class="col col-xs-6">
-                            <h3 class="panel-title">Panel Heading</h3>
-                        </div>
-                        <div class="col col-xs-6 text-right">
-                            <form:form action="/admin/user/add/step/1" method="get">
-                                <button type="submit"
-                                        class="btn btn-sm btn-primary btn-create">
-                                    Додати нового порушника
-                                </button>
-                            </form:form>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <table class="table table-striped table-bordered table-list">
-                        <thead>
-                        <tr>
-                            <th class="hidden-xs">ID</th>
-                            <th>Прізвище</th>
-                            <th>Ім'я</th>
-                            <th>По батькові</th>
-                            <th>Серія</th>
-                            <th>Номер паспорту</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-
-                            <c:forEach var="userEntity" items="${allusers}">
-                                    <tr>
-                                        <td class="hidden-xs">${userEntity.id}</td>
-                                        <td>${userEntity.name}</td>
-                                        <td>${userEntity.surname}</td>
-                                        <td>${userEntity.secondName}</td>
-                                        <td>${userEntity.passport.series}</td>
-                                        <td>${userEntity.passport.number}</td>
-                                    </tr>
-                            </c:forEach>
-                        </tbody>
-                    </table>
-
-                </div>
-            </div>
-
+            </table>
         </div>
     </div>
 </div>
+</div>
 
+
+<script>
+    $(document).ready( function () {
+        $('#bootstrap-table').bdt();
+    });
+</script>
 
 </body>
 </html>

@@ -42,7 +42,7 @@ public class AdminController {
 
 
     @RequestMapping("")
-    public String adminpage(ModelAndView mav){
+    public String adminpage(){
 
         return "adminpage";
     }

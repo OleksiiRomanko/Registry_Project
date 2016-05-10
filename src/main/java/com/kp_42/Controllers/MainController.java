@@ -98,9 +98,4 @@ public class MainController {
         return "sendextraction";
     }
 
-
-
-
-
-
 }
