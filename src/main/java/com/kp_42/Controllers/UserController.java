@@ -12,6 +12,7 @@ import org.springframework.web.bind.support.SessionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -157,7 +158,6 @@ public class UserController {
     @RequestMapping(value = "/{id}/delete", method = RequestMethod.POST)
     public String deleteUser(ModelMap map, @PathVariable Integer id) {
         deleteService.deleteUser(id);
-
         return "redirect:/admin";
     }
 

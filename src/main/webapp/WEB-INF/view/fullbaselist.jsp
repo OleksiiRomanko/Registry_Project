@@ -60,7 +60,7 @@
                 <form:input type="text" path="surname" placeholder="Surname"/>
                 <form:input type="text" path="series" placeholder="Series"/>
                 <form:input type="number" path="number" placeholder="Number"/>
-                <button type="submit">Filter</button>
+                <button class="btn-success pull-center " type="submit">Filter</button>
             </form:form>
             <h3>Результуюча таблиця</h3>
 
