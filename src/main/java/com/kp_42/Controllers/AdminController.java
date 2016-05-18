@@ -5,13 +5,12 @@ import com.kp_42.Model.Entity.LawEntity;
 import com.kp_42.Model.Entity.UsersEntity;
 import com.kp_42.Model.Interface.IPersistService;
 import com.kp_42.Model.Interface.ISearchService;
+import com.kp_42.Model.Repositories.UsersRepository;
+import org.hibernate.Criteria;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -27,6 +26,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/admin")
+@SessionAttributes(value = {"Criteria"})
 public class AdminController {
 
 
@@ -41,6 +41,9 @@ public class AdminController {
     public UsersEntity userModel(){ return new UsersEntity(); }
 
 
+    @ModelAttribute("Criteria")
+    public UsersRepository.UserCriteria criteriaModel(){return new UsersRepository.UserCriteria(null,null,null,null);}
+
     @RequestMapping("")
     public String adminpage(){
 
@@ -54,9 +57,11 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/fulltable",method = RequestMethod.POST)
-    public String showTable(ModelMap map){
+    public String showTable(ModelMap map, @ModelAttribute("Criteria")UsersRepository.UserCriteria criteria){
+
 
         List<UsersEntity>  allusers = searchService.getAllUsers();
+        allusers = criteria.filter(allusers);
         map.addAttribute("allusers",allusers);
         System.out.println(allusers);
         return "fullbaselist";

@@ -89,7 +89,9 @@ public class ActController {
     @RequestMapping(value = "/add/{id}",method = RequestMethod.POST)
     public String selectLaws(ModelMap map,@PathVariable Integer id){
         System.out.printf("id - " + id);
-        map.addAttribute("user",searchService.findUser(id));
+        UsersEntity user = searchService.findUser(id);
+        if(user.getCriminalAct() != null)return "redirect:/admin/act/add/";
+        map.addAttribute("user",user);
         List<LawEntity> laws = searchService.getAllLaws();
         map.addAttribute("laws",laws);
         return "EntityCreating/ActCreating/selectlaw";

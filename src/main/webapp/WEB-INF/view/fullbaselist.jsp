@@ -54,17 +54,26 @@
 <div class="container">
     <div class="row">
         <div class="box clearfix">
+
+            <form:form action="" modelAttribute="Criteria" method="post">
+                <form:input type="text" path="name" placeholder="Name"/>
+                <form:input type="text" path="surname" placeholder="Surname"/>
+                <form:input type="text" path="series" placeholder="Series"/>
+                <form:input type="number" path="number" placeholder="Number"/>
+                <button type="submit">Filter</button>
+            </form:form>
             <h3>Результуюча таблиця</h3>
 
-            <table class="table table-hover" id="bootstrap-table">
+            <table class="table table-hover" >
                 <thead>
                 <tr>
                     <th class="hidden-xs">ID</th>
-                    <th>Прізвище</th>
                     <th>Ім'я</th>
+                    <th>Прізвище</th>
                     <th>По батькові</th>
                     <th>Серія</th>
                     <th>Номер паспорту</th>
+                    <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -77,6 +86,13 @@
                         <td>${userEntity.secondName}</td>
                         <td>${userEntity.passport.series}</td>
                         <td>${userEntity.passport.number}</td>
+                        <td>
+                        <form:form method="post" action="/admin/user/${userEntity.id}/delete">
+                            <button class="btn btn-success pull-right btn-sm" type="submit">
+                                Видалити
+                            </button>
+                        </form:form>
+                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
@@ -88,11 +104,11 @@
 </div>
 
 
-<script>
-    $(document).ready( function () {
-        $('#bootstrap-table').bdt();
-    });
-</script>
+<%--<script>--%>
+    <%--$(document).ready( function () {--%>
+        <%--$('#bootstrap-table').bdt();--%>
+    <%--});--%>
+<%--</script>--%>
 
 </body>
 </html>
