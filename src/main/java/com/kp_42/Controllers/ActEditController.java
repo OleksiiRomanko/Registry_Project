@@ -66,7 +66,7 @@ public class ActEditController {
     public String editActInfo(ModelMap map, @PathVariable Integer id, @Valid @ModelAttribute("CriminalActEntity") CriminalActEntity actEntity,
                                BindingResult result,SessionStatus status) {
 
-        if(result.hasErrors()) return "EntityEditing/ActCreating/changeact";
+        if(result.hasErrors()) return "EntityEditing/ActEditing/changeact";
 
         CriminalActEntity actUpdate =  searchService.findUser(id).getCriminalAct();
         actUpdate.setCriminalDescription(actEntity.getCriminalDescription());

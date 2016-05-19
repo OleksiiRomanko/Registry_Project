@@ -15,6 +15,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.validation.Valid;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @Controller
@@ -43,6 +44,10 @@ public class VisitorController {
 
             List<UsersEntity> users = searchService.findUsersByCredentials(credentials);
 
+            if (users.stream()
+                    .filter((obj) -> obj.getCriminalAct() != null)
+                    .collect(Collectors.toList()).isEmpty()
+                    )return "redirect:/mainpage";
             if (users.size() == 0)
                 return "redirect:/mainpage";
 

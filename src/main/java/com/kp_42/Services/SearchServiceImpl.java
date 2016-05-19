@@ -44,7 +44,7 @@ public class SearchServiceImpl implements ISearchService {
 
         List<UsersEntity> result =  new ArrayList<>();
         String [] arr = credentials.split(" ");
-        if(arr.length != 3)return null;
+        if(arr.length != 3)return result;
         System.out.println(arr[0] + " " + arr[1] + " " +arr[2]);
         result.addAll(usersRepository.findBySurnameLike(arr[0]));
         result = result.stream()

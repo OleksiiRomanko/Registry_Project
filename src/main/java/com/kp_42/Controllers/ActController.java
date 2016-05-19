@@ -76,6 +76,7 @@ public class ActController {
     public String findUser(@RequestParam("credentials") String credentials, ModelMap map){
         List<UsersEntity> list = searchService.findUsersByCredentials(credentials);
         if(list == null) return "EntityCreating/ActCreating/finduser";
+        list = list.stream().filter((obj) -> obj.getCriminalAct() == null).collect(Collectors.toList());
         map.addAttribute("users",list);
         return "EntityCreating/ActCreating/selectuser";
     }
@@ -90,7 +91,7 @@ public class ActController {
     public String selectLaws(ModelMap map,@PathVariable Integer id){
         System.out.printf("id - " + id);
         UsersEntity user = searchService.findUser(id);
-        if(user.getCriminalAct() != null)return "redirect:/admin/act/add/";
+        if(user.getCriminalAct() != null)return "redirect:/admin/";
         map.addAttribute("user",user);
         List<LawEntity> laws = searchService.getAllLaws();
         map.addAttribute("laws",laws);
@@ -132,6 +133,7 @@ public class ActController {
     @RequestMapping(value = "/search", method = RequestMethod.GET)
     public String findUser(ModelMap map, @RequestParam("Credentials") String credentials){
 
+        if(credentials == null || credentials.isEmpty()) return "EntityEditing/ActEditing/findactbyuser";
         List<UsersEntity> list = searchService.findUsersByCredentials(credentials).stream()
                 .filter((usersEntity -> usersEntity.getCriminalAct()!=null))
                 .collect(Collectors.toList());
