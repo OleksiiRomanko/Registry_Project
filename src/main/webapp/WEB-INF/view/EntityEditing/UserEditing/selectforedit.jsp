@@ -105,7 +105,7 @@
                                     </form:form>
                                     </td>
                                     <td>
-                                        <form:form method="post" action="/admin/user/${user.id}/delete">
+                                        <form:form method="post" action="/admin/user/${user.id}/delete/">
                                             <button class="btn btn-success pull-right btn-sm" type="submit">
                                                 Видалити
                                             </button>

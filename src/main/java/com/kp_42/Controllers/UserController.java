@@ -155,7 +155,7 @@ public class UserController {
 
     }
 
-    @RequestMapping(value = "/{id}/delete", method = RequestMethod.POST)
+    @RequestMapping(value = "/{id}/delete/", method = RequestMethod.POST)
     public String deleteUser(ModelMap map, @PathVariable Integer id) {
         deleteService.deleteUser(id);
         return "redirect:/admin";

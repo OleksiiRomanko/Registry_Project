@@ -87,7 +87,7 @@
                         <td>${userEntity.passport.series}</td>
                         <td>${userEntity.passport.number}</td>
                         <td>
-                        <form:form method="post" action="/admin/user/${userEntity.id}/delete">
+                        <form:form method="post" action="/admin/user/${userEntity.id}/delete/">
                             <button class="btn btn-success pull-right btn-sm" type="submit">
                                 Видалити
                             </button>

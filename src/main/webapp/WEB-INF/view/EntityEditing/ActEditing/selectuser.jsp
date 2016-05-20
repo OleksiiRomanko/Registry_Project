@@ -100,16 +100,19 @@
                                 <td>${user.passport.series}</td>
                                 <td>${user.passport.number}</td>
                                 <td>
-                                    <form:form method="get" action="/admin/act/${user.id}/edit/extrafields">
-                                        <button c lass="btn btn-success pull-right btn-sm" type="submit">
-                                            Редагувати
-                                        </button>
-                                    </form:form>
-                                    <form:form method="post" action="/admin/act/${user.id}/delete">
-                                        <button class="btn btn-success pull-right btn-sm" type="submit">
-                                            Видалити
-                                        </button>
-                                    </form:form>
+                                    <div class="btn-group">
+                                        <form:form method="get" action="/admin/act/${user.id}/edit/extrafields">
+                                            <button class="btn btn-success pull-right btn-sm" type="submit">
+                                                Редагувати
+                                            </button>
+                                        </form:form>
+                                        <form:form method="post" action="/admin/act/${user.id}/delete">
+                                            <button class="btn btn-success pull-right btn-sm" type="submit">
+                                                Видалити
+                                            </button>
+                                        </form:form>
+                                    </div>
+
                                 </td>
                             </tr>
 
